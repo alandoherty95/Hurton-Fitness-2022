@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap');
+
+
+/*--------------------------------------------ID Selectors*/
+
+#main-heading {
+    background-color: #ffaaff;
+    font-size: 200%;
+    text-align: center;
+}
+
+#logo {
+    text-transform: uppercase;
+}
+
+#main-menu {
+    background-color: rgb(255, 170, 184);
+}
+
+#three-reasons {
+    text-align: center;
+}
+
+#section-one {
+    color: blue;
+}
+
+#section-two {
+    color: greenyellow;
+}
+
+#section-two-heading {
+    text-align: center;
+}
+
+#section-three {
+    color: aqua;
+}
+
+#section-three-heading {
+    text-align: center;
+}
+
+#container-fluid {
+
+}
+
+#main-footer {
+    background-color: grey;
+}
+
+#footer-details {
+
+}
+
+/*--------------------------------------------Heading*/
+
+header {
+    margin: 0;
+}
+
+/*--------------------------------------------Nav Bar*/
+
+#nav li {
+    font-size: 14px;
+    padding: 0;
+}
+
+#nav {
+    margin: 0;
+}
+
+.menuitem {
+    color: indigo;
+}
+
+.menuitem a {
+    width: 100%;
+    text-decoration: none;
+    color: #fff;
+    height: 120px;
+}
+
+.menuitem span {
+    display: block;
+    width: 100%;
+    padding-top: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
