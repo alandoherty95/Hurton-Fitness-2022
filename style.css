@@ -1,33 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 
 /*--------------------------------------------------------------Header*/
-
-body, html {
-    height: 200%;
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
 header {
-    padding: 5px;
-    line-height: 200px;
+    padding: 1px;
+    position: sticky;
+    background-color: #C5C3C6;
+    width: 100%
 }
 
 body{
-    font-family: Lato;
-    color:#777777;
+    font-family: 'Fjalla One', sans-serif;
+    color: #ffffff;
     font-size: 20px;
+    background-color: #C5C3C6;
 }
 
 h1 {
-    font-family: Oswald;
+    font-family: 'Fjalla One', sans-serif;
     text-transform: uppercase;
-    letter-spacing: 14px;
-    color:#000000;
+    font-size: 80px; 
+    letter-spacing: 8px;
+    font-weight: 600;
+    color:#1985A1;
 }
 
 h2, h3 {
-    font-family: Oswald;
+    font-family: 'Fjalla One', sans-serif;
     text-transform: uppercase;
+    font-weight: bold;
     letter-spacing: 6px;
     color:#ffffff;
 }
@@ -37,12 +43,12 @@ h2, h3 {
 
 #logo {
     float: left; 
-    font-size: 300%;
-    margin: 5px  5px 5px 5px;
-    padding:  5px 5px 5px 5px;
+    font-size: 360%;
+    text-decoration: none;
+    padding: 10px;
 }
 
-#nav {
+#nav-bar {
     list-style-type: none;
     letter-spacing: 6px;
 }
@@ -50,39 +56,43 @@ h2, h3 {
 #logo, #nav-bar {
     line-height: 60px;
     text-transform: uppercase;
-
+    background-color: #C5C3C6;
 }
 
 #nav-bar li {
     float: right;
     list-style: none;
-    font-size: 150%;
-    letter-spacing: 2px;
+    font-size: 140%;
+    margin: 16px;
+    padding: 10px 0px 0px 0px;
+    letter-spacing: 4px;
+    font-weight: bold;
+    background-color: #C5C3C6;
 }
 
  #nav-bar li i {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    color: #000000;
-    transition: all 0.35s ease-in-out;
+    color: #1985A1;
     text-align: center;
-    margin: 5px 5px 5px 5px;
-    padding: 5px 5px 5px 5px;
+    padding: 10px 20px 10px 20px;
 }
 
 #nav-bar a {
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: #000000;
+
 }
 
 
 #nav-bar a:hover {
-    border-bottom: 1px solid #777777;
+    border: 3px solid #1985A1;
+    border-radius: 25px; 
 }
 
 .active {
-    border-bottom: 1px solid #777777;
+    border-bottom: 2px solid #000000;
 }
 
 /*----------------------------------------------------------Top Section*/
@@ -90,14 +100,14 @@ h2, h3 {
 #top-section {
     overflow: hidden;
     position: relative;
-    height: 600px;
+    height: 1500px;
     width: 100%;
 }
 
 #cover-image {
-    height: 600px;
+    height: 1500px;
     width: 100%;
-    background-image: url("assets/heroimage.jpg");
+    background-image: url("assets/steps.jpg");
     animation-name: hero-zoom;
     animation-duration: 4s;
     animation-fill-mode: forwards;
@@ -118,60 +128,121 @@ h2, h3 {
 #cover-text {
     font-size: 200%;
     text-transform: uppercase;
-    margin: 5px 5px 5px 5px;
-    padding: 5px 5px 5px 5px;
+    padding: 15px 20px 15px 20px;
+    border-radius: 25px;
+    letter-spacing: 3px;
     position: absolute;
     text-align: center;
-    background-color: rgba(60, 249, 255, 0.7);
-    bottom: 60px;
-    left: 90px;
+    border: 4px solid #1985A1;
+    color: #1985A1;
+    background-color: rgb(197,195,198, 0.65);
+    top: 200px;
+    right: 180px; 
+}
+#cover-text2 {
+    font-size: 200%;
+    text-transform: uppercase;
+    padding: 15px 20px 15px 20px;
+    border: 6px solid #1985A1;;
+    border-radius: 25px;
+    letter-spacing: 3px;
+    color: #FF0000;
+    position: absolute;
+    text-align: center;
+    background-color: rgb(197,195,198, 0.65);
+    bottom: 250px;
+    left: 180px; 
 }
 
+
+#cover-text h3 {
+    font-family: 'Fjalla One', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color:#ffffff;
+}
+
+#cover-text h3, h4 {
+    font-family: 'Fjalla One', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color:#1985A1;
+}
+
+
+#cover-text2 a {
+    color: #1985A1;
+    transition: all 0.5s ease-in-out;
+    font-size: 30px;
+    text-transform: lowercase;
+}
+
+#cover-text2 h4 {
+    color:#1985A1;
+    font-size: 30px;
+}
+
+#cover-text2 a:hover {
+    border: 2px solid #1985A1;
+    border-radius: 25px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+#cover-text2 i {
+    color: #1985A1;
+    font-size: 30px;
+}
 
 /*----------------------------------------------------------Section One*/
 
 #section-one {
-    color: rgb(250, 250, 250);
-    background-color: #00b7ff;
-    height: 750px;
+    color: #ffffff;
+    background-color: #C5C3C6;
+    margin: 0px;
+    padding: 30px;
+    height: auto;
     width: 100%;
-}
+} 
+
 
 #container {
-    margin: 5px 5px 5px 5px;
-    padding: 5px 15px 5px 15px;
+    margin: 1px;
+    padding: 1px;
 }
 
 #three-reasons {
-    background-color: #00b7ff;
-    margin: 5px 5px 5px 5px;
-    padding: 15px 5px 15px 5px;
+    background-color: #46494C;
+    border-style: groove;
+    border-radius: 25px;
+    margin: 0px;
+    padding: 30px;
+    font-size: 70px;
     text-align: center;
 }
 
-
-
-#three-reasons i {
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    font-size: 60px;
-    color: #fafafa;
-    display: block;
-    text-align: center;
-    transition: all 0.35s ease-in-out;
-}
 
 .col-sm {
     width: 40%;
-    background-color: #00d9ff;
-    height: 600px;
+    background-color: #46494C;
+    border-radius: 25px;
+    height: 550px;
     padding: 15px 15px 15px 15px;
     margin: 5px 5px 5px 5px;
     text-align: center;
 }
 
-
+.col-sm i {
+    font-size: 200%;
+    align-items: center;
+    border-radius: 50%;
+    left: 40px;
+    color: #ffffff;
+    padding: 20px;
+    display: block;
+    text-align: center;
+}
 
 
 
@@ -181,131 +252,271 @@ h2, h3 {
 
 #section-two {
     color: #ffffff;
-    background-color: rgb(246, 151, 255);
-    margin: 5px  5px 5px 5px;
+    background-color: #11586A;
+    border-radius: 25px;
     padding: 15px 5px 15px 5px;
 }
 
+#section-two .row {
+    margin: 5px;
+    padding: 5px;
+}
+
 #section-two i {
-    width: 200px;
-    height: 200px;
+    font-size: 200%;
     border-radius: 50%;
     color: #ffffff;
-    transition: all 0.35s ease-in-out;
-    text-align: center;
-    margin: 5px 5px 5px 5px;
-    padding: 5px 5px 5px 5px;
+    margin: 3px;
 }
 
 #section-two-heading {
     text-align: center;
-    margin: 5px  5px 5px 5px;
-    padding: 15px 5px 15px 5px;
+    margin: 5px 0px 5px 0px;
+    padding: 15px 0px 15px 0px;
 }
 
 
 /*----------------------------------------------------------Section Three*/
-
 #section-three {
-    margin: 5px  5px 5px 5px;
-    padding: 15px 5px 15px 5px;
+    border-radius: 25px;
+    height: auto;
     width: 100%;
+}
+
+#section-three i {
+    font-size: 250%;
+    border-radius: 50%;
+    color: #ffffff;
 }
 
 #section-three-heading {
     text-align: center;
 }
 
-#section-three div{
+#motto {
     color: #ffffff;
-    background-color: #f261ff;
+    background-color: #1985A1;
+    border-radius: 25px;
     width: 100%;
-    margin: 5px  5px 5px 5px;
+    height: 400px;
+    margin: 5px;
     padding: 5px 5px 5px 5px;
     text-align: center;
 }
+
+/*---------
+
+#crest {
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+    width: 100%;
+    height: auto;
+}
+
+#crest img {
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 100%;
+  height: auto;
+}
+
+---*/
+
+
 
 /*----------------------------------------------------------Events Section*/
 
 #events {
     width: 100%;
-    border: 10px solid rgba(174, 0, 255, 0.486);
-    margin: 5px  5px 5px 5px;
-    padding:  5px 5px 5px 5px;
-    height: 400px;
+    border: 8px solid #11586A;
+    border-radius: 25px;
+    margin: 10px;
+    height: 800px;
     text-align: center;
 }
 
-#events div{
-    background-color:  rgb(174, 0, 255);
-    width: 24%;
-    height: 360px;
-    margin: 5px 0px 5px 10px; 
+#events div {
+    background-image: url("assets/outdoorexercise.jpg");
+    background-color: rgb(17, 88, 106, 0.65);
+    border-radius: 25px;
+    margin: 5px;
+    padding-top: 200px;
     text-align: center;
-    float: left;
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    width: 24%;
+    display: inline-block;
 }
 
 #events h3 {
-    letter-spacing: 3px;
-    color:#ffffff;
-    padding: 20px
-
+    letter-spacing: 4px;
+    font-size: 50px;
+    color: #ffffff;
+    padding: 5px;
+    font-weight: 400;
 }
 
 #events h4 {
-    letter-spacing: 5px;
-    color:#ffffff;
+    letter-spacing: 4px;
+    color: #ffffff;
     text-transform: uppercase;
-    padding: 5px
+    font-size: 50px;
+    padding: 5px;
+    font-weight: 400;
 }
+
+/*-------------------------------------------------------------------Form*/
+
+.form-section {
+    clear: both;
+    background: url("#");
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+}
+
+.form-section i {
+    font-size: 300%;
+    float: right;
+    color: #ffffff;
+}
+
+#form {
+    border: 4px solid #1985A1;
+    color: #ffffff;
+    background-color: #1985A1;
+    height: 750px;
+    padding: 50px;
+    text-align: left;
+}
+
+input {
+ width: 500px;
+ height: 30px;
+ padding: 30px;
+}
+
+
+/*----------------------------------------------------------------End Form*/
+
 
 /*-----------------------------------------------------------------Footer*/
 
 #footer {
-    background-color: grey;
-    margin: 5px  5px 5px 5px;
-    padding:  5px 5px 5px 5px;
+    background-color: #46494C;
     text-align: center;
+    color: #ffffff;
+    height: 500px;
 }
 
 .full-width-footer {
     width: 100%;
-    margin: auto;
-    padding:  15px 5px 15px 5px;
+}
+
+.footer-details h3 {
+    font-size: 40px;
+    letter-spacing: 6px;
 }
 
 .full-width-footer li {
-    list-style: none;
-    color: #ffffff;
-    padding: 0px 20px 0px 20px;
+    display: inline;
+    padding: 40px;
     text-decoration: none;
 }
 
 .footer-details li i {
-    width: 120px;
-    height: 120px;
-    padding: 40px 0 40px 0;
     border-radius: 50%;
-    font-size: 40px;
-    line-height: 60px;
-    color: #ffffff;
+    font-size: 80px;
+    line-height: 150px;
+    padding: 10px;
     text-decoration: none;
-    transition: all 0.35s ease-in-out;
 }
 
+.footer-details li a {
+    border-radius: 50%;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+
 .social-links li a:hover {
-    background: #f261ff;
+    color: #ffffff;
+    border-radius: 25px;
+    border: 3px solid #ffffff;
 }
 
 .social-links li a:visited {
     text-decoration: none;
 }
 
+/*-----------------------------------------------------------Events.html--*/
 
-/*-----------------------------------------------------------Hover.css*/
-
-.hvr-sweep-to-bottom:before {
-    background: rgba(0, 0, 0, 0.2);
+#top-section-events {
+    overflow: hidden;
+    position: relative;
+    height: 2200px;
+    width: 100%;
 }
+
+#cover-image-events {
+    width: 100%;
+    background-image: url("assets/steps.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+} 
+
+#event-details {
+    margin: 50px;
+    padding: 50px;
+}
+
+#event-details .event1 {
+    margin: 50px;
+    padding: 50px;
+    border-radius: 25px;
+    text-align: center;
+    border: 8px solid #1985A1;
+    color: #1985A1;
+    background-color: rgb(197,195,198, 0.65);
+}
+
+#event-details h3 {
+    letter-spacing: 4px;
+    font-size: 50px;
+    color: #ffffff;
+    padding: 5px;
+    font-weight: 400;
+}
+
+#event-details h4 {
+    letter-spacing: 4px;
+    color: #1985A1;
+    text-transform: uppercase;
+    font-size: 50px;
+    padding: 5px;
+    font-weight: 400;
+}
+
+#event1 i {
+    color: #1985A1;
+    font-size: 60px;
+}
+
+/*-----------------------------------------------------------Gallery---*/
+
+#images {
+    clear: both;
+    line-height: auto;
+    column-count: 3;
+    column-gap: 0px;
+}
+
+#images img{
+    width: 100%;
+}
+
 
 
