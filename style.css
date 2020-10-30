@@ -63,7 +63,7 @@ h2, h3 {
     float: right;
     list-style: none;
     font-size: 140%;
-    margin: 16px;
+    margin: 6px;
     padding: 10px 0px 0px 0px;
     letter-spacing: 4px;
     font-weight: bold;
@@ -76,26 +76,19 @@ h2, h3 {
     border-radius: 50%;
     color: #1985A1;
     text-align: center;
-    padding: 10px 20px 10px 20px;
+    padding: 10px;
 }
 
 #nav-bar a {
     text-decoration: none;
     color: #000000;
-
 }
-
 
 #nav-bar a:hover {
-    border: 3px solid #1985A1;
-    border-radius: 25px; 
+    color: #ffffff;
 }
 
-.active {
-    border-bottom: 2px solid #000000;
-}
-
-/*----------------------------------------------------------Top Section*/
+/*-------------------------------border: 3px solid #1985A1;---------------------------Top Section*/
 
 #top-section {
     overflow: hidden;
@@ -183,16 +176,19 @@ h2, h3 {
     font-size: 30px;
 }
 
+#cover-text2 i {
+    color: #1985A1;
+    font-size: 30px;
+}
+
 #cover-text2 a:hover {
-    border: 2px solid #1985A1;
-    border-radius: 25px;
+    color: #ffffff;
     padding: 10px;
     text-decoration: none;
 }
 
-#cover-text2 i {
-    color: #1985A1;
-    font-size: 30px;
+#cover-text2 i:hover {
+    color: #ffffff;
 }
 
 /*----------------------------------------------------------Section One*/
@@ -244,17 +240,13 @@ h2, h3 {
     text-align: center;
 }
 
-
-
 /*------------------------------------------------------------Section Two*/
-
-
 
 #section-two {
     color: #ffffff;
     background-color: #11586A;
-    border-radius: 25px;
     padding: 15px 5px 15px 5px;
+    height: auto;
 }
 
 #section-two .row {
@@ -275,10 +267,9 @@ h2, h3 {
     padding: 15px 0px 15px 0px;
 }
 
-
 /*----------------------------------------------------------Section Three*/
+
 #section-three {
-    border-radius: 25px;
     height: auto;
     width: 100%;
 }
@@ -296,34 +287,11 @@ h2, h3 {
 #motto {
     color: #ffffff;
     background-color: #1985A1;
-    border-radius: 25px;
     width: 100%;
     height: 400px;
-    margin: 5px;
     padding: 5px 5px 5px 5px;
     text-align: center;
 }
-
-/*---------
-
-#crest {
-    margin: 5px 5px 5px 5px;
-    padding: 5px 5px 5px 5px;
-    width: 100%;
-    height: auto;
-}
-
-#crest img {
-  border: 2px solid #ddd;
-  border-radius: 4px;
-  padding: 5px;
-  width: 100%;
-  height: auto;
-}
-
----*/
-
-
 
 /*----------------------------------------------------------Events Section*/
 
@@ -331,8 +299,9 @@ h2, h3 {
     width: 100%;
     border: 8px solid #11586A;
     border-radius: 25px;
-    margin: 10px;
-    height: 800px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: auto;
     text-align: center;
 }
 
@@ -384,7 +353,6 @@ h2, h3 {
 }
 
 #form {
-    border: 4px solid #1985A1;
     color: #ffffff;
     background-color: #1985A1;
     height: 750px;
@@ -443,8 +411,7 @@ input {
 
 .social-links li a:hover {
     color: #ffffff;
-    border-radius: 25px;
-    border: 3px solid #ffffff;
+  
 }
 
 .social-links li a:visited {
