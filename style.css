@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
 
-/*--------------------------------------------------------------Header*/
+/*--------------------------------------------------------------Head*/
+
 * {
     margin: 0;
     padding: 0;
@@ -8,13 +10,11 @@
 }
 
 header {
-    padding: 1px;
-    position: sticky;
     background-color: #C5C3C6;
     width: 100%
 }
 
-body{
+body {
     font-family: 'Fjalla One', sans-serif;
     color: #ffffff;
     font-size: 20px;
@@ -22,20 +22,18 @@ body{
 }
 
 h1 {
-    font-family: 'Fjalla One', sans-serif;
     text-transform: uppercase;
     font-size: 80px; 
     letter-spacing: 8px;
-    font-weight: 600;
+    font-weight: 800;
     color:#1985A1;
 }
 
 h2, h3 {
-    font-family: 'Fjalla One', sans-serif;
     text-transform: uppercase;
     font-weight: bold;
-    letter-spacing: 6px;
     color:#ffffff;
+    text-align: center;
 }
 
 
@@ -43,52 +41,47 @@ h2, h3 {
 
 #logo {
     float: left; 
-    font-size: 360%;
     text-decoration: none;
-    padding: 10px;
+    padding-left: 10px;
 }
 
 #nav-bar {
     list-style-type: none;
-    letter-spacing: 6px;
 }
 
 #logo, #nav-bar {
-    line-height: 60px;
-    text-transform: uppercase;
+    line-height: 100px;
     background-color: #C5C3C6;
 }
 
 #nav-bar li {
     float: right;
     list-style: none;
-    font-size: 140%;
-    margin: 6px;
-    padding: 10px 0px 0px 0px;
-    letter-spacing: 4px;
+    text-transform: uppercase;
     font-weight: bold;
-    background-color: #C5C3C6;
+    font-size: 30px;
+    margin: 4px;
+    padding: 4px;
+    letter-spacing: 4px;
 }
 
- #nav-bar li i {
+#nav-bar li i {
     width: 100%;
     height: 100%;
-    border-radius: 50%;
     color: #1985A1;
-    text-align: center;
     padding: 10px;
 }
 
-#nav-bar a {
+#nav-bar li a {
     text-decoration: none;
-    color: #000000;
-}
-
-#nav-bar a:hover {
     color: #ffffff;
 }
 
-/*-------------------------------border: 3px solid #1985A1;---------------------------Top Section*/
+#nav-bar a:hover {
+    font-size: 32px;
+}
+
+/*----------------------------------------------------------Top Section*/
 
 #top-section {
     overflow: hidden;
@@ -96,6 +89,19 @@ h2, h3 {
     height: 1500px;
     width: 100%;
 }
+
+#top-section h2 {
+    letter-spacing: 2px;
+    font-size: 30px;
+    color:#ffffff;
+}
+
+#top-section h3 {
+    letter-spacing: 2px;
+    font-size: 30px;
+    color:#1985A1;
+}
+
 
 #cover-image {
     height: 1500px;
@@ -118,62 +124,37 @@ h2, h3 {
     }
 }
 
+/*----------------------------------------------------------Cover Text 1*/
+
 #cover-text {
-    font-size: 200%;
-    text-transform: uppercase;
-    padding: 15px 20px 15px 20px;
+    padding: 15px;
     border-radius: 25px;
     letter-spacing: 3px;
-    position: absolute;
-    text-align: center;
-    border: 4px solid #1985A1;
-    color: #1985A1;
+    border: 6px solid #1985A1;
     background-color: rgb(197,195,198, 0.65);
+    position: absolute;
     top: 200px;
     right: 180px; 
 }
+
+/*----------------------------------------------------------Cover Text 2*/
+
 #cover-text2 {
-    font-size: 200%;
-    text-transform: uppercase;
-    padding: 15px 20px 15px 20px;
+    padding: 15px;
     border: 6px solid #1985A1;;
     border-radius: 25px;
     letter-spacing: 3px;
-    color: #FF0000;
-    position: absolute;
-    text-align: center;
     background-color: rgb(197,195,198, 0.65);
+    position: absolute;
     bottom: 250px;
     left: 180px; 
 }
 
-
-#cover-text h3 {
-    font-family: 'Fjalla One', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color:#ffffff;
-}
-
-#cover-text h3, h4 {
-    font-family: 'Fjalla One', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: bold;
-    color:#1985A1;
-}
-
-
 #cover-text2 a {
     color: #1985A1;
-    transition: all 0.5s ease-in-out;
     font-size: 30px;
+    padding: 5px;
     text-transform: lowercase;
-}
-
-#cover-text2 h4 {
-    color:#1985A1;
-    font-size: 30px;
 }
 
 #cover-text2 i {
@@ -183,13 +164,9 @@ h2, h3 {
 
 #cover-text2 a:hover {
     color: #ffffff;
-    padding: 10px;
     text-decoration: none;
 }
 
-#cover-text2 i:hover {
-    color: #ffffff;
-}
 
 /*----------------------------------------------------------Section One*/
 
@@ -201,7 +178,6 @@ h2, h3 {
     height: auto;
     width: 100%;
 } 
-
 
 #container {
     margin: 1px;
@@ -217,7 +193,6 @@ h2, h3 {
     font-size: 70px;
     text-align: center;
 }
-
 
 .col-sm {
     width: 40%;
@@ -245,26 +220,37 @@ h2, h3 {
 #section-two {
     color: #ffffff;
     background-color: #11586A;
-    padding: 15px 5px 15px 5px;
+    padding: 15px;
     height: auto;
 }
 
 #section-two .row {
     margin: 5px;
     padding: 5px;
+    font-family: 'Amatic SC', cursive;
 }
 
 #section-two i {
-    font-size: 200%;
-    border-radius: 50%;
+    font-size: 180%;
     color: #ffffff;
     margin: 3px;
+    padding-bottom: 40px;
 }
 
 #section-two-heading {
     text-align: center;
     margin: 5px 0px 5px 0px;
     padding: 15px 0px 15px 0px;
+}
+
+.col-md-6 h2 {
+    font-size: 30px;
+    text-align: left;
+}
+
+.col-md-6 p {
+    font-size: 24px;
+    font-weight: bold;
 }
 
 /*----------------------------------------------------------Section Three*/
@@ -274,30 +260,74 @@ h2, h3 {
     width: 100%;
 }
 
-#section-three i {
-    font-size: 250%;
-    border-radius: 50%;
-    color: #ffffff;
-}
-
-#section-three-heading {
-    text-align: center;
-}
-
 #motto {
     color: #ffffff;
     background-color: #1985A1;
     width: 100%;
-    height: 400px;
+    height: 600px;
     padding: 5px 5px 5px 5px;
     text-align: center;
 }
+
+#motto i {
+    font-size: 180%;
+    color: #ffffff;
+}
+
+/*----------------------------------------------------------Section Four*/
+
+#section-four {
+    height: auto;
+    width: 100%;
+}
+
+#recipe {
+    color: #ffffff;
+    background-color: #11586A;
+    font-family: 'Amatic SC', cursive;
+    height: 800px;
+    padding: 20px;
+    font-size: 36px;
+}
+
+#recipe h2 {
+    font-family: 'Amatic SC', cursive;
+    padding: 20px;
+    font-size: 56px;
+}
+
+#recipe i {
+    color: #ffffff;
+    font-size: 250%;
+}
+
+#recipe-one-heading {
+    float: left;
+    margin: 10px;
+    padding: 10px 10px 10px 30px;
+    width: 45%;
+    line-height: 50px;
+}
+
+#recipe-two-heading {
+    float: right;
+    padding: 10px 10px 10px 30px;
+    width: 45%;
+    margin: 5px;
+    line-height: 50px;
+}
+
+#recipe li {
+    text-decoration-style: solid;
+    text-transform: lowercase;
+}
+
 
 /*----------------------------------------------------------Events Section*/
 
 #events {
     width: 100%;
-    border: 8px solid #11586A;
+    border: 6px solid #11586A;
     border-radius: 25px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -306,32 +336,21 @@ h2, h3 {
 }
 
 #events div {
-    background-image: url("assets/outdoorexercise.jpg");
-    background-color: rgb(17, 88, 106, 0.65);
+    background-image: url("assets/Spartan18.jpg");
     border-radius: 25px;
     margin: 5px;
-    padding-top: 200px;
-    text-align: center;
     background-size: cover;
     background-position: center;
     height: 700px;
+    padding-top: 300px;
     width: 24%;
     display: inline-block;
 }
 
-#events h3 {
+#events h2, h3 {
     letter-spacing: 4px;
     font-size: 50px;
     color: #ffffff;
-    padding: 5px;
-    font-weight: 400;
-}
-
-#events h4 {
-    letter-spacing: 4px;
-    color: #ffffff;
-    text-transform: uppercase;
-    font-size: 50px;
     padding: 5px;
     font-weight: 400;
 }
@@ -411,7 +430,7 @@ input {
 
 .social-links li a:hover {
     color: #ffffff;
-  
+    font-size: 210%;
 }
 
 .social-links li a:visited {
