@@ -280,14 +280,20 @@ h2, h3 {
 /*----------------------------------------------------------Section Four*/
 
 #section-four {
-    height: auto;
     width: 100%;
+    height: 800px;
+    overflow: hidden;
+    position: relative;
 }
 
 #recipe {
-    color: #ffffff;
-    background-color: #11586A;
+    color: #000000;
+    background-image: url("assets/Recipe4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: center;
     font-family: 'Amatic SC', cursive;
+    font-weight: 700;
     height: 800px;
     padding: 20px;
     font-size: 36px;
@@ -299,18 +305,13 @@ h2, h3 {
     font-size: 56px;
 }
 
-#recipe i {
-    color: #ffffff;
-    font-size: 250%;
-}
-
 #recipe-one-heading {
     float: left;
     margin: 10px;
     padding: 10px 20px 10px 40px;
     width: 45%;
     line-height: 60px;
-    border: 3px solid #ffffff;
+    border: 3px solid #000000;
 }
 
 #recipe-two-heading {
@@ -319,7 +320,7 @@ h2, h3 {
     width: 45%;
     margin: 10px;
     line-height: 60px;
-    border: 3px solid #ffffff;
+    border: 3px solid #000000;
 }
 
 #recipe li {
@@ -347,12 +348,12 @@ h2, h3 {
     background-size: cover;
     background-position: center;
     height: 700px;
-    padding-top: 300px;
+    padding-top: 50px;
     width: 24%;
     display: inline-block;
 }
 
-#events h2, h3 {
+#events h2 {
     letter-spacing: 4px;
     font-size: 50px;
     color: #ffffff;
@@ -360,48 +361,32 @@ h2, h3 {
     font-weight: 400;
 }
 
+#events h3 {
+    letter-spacing: 4px;
+    padding-top: 100px;
+    font-size: 50px;
+    color: #ffffff;
+    padding: 5px;
+    font-weight: 200;
+}
+
 /*-------------------------------------------------------------------Contact*/
 
-#top-section-contact {
+#contact-top-section {
     overflow: hidden;
     position: relative;
-    height: 1500px;
+    height: 1800px;
     width: 100%;
 }
 
-#top-section-contact h2 {
-    letter-spacing: 2px;
-    font-size: 30px;
-    color:#ffffff;
-}
-
-#top-section-contact h3 {
-    letter-spacing: 2px;
-    font-size: 30px;
-    color:#1985A1;
-}
-
-
-#cover-image {
-    height: 1500px;
+#contact-cover-image {
+    height: 1800px;
     width: 100%;
-    background-image: url("assets/steps9.jpg");
-    animation-name: hero-zoom;
-    animation-duration: 4s;
-    animation-fill-mode: forwards;
+    background-image: url("assets/Steps10.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
 } 
-
-@keyframes hero-zoom {
-    from{
-        transform: scale(1);
-    }
-    to{
-        transform: scale(1.08);
-    }
-}
 
 /*-------------------------------------------------------------------Form*/
 
@@ -417,6 +402,8 @@ h2, h3 {
     height: 850px;
     padding: 50px;
     text-align: left;
+    box-sizing: border-box;
+    margin: -16px;
 }
 
 #form h2 {
@@ -427,6 +414,10 @@ h2, h3 {
 .button {
     color: #1985A1;
     background-color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
 
 input {
@@ -489,16 +480,16 @@ input {
 
 /*-----------------------------------------------------------Events.html--*/
 
-#top-section-events {
+#events-top-section {
     overflow: hidden;
     position: relative;
     height: 2200px;
     width: 100%;
 }
 
-#cover-image-events {
+#events-cover-image {
     width: 100%;
-    background-image: url("assets/steps.jpg");
+    background-image: url("assets/Steps8.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
@@ -536,21 +527,24 @@ input {
     font-weight: 400;
 }
 
-#event1 i {
-    color: #1985A1;
-    font-size: 60px;
+/*-----------------------------------------------------------Gallery---*/
+#images-title {
+    padding-top: 140px;
+    padding-left: 40px;
 }
 
-/*-----------------------------------------------------------Gallery---*/
+#images-title h2 {
+    text-align: left;
+}
 
-#images {
+#race-images {
     clear: both;
     line-height: auto;
     column-count: 2;
     column-gap: 0px;
 }
 
-#images img{
+#race-images img{
     width: 100%;
 }
 
