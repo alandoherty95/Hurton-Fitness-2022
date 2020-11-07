@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
 /*--------------------------------------------------------------Head*/
 
@@ -50,7 +51,7 @@ h2, h3 {
 }
 
 #logo, #nav-bar {
-    line-height: 100px;
+    line-height: 80px;
     background-color: #C5C3C6;
 }
 
@@ -58,27 +59,29 @@ h2, h3 {
     float: right;
     list-style: none;
     text-transform: uppercase;
-    font-weight: bold;
-    font-size: 30px;
     margin: 4px;
     padding: 4px;
     letter-spacing: 4px;
 }
 
 #nav-bar li i {
-    width: 100%;
-    height: 100%;
     color: #1985A1;
-    padding: 10px;
+    padding-right: 30px;
+    font-size: 40px;
 }
 
 #nav-bar li a {
     text-decoration: none;
-    color: #ffffff;
+}
+
+#nav-bar li h2 {
+    font-weight: bold;
+    font-size: 32px;
+    color: #1985A1;
 }
 
 #nav-bar a:hover {
-    font-size: 32px;
+     font-size: 36px;
 }
 
 /*----------------------------------------------------------Top Section*/
@@ -147,7 +150,7 @@ h2, h3 {
     border: 6px solid #1985A1;;
     border-radius: 25px;
     letter-spacing: 3px;
-    background-color: rgb(197,195,198, 0.65);
+    background-color: rgb(197,195,198, 0.75);
     position: absolute;
     bottom: 250px;
     left: 180px; 
@@ -205,6 +208,7 @@ h2, h3 {
     padding: 15px 15px 15px 15px;
     margin: 5px 5px 5px 5px;
     text-align: center;
+    font-size: 24px;
 }
 
 .col-sm i {
@@ -281,7 +285,7 @@ h2, h3 {
 
 #section-four {
     width: 100%;
-    height: 800px;
+    height: 1000px;
     overflow: hidden;
     position: relative;
 }
@@ -293,9 +297,8 @@ h2, h3 {
     background-size: cover;
     position: center;
     font-family: 'Amatic SC', cursive;
-    font-weight: 700;
-    height: 800px;
-    padding: 20px;
+    height: 1000px;
+    padding: 60px 100px 60px 100px;
     font-size: 36px;
 }
 
@@ -303,29 +306,32 @@ h2, h3 {
     font-family: 'Amatic SC', cursive;
     padding: 20px;
     font-size: 56px;
+    font-weight: 900;
+}
+
+#recipe-one-heading, #recipe-two-heading {
+    margin: 10px;
+    width: 45%;
+    padding: 40px;
+    border: 6px solid #000000;
+    border-radius: 10px;
+    line-height: 60px;
 }
 
 #recipe-one-heading {
     float: left;
-    margin: 10px;
-    padding: 10px 20px 10px 40px;
-    width: 45%;
-    line-height: 60px;
-    border: 3px solid #000000;
 }
 
 #recipe-two-heading {
     float: right;
-    padding: 10px 30px 10px 40px;
-    width: 45%;
-    margin: 10px;
-    line-height: 60px;
-    border: 3px solid #000000;
 }
 
 #recipe li {
     text-decoration-style: solid;
     text-transform: lowercase;
+    padding-left: 5px;
+    font-weight: 900;
+    list-style-type: "》";
 }
 
 
@@ -333,54 +339,56 @@ h2, h3 {
 
 #events {
     width: 100%;
-    border: 6px solid #11586A;
     border-radius: 25px;
     margin-top: 20px;
     margin-bottom: 20px;
-    height: auto;
-    text-align: center;
+    height: 870px;
 }
 
-#events div {
-    background-image: url("assets/Spartan18.jpg");
+#events .home-events {
+    background-image: url("assets/Spartan9.jpg");
     border-radius: 25px;
     margin: 5px;
     background-size: cover;
-    background-position: center;
-    height: 700px;
-    padding-top: 50px;
-    width: 24%;
     display: inline-block;
+    background-position: center;
+    overflow: hidden;
+    height: 870px;
+    padding-top: 500px;
+    width: 24%;
+    font-family: 'Permanent Marker', cursive;
 }
 
 #events h2 {
     letter-spacing: 4px;
-    font-size: 50px;
+    font-size: 40px;
     color: #ffffff;
     padding: 5px;
-    font-weight: 400;
+    font-weight: 700;
+    text-align: left;
 }
 
 #events h3 {
     letter-spacing: 4px;
-    padding-top: 100px;
-    font-size: 50px;
+    font-size: 40px;
     color: #ffffff;
     padding: 5px;
-    font-weight: 200;
+    font-weight: 700;
+    text-align: left;
 }
+
 
 /*-------------------------------------------------------------------Contact*/
 
 #contact-top-section {
     overflow: hidden;
     position: relative;
-    height: 1800px;
+    height: 2400px;
     width: 100%;
 }
 
 #contact-cover-image {
-    height: 1800px;
+    height: 2400px;
     width: 100%;
     background-image: url("assets/Steps10.jpg");
     background-repeat: no-repeat;
@@ -398,7 +406,6 @@ h2, h3 {
 }
 
 #form {
-    color: #ffffff;
     height: 850px;
     padding: 50px;
     text-align: left;
@@ -411,11 +418,16 @@ h2, h3 {
     font-size: 50px;
 }
 
+datalist {
+    display: list-none;
+}
+
 .button {
     color: #1985A1;
-    background-color: #ffffff;
+    background-color: rgb(197,195,198, 0.65);
     text-align: center;
     text-decoration: none;
+    border-radius: 10px;
     display: inline-block;
     font-size: 16px;
 }
@@ -428,9 +440,72 @@ input {
 
 
 /*----------------------------------------------------------------End Form*/
+.footer-details {
+    height: 300px;
+    font-size: 20px;
+}
 
+.footer-details .row {
+    padding-right: 15px;
+}
 
-/*-----------------------------------------------------------------Footer*/
+.col-sm-8 {
+    line-height: 150px;
+    display: inline;
+    padding: 70px;
+    text-decoration: none;
+    text-align: center;
+}
+.col-sm-8 h2 {
+    font-size: 40px;
+}
+
+.col-sm-8 li {
+    border-radius: 50%;
+    font-size: 50px;
+    line-height: 100px;
+    font-family: 'Permanent Marker', cursive;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.col-sm-8 li a {
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+.social-links li a:hover {
+    color: #ffffff;
+    font-size: 55px%;
+}
+
+.social-links li a:visited {
+    text-decoration: none;
+}
+
+.back-to-top a {
+    bottom: 20px;
+    right: 30px;
+    border-radius: 10px;
+    color: #ffffff;
+}
+
+.row .col-sm-4 {
+    background-image: url("assets/logo-only.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.col-sm-4 img {
+    height: 30px;
+    width: 30px;
+    padding: 0;
+}
+
+/*-----------------------------------------------------------------Footer
 
 #footer {
     background-color: #46494C;
@@ -452,6 +527,7 @@ input {
     display: inline;
     padding: 40px;
     text-decoration: none;
+    font-family: 'Permanent Marker', cursive;
 }
 
 .footer-details li i {
@@ -478,18 +554,28 @@ input {
     text-decoration: none;
 }
 
+.back-to-top a {
+    bottom: 20px;
+    right: 30px;
+    border-radius: 10px;
+    color: #11586A;
+}
+
+---Footer*/
+
 /*-----------------------------------------------------------Events.html--*/
 
 #events-top-section {
     overflow: hidden;
     position: relative;
-    height: 2200px;
+    height: 2400px;
     width: 100%;
 }
 
 #events-cover-image {
     width: 100%;
-    background-image: url("assets/Steps8.jpg");
+    height: 2400px;
+    background-image: url("assets/Steps4.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
@@ -535,6 +621,7 @@ input {
 
 #images-title h2 {
     text-align: left;
+    font-family: 'Permanent Marker', cursive;
 }
 
 #race-images {

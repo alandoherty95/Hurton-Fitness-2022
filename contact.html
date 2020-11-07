@@ -26,7 +26,7 @@
 <!-------------------------------------------------------------------------------------------Body-->
 
 <body>
-
+        <a name="top"></a>
 <!-----------------------------------------------------------------------------------------Header-->
 
         <header>
@@ -70,14 +70,28 @@
                                         <h2> Get in Contact with Iain </h2>
                                         <br>
                                         <input type="text" name="name" placeholder="Your Name" required/>
-                                        
+                                        <br>
+                                        <br>
                                         <input type="text" id="phone" name="phone" placeholder="Your Phone Number" required>
-                                      
+                                        <br>
+                                        <br>
                                         <input type="text" id="email" name="email" placeholder="Your Email Address" required>
-                                       
-                                        <textarea placeholder=" Type your message here.." name="message"></textarea>
-                                        
-                                        <input type="submit" class="button" value="Send Message">
+                                        <br>
+                                        <br>
+                                        <input list="contact-reason" placeholder="Reason for Contacting" maxlength="50">
+                                            <datalist id="contact-reason">
+                                                <option value="Fitness Bootcamp"></option>
+                                                <option value="Smimming Class"></option>
+                                                <option value="Online Fitness Class"></option>
+                                                <option value="Personal Training"></option>
+                                                <option value="Other"></option>
+                                            </datalist>
+                                        <br>
+                                        <br>
+                                        <textarea row="6" cols="54" placeholder="      Type your message here.." name="message"></textarea>
+                                        <br>
+                                        <br>
+                                        <input type="submit" class="contact-button" value="Send Message">
 
                                     </form>          
                         
@@ -94,16 +108,61 @@
 
         <footer id="footer">
 
-            <div class="full-width-footer">
+
 
 <!------------------------------------------------------------------Footer Details-->
 
-                <div id="row" class="footer-details">
-                
+                <div class="footer-details">
+
+                    <div class="row">
+
+                        <div class="col-sm-8"> <h3 class="uppercase"> Social Media Links </h3>
+                            <ul>
+
+                                <li class="list-inline-item"> 
+                                <a target="_blank" href="https://www.facebook.com/">
+                                    <i class="fa fa-facebook"></i>
+                                    Facebook
+                                </a>
+                                </li>
+                                <li class="list-inline-item">
+                                <a target="_blank" href="https://www.spotify.com/ie/">
+                                    <i class="fa fa-spotify"></i>
+                                    Spotify
+                                </a>
+                                </li>
+                                <li class="list-inline-item">
+                                <a target="_blank" href="https://www.instagram.com/?hl=en">
+                                    <i class="fa fa-instagram"></i>
+                                    Instagram 
+                                </a>
+                                </li>
+                                <li class="list-inline-item">
+                                <a target="_blank" href="https://www.youtube.com/"> 
+                                    <i class="fa fa-youtube"></i> 
+                                    YouTube
+                                </a>
+                                </li>
+                                <br>
+                                © 2020 Hurton Fitness
+
+                                <a href="#top" class="back-to-top"> Back to Top </a>
+                                
+                            </ul>
+
+                        
+                        
+                        
+                        </div>
+                        <div class="col-sm-4"> 
+                            
+                        </div>
+                    </div>
+                    
+<!------------                                 
                     <div class="col-lg">
                         <br>
-                        <h3 class="uppercase"> Social Media Links </h3>
-                        <hr>
+                        
                         <br>
                         <ul class="list-inline social-links">
                             <li class="list-inline-item menuitem">
@@ -136,6 +195,8 @@
                     </div>
                 </div>
             </div>
+-->
+
         </footer>
 
 </body>
