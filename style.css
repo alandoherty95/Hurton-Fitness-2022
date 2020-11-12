@@ -10,23 +10,27 @@
     border: 0;
 }
 
+hr {
+    height: 1px;
+    background-color: #ffffff;
+    border: none;
+}
+
 header {
-    background-color: #C5C3C6;
-    width: 100%
+    width: 100%;
 }
 
 body {
     font-family: 'Fjalla One', sans-serif;
     color: #ffffff;
     font-size: 20px;
-    background-color: #C5C3C6;
 }
 
 h1 {
     text-transform: uppercase;
-    font-size: 80px; 
-    letter-spacing: 8px;
-    font-weight: 800;
+    font-size: 90px; 
+    letter-spacing: 6px;
+    font-weight: 900;
     color:#1985A1;
 }
 
@@ -46,42 +50,27 @@ h2, h3 {
     padding-left: 10px;
 }
 
-#nav-bar {
-    list-style-type: none;
-}
-
-#logo, #nav-bar {
-    line-height: 80px;
-    background-color: #C5C3C6;
-}
-
 #nav-bar li {
     float: right;
     list-style: none;
     text-transform: uppercase;
-    margin: 4px;
-    padding: 4px;
-    letter-spacing: 4px;
+    margin: 12px;
+    padding: 2px;
+    letter-spacing: 2px;
+    font-size: 26px;
+    list-style-type: none;
 }
 
-#nav-bar li i {
+#nav-bar h2 {
     color: #1985A1;
-    padding-right: 30px;
-    font-size: 40px;
 }
 
-#nav-bar li a {
+#nav-bar a {
     text-decoration: none;
 }
 
-#nav-bar li h2 {
-    font-weight: bold;
-    font-size: 32px;
-    color: #1985A1;
-}
-
 #nav-bar a:hover {
-     font-size: 36px;
+    font-size: 28px;
 }
 
 /*----------------------------------------------------------Top Section*/
@@ -174,7 +163,7 @@ h2, h3 {
 }
 
 
-/*----------------------------------------------------------Section One*/
+/*----------------------------------------------------------Section One: 3 Reasons for Exercising---*/
 
 #section-one {
     color: #ffffff;
@@ -207,11 +196,19 @@ h2, h3 {
     height: 550px;
     padding: 15px 15px 15px 15px;
     margin: 5px 5px 5px 5px;
+}
+
+.row .col-sm h2 {
+    text-align: center;
+    font-size: 36px;
+}
+
+.row .col-sm p {
     text-align: center;
     font-size: 24px;
 }
 
-.col-sm i {
+.row .col-sm i {
     font-size: 200%;
     align-items: center;
     border-radius: 50%;
@@ -222,95 +219,105 @@ h2, h3 {
     text-align: center;
 }
 
-/*------------------------------------------------------------Section Two*/
+/*------------------------------------------------------------Section Two: Client Testimonials--*/
 
 #section-two {
     color: #ffffff;
-    background-color: #11586A;
-    padding: 15px;
+    background-color: #1985A1;
     height: auto;
 }
 
 #section-two .row {
-    margin: 5px;
-    padding: 5px;
     font-family: 'Amatic SC', cursive;
-}
-
-#section-two i {
-    font-size: 180%;
-    color: #ffffff;
-    margin: 3px;
-    padding-bottom: 40px;
+    padding: 10px;
 }
 
 #section-two-heading {
     text-align: center;
-    margin: 5px 0px 5px 0px;
-    padding: 15px 0px 15px 0px;
+    padding-top: 30px;
 }
 
-.col-md-6 h2 {
+#section-two-heading h2 {
+    font-size: 40px;
+    text-align: left;
+    font-weight: 900;
+}
+
+.row .col-md-6 p {
+    font-size: 28px;
+    font-weight: bold;
+    border: 1px solid #ffffff;
+    padding: 8px;
+}
+
+/*----------------------------------------------------------Section Three: Bio/Motto--*/
+
+#section-three {
+    color: #ffffff;
+    background-color: #1985A1;;
+    height: auto;
+}
+
+#section-three h2 {
+    font-size: 40px;
+    text-align: center;
+    padding: 20px;
+}
+
+.row p {
     font-size: 30px;
+    font-family: 'Amatic SC', cursive;
+}
+
+.row .col-md-6 h4 {
+    font-size: 36px;
     text-align: left;
 }
 
-.col-md-6 p {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-/*----------------------------------------------------------Section Three*/
-
-#section-three {
-    height: auto;
-    width: 100%;
-}
-
-#motto {
+.row .col-md-6 i {
+    font-size: 200%;
+    align-items: center;
+    border-radius: 50%;
+    left: 40px;
     color: #ffffff;
-    background-color: #1985A1;
-    width: 100%;
-    height: 600px;
-    padding: 5px 5px 5px 5px;
+    padding: 20px;
+    display: block;
     text-align: center;
 }
 
-#motto i {
-    font-size: 180%;
-    color: #ffffff;
-}
-
-/*----------------------------------------------------------Section Four*/
+/*----------------------------------------------------------Section Four: Smoothie Recipes--*/
 
 #section-four {
     width: 100%;
-    height: 1000px;
+    height: auto;
     overflow: hidden;
     position: relative;
 }
 
+#section-four h2 {
+    padding: 20px;
+    font-size: 56px;
+    color: #1985A1;
+}
+
 #recipe {
     color: #000000;
-    background-image: url("assets/Recipe4.jpg");
+    background-image: url("assets/recipe4.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    position: center;
+    background-position: center;
     font-family: 'Amatic SC', cursive;
-    height: 1000px;
+    height: 1100px;
     padding: 60px 100px 60px 100px;
     font-size: 36px;
 }
 
 #recipe h2 {
     font-family: 'Amatic SC', cursive;
-    padding: 20px;
-    font-size: 56px;
-    font-weight: 900;
+    color: #ffffff;
 }
 
 #recipe-one-heading, #recipe-two-heading {
-    margin: 10px;
     width: 45%;
     padding: 40px;
     border: 6px solid #000000;
@@ -339,24 +346,22 @@ h2, h3 {
 
 #events {
     width: 100%;
-    border-radius: 25px;
-    margin-top: 20px;
     margin-bottom: 20px;
-    height: 870px;
+    height: auto;
+    background-color: #1985A1;
 }
 
 #events .home-events {
-    background-image: url("assets/Spartan9.jpg");
+    background-image: url("assets/spartan9.jpg");
     border-radius: 25px;
     margin: 5px;
     background-size: cover;
     display: inline-block;
     background-position: center;
     overflow: hidden;
-    height: 870px;
+    height: 1000px;
     padding-top: 500px;
     width: 24%;
-    font-family: 'Permanent Marker', cursive;
 }
 
 #events h2 {
@@ -364,7 +369,7 @@ h2, h3 {
     font-size: 40px;
     color: #ffffff;
     padding: 5px;
-    font-weight: 700;
+    font-weight: 300;
     text-align: left;
 }
 
@@ -373,8 +378,20 @@ h2, h3 {
     font-size: 40px;
     color: #ffffff;
     padding: 5px;
-    font-weight: 700;
+    font-weight: 300;
     text-align: left;
+}
+
+#events a {
+    text-decoration: none;
+    float: right;
+    bottom: 20px;
+    padding: 4px;
+    color:#ffffff;
+}
+
+a:hover {
+    color:#ffffff;
 }
 
 
@@ -390,11 +407,35 @@ h2, h3 {
 #contact-cover-image {
     height: 2400px;
     width: 100%;
-    background-image: url("assets/Steps10.jpg");
+    background-image: url("assets/steps10.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
 } 
+
+#cover-text3 {
+    padding: 15px;
+    border-radius: 25px;
+    letter-spacing: 3px;
+    border: 6px solid #1985A1;
+    background-color: rgb(197,195,198, 0.65);
+    position: absolute;
+    bottom: 200px;
+    left: 40px; 
+}
+
+.row h2 {
+    font-size: 40px;
+    padding: 5px;
+    text-align: left;
+}
+
+.row li {
+    text-decoration: none;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 36px;
+}
+
 
 /*-------------------------------------------------------------------Form*/
 
@@ -403,6 +444,7 @@ h2, h3 {
     background-size: cover;
     background-position: center;
     height: 900px;
+    color: transparent;
 }
 
 #form {
@@ -418,168 +460,162 @@ h2, h3 {
     font-size: 50px;
 }
 
-datalist {
-    display: list-none;
-}
-
 .button {
-    color: #1985A1;
-    background-color: rgb(197,195,198, 0.65);
     text-align: center;
     text-decoration: none;
     border-radius: 10px;
     display: inline-block;
-    font-size: 16px;
+    font-size: 26px;
+    padding: 22px 20px;
+    background-color: transparent;
+    margin: 8px 8px;
+    box-sizing: border-box;
+    border: 2px solid #1985A1;
 }
 
 input {
-    width: 500px;
+    width: 40%;
+    color: #ffffff;
     height: 30px;
-    padding: 30px;
+    padding: 22px 20px;
+    background-color: transparent;
+    margin: 8px 8px;
+    box-sizing: border-box;
+    border: 2px solid #1985A1;
 }
+
+textarea {
+    padding: 32px 20px;
+    background-color: transparent;
+    margin: 8px 8px;
+    color: #ffffff;
+    box-sizing: border-box;
+    border: 2px solid #1985A1;
+}
+
 
 
 /*----------------------------------------------------------------End Form*/
-.footer-details {
-    height: 300px;
-    font-size: 20px;
+
+/*-----------------------------------------------------------------Footer--*/
+
+.footer {
+    width: 100%;
 }
 
-.footer-details .row {
-    padding-right: 15px;
+.row {
+    padding: 5px;
 }
+
+.row h3 {
+    text-transform: uppercase;
+    padding-top: 20px;
+    font-size: 42px;
+} 
 
 .col-sm-8 {
-    line-height: 150px;
     display: inline;
-    padding: 70px;
     text-decoration: none;
     text-align: center;
 }
-.col-sm-8 h2 {
-    font-size: 40px;
+
+.col-sm-8 h3 {
+   color: #1985A1;
 }
 
-.col-sm-8 li {
-    border-radius: 50%;
+#social-links {
     font-size: 50px;
-    line-height: 100px;
     font-family: 'Permanent Marker', cursive;
     padding: 10px;
     text-decoration: none;
 }
 
-.col-sm-8 li a {
-    border-radius: 50%;
-    text-decoration: none;
-}
-
-.social-links li a:hover {
-    color: #ffffff;
-    font-size: 55px%;
-}
-
-.social-links li a:visited {
-    text-decoration: none;
-}
-
-.back-to-top a {
-    bottom: 20px;
-    right: 30px;
-    border-radius: 10px;
-    color: #ffffff;
-}
-
-.row .col-sm-4 {
-    background-image: url("assets/logo-only.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: center;
-    width: 100%;
+#social-links li {
     padding: 20px;
+    color: #1985A1;
 }
 
-.col-sm-4 img {
-    height: 30px;
-    width: 30px;
-    padding: 0;
+#social-links a {
+    text-decoration: none;
 }
 
-/*-----------------------------------------------------------------Footer
+#social-links li a:visited {
+    text-decoration: none;
+}
 
-#footer {
-    background-color: #46494C;
+.col-sm-4 {
+    text-decoration: none;
     text-align: center;
-    color: #ffffff;
-    height: 500px;
 }
 
-.full-width-footer {
-    width: 100%;
-}
-
-.footer-details h3 {
-    font-size: 40px;
-    letter-spacing: 6px;
-}
-
-.full-width-footer li {
-    display: inline;
-    padding: 40px;
-    text-decoration: none;
-    font-family: 'Permanent Marker', cursive;
-}
-
-.footer-details li i {
-    border-radius: 50%;
-    font-size: 80px;
-    line-height: 150px;
+.col-sm-4 h4 {
+    color: #1985A1;
     padding: 10px;
-    text-decoration: none;
 }
 
-.footer-details li a {
-    border-radius: 50%;
-    font-size: 40px;
-    text-decoration: none;
+.col-sm-4 a {
+    border: 4px solid #1985A1;
+    border-radius: 10px;
+    padding: 5px;
 }
 
-
-.social-links li a:hover {
-    color: #ffffff;
-    font-size: 210%;
-}
-
-.social-links li a:visited {
-    text-decoration: none;
+.back-to-top {
+    margin: 10px;
+    border: 4px solid #1985A1;
+    border-radius: 10px;
+    padding: 15px;
+    color: #1985A1;
 }
 
 .back-to-top a {
-    bottom: 20px;
-    right: 30px;
+    border: 2px solid #1985A1;
     border-radius: 10px;
-    color: #11586A;
 }
 
----Footer*/
+.back-to-top a:hover {
+    border: 2px solid #1985A1;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.back-to-home {
+    margin: 10px;
+    border: 4px solid #1985A1;
+    border-radius: 10px;
+    padding: 15px;
+    color: #1985A1;
+}
+
+.back-to-home a {
+    border: 2px solid #1985A1;
+    border-radius: 10px;
+}
+
+.back-to-home a:hover {
+    border: 2px solid #1985A1;
+    border-radius: 10px;
+    text-decoration: none;
+}
 
 /*-----------------------------------------------------------Events.html--*/
 
 #events-top-section {
     overflow: hidden;
     position: relative;
-    height: 2400px;
+    height: 3400px;
     width: 100%;
 }
 
 #events-cover-image {
     width: 100%;
-    height: 2400px;
-    background-image: url("assets/Steps4.jpg");
-    background-repeat: no-repeat;
+    height: auto;
+    background-image: url("assets/steps5.jpg");
+    background-repeat: repeat-y;
+    background-position: center;
     background-size: cover;
     position: absolute;
 } 
+
 
 #event-details {
     margin: 50px;
@@ -603,7 +639,6 @@ input {
     padding: 5px;
     font-weight: 400;
 }
-
 #event-details h4 {
     letter-spacing: 4px;
     color: #1985A1;
@@ -613,20 +648,33 @@ input {
     font-weight: 400;
 }
 
+.row p {
+    color: #ffffff;
+    font-size: 34px;
+}
+
+#event-details a {
+    color: #1985A1;
+    font-size: 24px;
+    float: right;
+    text-decoration: none;
+    padding: 4px;
+}
+
 /*-----------------------------------------------------------Gallery---*/
-#images-title {
+#race-images-title {
     padding-top: 140px;
     padding-left: 40px;
 }
 
-#images-title h2 {
+#race-images-title h2 {
     text-align: left;
     font-family: 'Permanent Marker', cursive;
+    color: #1985A1;
 }
 
 #race-images {
     clear: both;
-    line-height: auto;
     column-count: 2;
     column-gap: 0px;
 }
@@ -635,5 +683,35 @@ input {
     width: 100%;
 }
 
+#photo-shoot-title {
+    padding-top: 140px;
+    padding-left: 40px;
+}
+
+#photo-shoot-title h2 {
+    text-align: left;
+    font-family: 'Permanent Marker', cursive;
+    color: #1985A1;
+}
+
+#photo-shoot-images {
+    clear: both;
+    column-count: 2;
+    column-gap: 0px;
+}
+
+#photo-shoot-images img{
+    width: 100%;
+}
 
 
+
+/*---
+                                            <input type="radio" id="existing-client" name="type" value="existing-client">
+                                            <label for="male"> Existing Client </label><br>
+                                            <input type="radio" id="new-client" name="type" value="new-client">
+                                            <label for="female"> New Client </label><br>
+                                            <input type="radio" id="other" name="type" value="other">
+                                            <label for="other"> Other </label>
+                                            
+---*/
