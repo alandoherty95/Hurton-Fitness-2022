@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
-/*--------------------------------------------------------------Head*/
+/*----------------------------------------------------------------------- Head -*/
 
 * {
     margin: 0;
@@ -41,8 +41,7 @@ h2, h3 {
     text-align: center;
 }
 
-
-/*------------------------------------------------------------Nav Bar*/
+/*------------------------------------------------------------Logo & Nav Bar-*/
 
 #logo {
     float: left; 
@@ -53,7 +52,6 @@ h2, h3 {
 #nav-bar li {
     float: right;
     list-style: none;
-    text-transform: uppercase;
     margin: 12px;
     padding: 2px;
     letter-spacing: 2px;
@@ -65,15 +63,9 @@ h2, h3 {
     color: #1985A1;
 }
 
-#nav-bar a {
-    text-decoration: none;
-}
+/*------------------------------------------------------------------------------------- index.html -*/
 
-#nav-bar a:hover {
-    font-size: 28px;
-}
-
-/*----------------------------------------------------------Top Section*/
+/*---------------------------------------------------------- Top Section -*/
 
 #top-section {
     overflow: hidden;
@@ -91,13 +83,14 @@ h2, h3 {
 #top-section h3 {
     letter-spacing: 2px;
     font-size: 30px;
+    text-transform: none;
     color:#1985A1;
 }
 
-#cover-image {
+#home-cover-image {
     height: 1500px;
     width: 100%;
-    background-image: url("assets/steps.jpg");
+    background-image: url("assets/images/steps.jpg");
     animation-name: hero-zoom;
     animation-duration: 4s;
     animation-fill-mode: forwards;
@@ -115,9 +108,9 @@ h2, h3 {
     }
 }
 
-/*----------------------------------------------------------Cover Text 1*/
+/*----------------------------------------------------------Home Cover Text 1 -*/
 
-#cover-text {
+#home-cover-text1 {
     padding: 15px;
     border-radius: 25px;
     letter-spacing: 3px;
@@ -128,13 +121,13 @@ h2, h3 {
     right: 180px; 
 }
 
-#cover-text h2 {
+#home-cover-text1 h2 {
     letter-spacing: 10px;
 }
 
-/*----------------------------------------------------------Cover Text 2*/
+/*---------------------------------------------------------- Home Cover Text 2 -*/
 
-#cover-text2 {
+#home-cover-text2 {
     padding: 15px;
     border: 6px solid #1985A1;;
     border-radius: 25px;
@@ -145,33 +138,32 @@ h2, h3 {
     left: 180px; 
 }
 
-#cover-text2 a {
+#home-cover-text2 a {
     color: #1985A1;
     font-size: 30px;
     padding: 5px;
     text-transform: lowercase;
 }
 
-#cover-text2 i {
+#home-cover-text2 i {
     color: #1985A1;
     font-size: 30px;
 }
 
-#cover-text2 a:hover {
+#home-cover-text2 a:hover {
     color: #ffffff;
     text-decoration: none;
 }
 
 
-/*----------------------------------------------------------Section One: 3 Reasons for Exercising---*/
+/*---------------------------------------------------------- 3 Reasons for Exercising -*/
 
-#section-one {
+#exercise-reasons {
     color: #ffffff;
     background-color: #C5C3C6;
-    margin: 0px;
-    padding: 30px;
     height: auto;
     width: 100%;
+    padding: 30px;
 } 
 
 #container {
@@ -185,12 +177,27 @@ h2, h3 {
     border-radius: 25px;
     margin: 0px;
     padding: 30px;
-    font-size: 70px;
+    font-size: 60px;
     text-align: center;
 }
 
+.container-reasons {
+    padding: 10px;
+    margin: 4px;
+}
+
+.container-reasons h2 {
+    font-size: 36px;
+    text-align: left;
+}
+
+.container-reasons p {
+    font-size: 32px;
+    text-align: left;
+    font-family: 'Amatic SC', cursive;
+}
+
 .col-sm {
-    width: 40%;
     background-color: #46494C;
     border-radius: 25px;
     height: 550px;
@@ -205,7 +212,7 @@ h2, h3 {
 
 .row .col-sm p {
     text-align: center;
-    font-size: 24px;
+    font-size: 32px;
 }
 
 .row .col-sm i {
@@ -219,28 +226,32 @@ h2, h3 {
     text-align: center;
 }
 
-/*------------------------------------------------------------Section Two: Client Testimonials--*/
+/*------------------------------------------------------------ Client Testimonials -*/
 
-#section-two {
+#testimonials {
     color: #ffffff;
     background-color: #1985A1;
     height: auto;
 }
 
-#section-two .row {
+#testimonials .row {
     font-family: 'Amatic SC', cursive;
     padding: 10px;
 }
 
-#section-two-heading {
+#testimonials-heading {
     text-align: center;
     padding-top: 30px;
 }
 
-#section-two-heading h2 {
-    font-size: 40px;
-    text-align: left;
-    font-weight: 900;
+#testimonials-heading {
+    font-size: 60px;
+}
+
+.row .col-md-6 h2 {
+    font-size: 36px;
+    font-weight: bold;
+    padding: 8px;
 }
 
 .row .col-md-6 p {
@@ -250,79 +261,105 @@ h2, h3 {
     padding: 8px;
 }
 
-/*----------------------------------------------------------Section Three: Bio/Motto--*/
+/*----------------------------------------------------------Events Section-*/
 
-#section-three {
-    color: #ffffff;
-    background-color: #1985A1;;
+#home-events {
+    width: 100%;
+    margin-bottom: 0px;
     height: auto;
+    background-color: #1985A1;
 }
 
-#section-three h2 {
+#home-events h2 {
+    font-size: 60px;
+    padding-top: 100px;
+}
+
+#home-events .next-events {
+    background-image: url("assets/images/spartan9.jpg");
+    border-radius: 25px;
+    margin: 5px;
+    background-size: cover;
+    display: inline-block;
+    background-position: center;
+    overflow: hidden;
+    height: 1000px;
+    padding-top: 500px;
+    width: 24%;
+}
+
+#home-events .next-events h2 {
+    letter-spacing: 4px;
     font-size: 40px;
-    text-align: center;
-    padding: 20px;
-}
-
-.row p {
-    font-size: 30px;
-    font-family: 'Amatic SC', cursive;
-}
-
-.row .col-md-6 h4 {
-    font-size: 36px;
+    color: #ffffff;
+    padding: 5px;
+    font-weight: 300;
     text-align: left;
 }
 
-.row .col-md-6 i {
-    font-size: 200%;
-    align-items: center;
-    border-radius: 50%;
-    left: 40px;
+#home-events .next-events h3 {
+    letter-spacing: 4px;
+    font-size: 40px;
     color: #ffffff;
-    padding: 20px;
-    display: block;
-    text-align: center;
+    padding: 5px;
+    font-weight: 300;
+    text-align: left;
 }
 
-/*----------------------------------------------------------Section Four: Smoothie Recipes--*/
+#home-events .next-events a {
+    text-decoration: none;
+    float: right;
+    padding-top: 40px;
+    padding-right: 5px;
+    color:#1985A1;
+}
 
-#section-four {
+#home-events .next-events a:hover {
+    color:#ffffff;
+}
+
+/*---------------------------------------------------------- Smoothie Recipes -*/
+
+#smoothie-recipes {
     width: 100%;
+    padding-top: 100px;
     height: auto;
     overflow: hidden;
     position: relative;
+    background-color: #1985A1;
 }
 
-#section-four h2 {
+#smoothie-recipes h2 {
     padding: 20px;
     font-size: 56px;
-    color: #1985A1;
+    color:#ffffff;
 }
 
 #recipe {
     color: #000000;
-    background-image: url("assets/recipe4.jpg");
+    background-image: url("assets/images/recipe4.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     font-family: 'Amatic SC', cursive;
-    height: 1100px;
+    height: 1000px;
     padding: 60px 100px 60px 100px;
-    font-size: 36px;
+    font-size: 40px;
 }
 
 #recipe h2 {
-    font-family: 'Amatic SC', cursive;
-    color: #ffffff;
+    font-family: 'Permanent Marker', cursive;
+    color: #1985A1;
+    font-size: 40px;
+    letter-spacing: 4px;
 }
 
 #recipe-one-heading, #recipe-two-heading {
     width: 45%;
     padding: 40px;
-    border: 6px solid #000000;
+    border: 6px solid #1985A1;
     border-radius: 10px;
-    line-height: 60px;
+    line-height: 70px;
 }
 
 #recipe-one-heading {
@@ -335,109 +372,97 @@ h2, h3 {
 
 #recipe li {
     text-decoration-style: solid;
-    text-transform: lowercase;
     padding-left: 5px;
-    font-weight: 900;
     list-style-type: "》";
 }
 
-
-/*----------------------------------------------------------Events Section*/
-
-#events {
-    width: 100%;
-    margin-bottom: 20px;
-    height: auto;
-    background-color: #1985A1;
-}
-
-#events .home-events {
-    background-image: url("assets/spartan9.jpg");
-    border-radius: 25px;
-    margin: 5px;
-    background-size: cover;
-    display: inline-block;
-    background-position: center;
-    overflow: hidden;
-    height: 1000px;
-    padding-top: 500px;
-    width: 24%;
-}
-
-#events h2 {
-    letter-spacing: 4px;
-    font-size: 40px;
-    color: #ffffff;
-    padding: 5px;
-    font-weight: 300;
-    text-align: left;
-}
-
-#events h3 {
-    letter-spacing: 4px;
-    font-size: 40px;
-    color: #ffffff;
-    padding: 5px;
-    font-weight: 300;
-    text-align: left;
-}
-
-#events a {
-    text-decoration: none;
-    float: right;
-    bottom: 20px;
-    padding: 4px;
-    color:#ffffff;
-}
-
-a:hover {
-    color:#ffffff;
-}
-
-
-/*-------------------------------------------------------------------Contact*/
+/*------------------------------------------------------------------------------------ contact.html -*/
 
 #contact-top-section {
     overflow: hidden;
     position: relative;
     height: 2400px;
     width: 100%;
+    color: #ffffff;
 }
 
 #contact-cover-image {
     height: 2400px;
     width: 100%;
-    background-image: url("assets/steps10.jpg");
+    background-image: url("assets/images/steps10.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
 } 
+
+#cover-text4 {
+    padding: 15px;
+    border-radius: 25px;
+    border: 6px solid #1985A1;
+    background-color: rgb(197,195,198, 0.65);
+    position: absolute;
+    bottom: 180px;
+    left: 40px; 
+}
+
+#cover-text4 h2 {
+    letter-spacing: 3px;
+    text-transform: none;
+}
+
+#cover-text4 h2 i {
+    font-size: 60px;
+}
 
 #cover-text3 {
     padding: 15px;
     border-radius: 25px;
     letter-spacing: 3px;
     border: 6px solid #1985A1;
+    font-size: 32px;
     background-color: rgb(197,195,198, 0.65);
     position: absolute;
-    bottom: 200px;
+    bottom: 300px;
     left: 40px; 
 }
 
-.row h2 {
-    font-size: 40px;
-    padding: 5px;
+#cover-text3 ul {
+    list-style-type: none;
+}
+
+/*--------------------------------------------------------------- Biography -*/
+
+#section-three {
+    color: #ffffff;
+    background-color: #1985A1;;
+    height: auto;
+}
+
+#section-three h1 {
+    text-align: center;
+    padding: 20px 20px;
+    letter-spacing: 6px;
+    font-weight: 900;
+    color:#ffffff;
+}
+
+.container2 {
+    padding: 10px;
+    margin: 4px;
+}
+
+.container2 h2 {
+    font-size: 36px;
     text-align: left;
 }
 
-.row li {
-    text-decoration: none;
-    font-family: 'Fjalla One', sans-serif;
-    font-size: 36px;
+.container2 p {
+    font-size: 30px;
+    text-align: left;
+    font-family: 'Amatic SC', cursive;
 }
 
-
-/*-------------------------------------------------------------------Form*/
+/*---------------------------------------------------------------- Form Section -*/
 
 .form-section {
     clear: both;
@@ -452,7 +477,6 @@ a:hover {
     padding: 50px;
     text-align: left;
     box-sizing: border-box;
-    margin: -16px;
 }
 
 #form h2 {
@@ -460,7 +484,7 @@ a:hover {
     font-size: 50px;
 }
 
-.button {
+.contact-button {
     text-align: center;
     text-decoration: none;
     border-radius: 10px;
@@ -495,9 +519,133 @@ textarea {
 
 
 
-/*----------------------------------------------------------------End Form*/
+/*---------------------------------------------------------------- End of Form -*/
 
-/*-----------------------------------------------------------------Footer--*/
+
+/*----------------------------------------------------------------------------------------- gallery.html -*/
+
+#race-images-title {
+    padding-top: 140px;
+    padding-left: 40px;
+}
+
+#race-images-title h2 {
+    text-align: left;
+    font-family: 'Permanent Marker', cursive;
+    color: #1985A1;
+}
+
+#race-images {
+    clear: both;
+    column-count: 2;
+    column-gap: 0px;
+}
+
+#race-images img{
+    width: 100%;
+}
+
+#photo-shoot-title {
+    padding-top: 140px;
+    padding-left: 40px;
+}
+
+#photo-shoot-title h2 {
+    text-align: left;
+    font-family: 'Permanent Marker', cursive;
+    color: #1985A1;
+}
+
+#photo-shoot-images {
+    clear: both;
+    column-count: 2;
+    column-gap: 0px;
+}
+
+#photo-shoot-images img{
+    width: 100%;
+}
+
+/*------------------------------------------------------------------------------------------ events.html -*/
+
+#events-top-section {
+    overflow: hidden;
+    position: relative;
+    height: 3600px;
+    width: 100%;
+}
+
+#events-cover-image {
+    width: 100%;
+    height: auto;
+    background-image: url("assets/images/steps5.jpg");
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+} 
+
+#event-details {
+    margin: 50px;
+    padding: 50px;
+}
+
+#event-details h2 {
+    color: #ffffff;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 50px;
+    padding-bottom: 40px;
+    letter-spacing: 6px;
+}
+
+#event-details h2 i {
+    font-size: 70px;
+}
+
+#event-details .event1 {
+    margin: 50px;
+    padding: 50px;
+    border-radius: 25px;
+    text-align: center;
+    border: 8px solid #1985A1;
+    color: #1985A1;
+    background-color: rgb(197,195,198, 0.65);
+}
+
+#event-details h3 {
+    letter-spacing: 4px;
+    font-size: 50px;
+    color: #ffffff;
+    padding: 5px;
+    font-weight: 400;
+}
+#event-details h4 {
+    letter-spacing: 4px;
+    color: #1985A1;
+    text-transform: uppercase;
+    font-size: 50px;
+    padding: 5px;
+    font-weight: 400;
+}
+
+.row p {
+    color: #ffffff;
+    font-size: 34px;
+}
+
+#event-details .event1 a {
+    color: #1985A1;
+    font-size: 24px;
+    float: right;
+    text-decoration: none;
+    padding: 4px;
+}
+
+#event-details .event1 a:hover {
+    color: #ffffff;
+}
+
+/*------------------------------------------------------------------------------------------------ Footer -*/
 
 .footer {
     width: 100%;
@@ -597,121 +745,3 @@ textarea {
     text-decoration: none;
 }
 
-/*-----------------------------------------------------------Events.html--*/
-
-#events-top-section {
-    overflow: hidden;
-    position: relative;
-    height: 3400px;
-    width: 100%;
-}
-
-#events-cover-image {
-    width: 100%;
-    height: auto;
-    background-image: url("assets/steps5.jpg");
-    background-repeat: repeat-y;
-    background-position: center;
-    background-size: cover;
-    position: absolute;
-} 
-
-
-#event-details {
-    margin: 50px;
-    padding: 50px;
-}
-
-#event-details .event1 {
-    margin: 50px;
-    padding: 50px;
-    border-radius: 25px;
-    text-align: center;
-    border: 8px solid #1985A1;
-    color: #1985A1;
-    background-color: rgb(197,195,198, 0.65);
-}
-
-#event-details h3 {
-    letter-spacing: 4px;
-    font-size: 50px;
-    color: #ffffff;
-    padding: 5px;
-    font-weight: 400;
-}
-#event-details h4 {
-    letter-spacing: 4px;
-    color: #1985A1;
-    text-transform: uppercase;
-    font-size: 50px;
-    padding: 5px;
-    font-weight: 400;
-}
-
-.row p {
-    color: #ffffff;
-    font-size: 34px;
-}
-
-#event-details a {
-    color: #1985A1;
-    font-size: 24px;
-    float: right;
-    text-decoration: none;
-    padding: 4px;
-}
-
-/*-----------------------------------------------------------Gallery---*/
-#race-images-title {
-    padding-top: 140px;
-    padding-left: 40px;
-}
-
-#race-images-title h2 {
-    text-align: left;
-    font-family: 'Permanent Marker', cursive;
-    color: #1985A1;
-}
-
-#race-images {
-    clear: both;
-    column-count: 2;
-    column-gap: 0px;
-}
-
-#race-images img{
-    width: 100%;
-}
-
-#photo-shoot-title {
-    padding-top: 140px;
-    padding-left: 40px;
-}
-
-#photo-shoot-title h2 {
-    text-align: left;
-    font-family: 'Permanent Marker', cursive;
-    color: #1985A1;
-}
-
-#photo-shoot-images {
-    clear: both;
-    column-count: 2;
-    column-gap: 0px;
-}
-
-#photo-shoot-images img{
-    width: 100%;
-}
-
-
-
-/*---
-                                            <input type="radio" id="existing-client" name="type" value="existing-client">
-                                            <label for="male"> Existing Client </label><br>
-                                            <input type="radio" id="new-client" name="type" value="new-client">
-                                            <label for="female"> New Client </label><br>
-                                            <input type="radio" id="other" name="type" value="other">
-                                            <label for="other"> Other </label>
-                                            
----*/
