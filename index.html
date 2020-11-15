@@ -9,36 +9,38 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="style.css" rel="stylesheet" type="text/css"/>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <title> Hurton Fitness </title>
 
 </head>
 
 <body>
-            <a id="top"></a>
-            <a id="home"></a>
 
 <!------------------------------------------------------------------------------------------------- logo & nav bar -->
 
             <header>
-
-                <a href="index.html" id="logo"> <h1> Hurton Fitness </h1> </a>
-
-                <nav>
-                    <ul id="nav-bar">
-                        <li>
-                            <a href="events.html"> <h2> <i class="fa fa-calendar"> Events </i> </h2> </a>
-                        </li>
-
-                        <li>
-                            <a href="gallery.html"> <h2> <i class="fa fa-image"> Gallery </i> </h2> </a>
-                        </li>
-
-                        <li>
-                            <a href="contact.html"> <h2> <i class="fa fa-phone"> Contact </i> </h2> </a>
-                        </li>                        
-                    </ul>
+           
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a id="logo" href="#"> <h1> Hurton Fitness </h1> </a> 
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav" id="top">
+                            <li class="nav-item">
+                                <a class="nav-link" href="events.html"> <h2> <i class="fa fa-phone"> Events </i> </h2> </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="gallery.html"> <h2> <i class="fa fa-image"> Gallery </i> </h2> </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html"> <h2> <i class="fa fa-phone"> Contact </i> </h2> </a>
+                            </li>
+                        </ul>
+                    </div>
                 </nav>
-
             </header>
 
 <!------------------------------------------------------------------------------------------------- top section -->
@@ -127,7 +129,7 @@
                 <div class="row">
 
                     <div class="col-md-6">
-                        <h2> Breda, aged 24 </h2> 
+                        <h3> Breda, aged 24 </h3> 
                         
                         <p> "Couldn't recommend Iain enough. I did personal training and classes with him. 
                             Extremely motivational and always pushed people to do their best. 
@@ -137,7 +139,7 @@
                     </div>
 
                     <div class="col-md-6">
-                        <h2> Mary, aged 70+ </h2> 
+                        <h3> Mary, aged 70+ </h3> 
                         
                         <p> "I did aqua aerobics twice a week with Iain at Castletroy Park Hotel, all the women loved when Iain was doing the class. 
                             His class was great fun, motivational and effective. 
@@ -151,7 +153,7 @@
                 <div class="row">
 
                     <div class="col-md-6">
-                        <h2> Anne, aged 54 </h2>
+                        <h3> Anne, aged 54 </h3>
 
                         <p> "Iain was a very professional, courteous and patient swimming instructor. 
                             He had a very kind and gentle approach to teaching, he acknowledged my fear in the water and personalised technigues that helped me relax in the water and become confident in my abilities. 
@@ -162,7 +164,7 @@
                     </div>
 
                     <div class="col-md-6">
-                        <h2> Brendan, aged 44 </h2> 
+                        <h3> Brendan, aged 44 </h3> 
 
                         <p> "Iain is a professional well-prepared trainer with natural charisma, a positive outlook and a growth mindset. 
                             The product he delivers to me has responded to any challenge and consistently improved in quality over time.
@@ -230,7 +232,7 @@
                 <h2> Favourite Smoothie Recipes  </h2>
                 <div id="recipe">
                     
-                        <div id="recipe-one-heading"> <h2> Peanut Butter Banana Smoothie </h2>
+                        <div id="recipe-one-heading"> <h2> Banana Protein Smoothie </h2>
                             <ul>
                                 <li> 1 Banana </li>
                                 <li> 1/2 cup of Blueberries </li>
@@ -242,7 +244,7 @@
                             </ul>
                         </div>
 
-                        <div id="recipe-two-heading"> <h2> Banana Strawberry Smoothie </h2>
+                        <div id="recipe-two-heading"> <h2> Strawberry Banana Smoothie </h2>
                             <ul>
                                 <li> 2 Bananas </li>
                                 <li> 1/2 cup of Strawberries </li>
@@ -263,53 +265,40 @@
 <!------------------------------------------------------------------Footer Details-->
                     <div class="row">
 
-                        <div class="col-sm-8"> <h3> Social Media Links </h3>
+                        <div class="col-sm-8"> <h2> Social Media Links </h2>
                             <ul id="social-links">
 
                                 <li class="list-inline-item"> 
                                 <a target="_blank" href="https://www.facebook.com/pages/category/Personal-Blog/Iain-Hurton-Fitness-2181026858613543/">
-                                    <i class="fa fa-facebook"></i>
-                                    Facebook
+                                    <h3> <i class="fa fa-facebook"></i>
+                                    Facebook </h3> 
                                 </a>
                                 </li>
                                 <li class="list-inline-item">
                                 <a target="_blank" href="https://open.spotify.com/playlist/59xQzFKBIph1NGVyC7e1zB?si=zeuUQVdgRg-gATAyl1OJbg">
-                                    <i class="fa fa-spotify"></i>
-                                    Spotify
+                                    <h3> <i class="fa fa-spotify"></i>
+                                    Spotify </h3>
                                 </a>
                                 </li>
                                 <li class="list-inline-item">
                                 <a target="_blank" href="https://www.instagram.com/hurtonsfitness/?hl=en">
-                                    <i class="fa fa-instagram"></i>
-                                    Instagram 
+                                    <h3> <i class="fa fa-instagram"></i>
+                                    Instagram </h3>
                                 </a>
                                 </li>
-                                <li class="list-inline-item">
-                                <a target="_blank" href="https://www.youtube.com/"> 
-                                    <i class="fa fa-youtube"></i> 
-                                    YouTube
-                                </a>
-                                </li>
-                            
                             </ul>
 
                         </div>
 
-                        <div class="col-sm-4">
+                        <div class="col-sm-4"> <h3> Details </h3>
                                 
-                                <h4> iain.hurton@gmail.com </h4>
-                                <h4> (083) 3269746 </h4>
-
+                                <h4> iainhurton1997@gmail.com </h4>
+                                <h4> © 2020 Hurton Fitness </h4>
                                 <h4>
                                     <a href="assets/documents/hurton-cv-reference.pdf" target="_blank"> Download CV & Reference </a>
                                 </h4>
-
-                                <h4> © 2020 Hurton Fitness </h4>
                                 
                                 <a href="#top" class="back-to-top"> Back to Top </a>
-                                <a href="#home" class="back-to-home"> Back to Home </a>
-
-
                         </div>
                 </div>
 

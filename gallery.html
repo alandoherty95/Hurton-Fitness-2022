@@ -11,6 +11,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="style.css" rel="stylesheet" type="text/css"/>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
     <title> Hurton Fitness </title>
     <style>       
     
@@ -22,29 +26,30 @@
 
 
 <body>
-        <a id="top"></a>
+        
 <!------------------------------------------------------------------------------------------------- logo & nav bar -->
 
             <header>
-
-                <a href="index.html" id="logo"> <h1> Hurton Fitness </h1> </a>
-
-                <nav>
-                    <ul id="nav-bar">
-                        <li>
-                            <a href="events.html"> <h2> <i class="fa fa-calendar"> Events </i> </h2> </a>
-                        </li>
-
-                        <li>
-                            <a href="gallery.html"> <h2> <i class="fa fa-image"> Gallery </i> </h2> </a>
-                        </li>
-
-                        <li>
-                            <a href="contact.html"> <h2> <i class="fa fa-phone"> Contact </i> </h2> </a>
-                        </li>                        
-                    </ul>
+           
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a id="logo" href="index.html"> <h1> Hurton Fitness </h1> </a> 
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav" id="top">
+                            <li class="nav-item">
+                                <a class="nav-link" href="events.html"> <h2> <i class="fa fa-phone"> Events </i> </h2> </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="gallery.html"> <h2> <i class="fa fa-image"> Gallery </i> </h2> </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html"> <h2> <i class="fa fa-phone"> Contact </i> </h2> </a>
+                            </li>
+                        </ul>
+                    </div>
                 </nav>
-
             </header>
 
 <!------------------------------------------------------------------------------------------------- race-images-title -->
@@ -58,34 +63,82 @@
 
 <!------------------------------------------------------------------------------------------------- race-images -->
 
-            <section id="race-images">
-                <img src="assets/images/spartan2.jpg" alt="Spartan Race">
-                <img src="assets/images/spartan3.jpg" alt="Spartan Race">
-                <img src="assets/images/spartan4.jpg" alt="Spartan Race">
-                <img src="assets/images/spartan6.jpg" alt="Spartan Race">
-                <img src="assets/images/logo-only.jpg" alt="Hurton Fitness Logo">
-                <img src="assets/images/spartan7.jpg" alt="Spartan Race">
-                <img src="assets/images/spartan8.jpg" alt="Spartan Race">
-
-                <img src="assets/images/spartan9.jpg" alt="Spartan Race">
-                <img src="assets/images/spartan10.jpg" alt="Spartan Race">
-                <img src="assets/images/spartan11.jpg" alt="Spartan Race">
-                <img src="assets/images/spartan12.jpg" alt="Spartan Race">
-                <img src="assets/images/logo-greyscale-footer.jpg" alt="Spartan Race">
-                <img src="assets/images/spartan13.jpg" alt="Spartan Race">
-                <img src="assets/images/spartan14.jpg" alt="Spartan Race">
-
-                <img src="assets/images/spartan15.jpg" alt="Spartan Race">
-                <img src="assets/images/spartan16.jpg" alt="Spartan Race">
-                <img src="assets/images/spartan17.jpg" alt="Spartan Race">
-                <img src="assets/images/spartan18.jpg" alt="Spartan Race">
-                <img src="assets/images/spartan19.jpg" alt="Spartan Race">
-                <img src="assets/images/spartan20.jpg" alt="Spartan Race">
-                <img src="assets/images/logo-greyscale.jpg" alt="Hurton Fitness Text">
-
-
-
-        </section>
+            <div class="container-gallery">
+                        <div class="row">
+                            <a href="assets/images/spartan1.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                            <img src="assets/images/spartan1.jpg" class="img-fluid rounded">
+                            </a>
+                            <a href="assets/images/spartan2.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                            <img src="assets/images/spartan2.jpg" class="img-fluid rounded">
+                            </a>
+                            <a href="assets/images/spartan3.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                            <img src="assets/images/spartan3.jpg" class="img-fluid rounded">
+                            </a>
+                        </div>
+                        <div class="row">
+                            <a href="assets/images/spartan4.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                            <img src="assets/images/spartan4.jpg" class="img-fluid rounded">
+                            </a>
+                            <a href="assets/images/spartan5.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                            <img src="assets/images/spartan5.jpg" class="img-fluid rounded">
+                            </a>
+                            <a href="assets/images/spartan6.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                            <img src="assets/images/spartan6.jpg" class="img-fluid rounded">
+                            </a>
+                        </div>
+                        <div class="row">
+                            <a href="assets/images/spartan7.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                            <img src="assets/images/spartan7.jpg" class="img-fluid rounded">
+                            </a>
+                            <a href="assets/images/spartan8.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                            <img src="assets/images/spartan8.jpg" class="img-fluid rounded">
+                            </a>
+                            <a href="assets/images/spartan9.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                            <img src="assets/images/spartan9.jpg" class="img-fluid rounded">
+                            </a>
+                        </div>
+                        <div class="row">
+                            <a href="assets/images/spartan10.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                            <img src="assets/images/spartan10.jpg" class="img-fluid rounded">
+                            </a>
+                            <a href="assets/images/spartan11.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                            <img src="assets/images/spartan11.jpg" class="img-fluid rounded">
+                            </a>
+                            <a href="assets/images/spartan12.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                            <img src="assets/images/spartan12.jpg" class="img-fluid rounded">
+                            </a>
+                        </div>
+                        <div class="row">
+                            <a href="assets/images/spartan13.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                            <img src="assets/images/spartan13.jpg" class="img-fluid rounded">
+                            </a>
+                            <a href="assets/images/spartan14.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                            <img src="assets/images/spartan14.jpg" class="img-fluid rounded">
+                            </a>
+                            <a href="assets/images/spartan15.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                            <img src="assets/images/spartan15.jpg" class="img-fluid rounded">
+                            </a>
+                        </div>
+                        <div class="row">
+                            <a href="assets/images/spartan16.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                            <img src="assets/images/spartan16.jpg" class="img-fluid rounded">
+                            </a>
+                            <a href="assets/images/spartan17.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                            <img src="assets/images/spartan17.jpg" class="img-fluid rounded">
+                            </a>
+                            <a href="assets/images/spartan18.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                            <img src="assets/images/spartan18.jpg" class="img-fluid rounded">
+                            </a>
+                        </div>
+                        <div class="row">
+                            <a href="assets/images/spartan19.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                            <img src="assets/images/spartan19.jpg" class="img-fluid rounded">
+                            </a>
+                            <a href="assets/images/spartan20.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                            <img src="assets/images/spartan20.jpg" class="img-fluid rounded">
+                            </a>
+                        </div>
+            </div>
 
 <!------------------------------------------------------------------------------------------------- photo-shoot-title -->
 
@@ -96,74 +149,78 @@
         </section>
 
 <!------------------------------------------------------------------------------------------------- photo-shoot-images -->
-
-        <section id="photo-shoot-images">
-
-                <img src="assets/images/steps10.jpg" alt="Clothing Photo Shoot">
-                <img src="assets/images/steps9.jpg" alt="Clothing Photo Shoot">
-                <img src="assets/images/steps8.jpg" alt="Clothing Photo Shoot">
-                <img src="assets/images/steps7.jpg" alt="Clothing Photo Shoot">
-                <img src="assets/images/logo-text-only.jpg" alt="Hurton Fitness Text">
-                <img src="assets/images/steps6.jpg" alt="Clothing Photo Shoot">
-
-                <img src="assets/images/steps5.jpg" alt="Clothing Photo Shoot">
-                <img src="assets/images/steps4.jpg" alt="Clothing Photo Shoot">
-                <img src="assets/images/logo-greyscale.jpg" alt="Hurton Fitness Logo">
-                <img src="assets/images/steps2.jpg" alt="Clothing Photo Shoot">
-                <img src="assets/images/steps.jpg" alt="Clothing Photo Shoot">
-                <img src="assets/images/steps4.jpg" alt="Clothing Photo Shoot">
-
-
-
-
-        </section>
+        <div class="container-gallery">
+                        <div class="row">
+                            <a href="assets/images/steps10.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                            <img src="assets/images/steps10.jpg" class="img-fluid rounded">
+                            </a>
+                            <a href="assets/images/steps2.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                            <img src="assets/images/steps2.jpg" class="img-fluid rounded">
+                            </a>
+                            <a href="assets/images/steps4.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                            <img src="assets/images/steps4.jpg" class="img-fluid rounded">
+                            </a>
+                        </div>
+                        <div class="row">
+                            <a href="assets/images/steps5.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                            <img src="assets/images/steps5.jpg" class="img-fluid rounded">
+                            </a>
+                            <a href="assets/images/steps6.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                            <img src="assets/images/steps6.jpg" class="img-fluid rounded">
+                            </a>
+                            <a href="assets/images/steps7.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                            <img src="assets/images/steps7.jpg" class="img-fluid rounded">
+                            </a>
+                        </div>
+                        <div class="row">
+                            <a href="assets/images/steps9.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                            <img src="assets/images/steps9.jpg" class="img-fluid rounded">
+                            </a>
+                            <a href="assets/images/steps.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                            <img src="assets/images/steps.jpg" class="img-fluid rounded">
+                            </a>
+                            <a href="assets/images/steps8.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                            <img src="assets/images/steps8.jpg" class="img-fluid rounded">
+                            </a>
+                        </div>
+        </div>
 
         <footer id="footer">
-<!------------------------------------------------------------------------------- footer details-->
+<!------------------------------------------------------------------Footer Details-->
                     <div class="row">
 
-                        <div class="col-sm-8"> <h3> Social Media Links </h3>
+                        <div class="col-sm-8"> <h2> Social Media Links </h2>
                             <ul id="social-links">
 
                                 <li class="list-inline-item"> 
                                 <a target="_blank" href="https://www.facebook.com/pages/category/Personal-Blog/Iain-Hurton-Fitness-2181026858613543/">
-                                    <i class="fa fa-facebook"></i>
-                                    Facebook
+                                    <h3> <i class="fa fa-facebook"></i>
+                                    Facebook </h3> 
                                 </a>
                                 </li>
                                 <li class="list-inline-item">
                                 <a target="_blank" href="https://open.spotify.com/playlist/59xQzFKBIph1NGVyC7e1zB?si=zeuUQVdgRg-gATAyl1OJbg">
-                                    <i class="fa fa-spotify"></i>
-                                    Spotify
+                                    <h3> <i class="fa fa-spotify"></i>
+                                    Spotify </h3>
                                 </a>
                                 </li>
                                 <li class="list-inline-item">
                                 <a target="_blank" href="https://www.instagram.com/hurtonsfitness/?hl=en">
-                                    <i class="fa fa-instagram"></i>
-                                    Instagram 
+                                    <h3> <i class="fa fa-instagram"></i>
+                                    Instagram </h3>
                                 </a>
                                 </li>
-                                <li class="list-inline-item">
-                                <a target="_blank" href="https://www.youtube.com/"> 
-                                    <i class="fa fa-youtube"></i> 
-                                    YouTube
-                                </a>
-                                </li>
-                            
                             </ul>
 
                         </div>
 
-                        <div class="col-sm-4">
+                        <div class="col-sm-4"> <h3> Details </h3>
                                 
-                                <h4> iain.hurton@gmail.com </h4>
-                                <h4> (083) 3269746 </h4>
-
+                                <h4> iainhurton1997@gmail.com </h4>
+                                <h4> © 2020 Hurton Fitness </h4>
                                 <h4>
                                     <a href="assets/documents/hurton-cv-reference.pdf" target="_blank"> Download CV & Reference </a>
                                 </h4>
-
-                                <h4> © 2020 Hurton Fitness </h4>
                                 
                                 <a href="#top" class="back-to-top"> Back to Top </a>
                                 <a href="index.html" class="back-to-home"> Back to Home </a>
