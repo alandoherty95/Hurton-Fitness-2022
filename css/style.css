@@ -119,7 +119,7 @@ h2, h3 {
 #home-cover-image {
     height: 76em;
     width: 100%;
-    background-image: url("/assets/images/steps.jpg");
+    background-image: url("assets/images/steps.jpg");
     animation-name: hero-zoom;
     animation-duration: 4s;
     animation-fill-mode: forwards;
@@ -282,7 +282,7 @@ h2, h3 {
 }
 
 #home-events .next-events {
-    background-image: url("/assets/images/spartan9.jpg");
+    background-image: url("assets/images/spartan9.jpg");
     border-radius: 1em;
     margin: 0.3em;
     background-size: cover;
@@ -341,7 +341,7 @@ h2, h3 {
 
 #recipe {
     color: #ffffff;
-    background-image: url("/assets/images/fruit-smoothie.jpg");
+    background-image: url("assets/images/fruit-smoothie.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -390,7 +390,7 @@ h2, h3 {
 #contact-cover-image {
     height: 120em;
     width: 100%;
-    background-image: url("/assets/images/steps10.jpg");
+    background-image: url("assets/images/steps10.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
@@ -567,7 +567,7 @@ textarea {
 #events-cover-image {
     width: 100%;
     height: 180em;
-    background-image: url("/assets/images/steps5.jpg");
+    background-image: url("assets/images/steps5.jpg");
     background-repeat: repeat-y;
     background-position: center;
     background-size: cover;
