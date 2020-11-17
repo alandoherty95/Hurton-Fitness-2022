@@ -49,16 +49,31 @@ h2, h3 {
     text-align: center;
 }
 
+
 /*------------------------------------------------------------Logo & Nav Bar-*/
 
 #logo {
     float: left; 
     text-decoration: none;
-    padding-left: 1em;
+    padding-left: 0.2em;
 }
 
-#navbarNav {
-    list-style: inline;
+@media only screen and (max-width: 600px) {
+  #logo {
+    font-size: 25.6px; 
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #logo {
+    font-size: 32.6px; 
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  #logo {
+    font-size: 48.6px; 
+  }
 }
 
 .nav-link li {
@@ -141,35 +156,46 @@ h2, h3 {
 /*----------------------------------------------------------Home Cover Text 1 -*/
 
 #home-cover-text1 {
-    padding: 1.5em;
+    padding: 1.2em;
     border-radius: 2.5em;
     border: 0.6em solid #1985A1;
-    background-color: rgb(197,195,198, 0.65);
+    background-color: rgb(197,195,198, 0.8);
     position: absolute;
-    top: 20em;
+    top: 28em;
     right: 4em; 
 }
 
 /*---------------------------------------------------------- Home Cover Text 2 -*/
 
 #home-cover-text2 {
-    padding: 1.5em;
+    padding: 1em;
     margin: 1em;
     border: 0.6em solid #1985A1;;
     border-radius: 2.5em;
-    background-color: rgb(197,195,198, 0.75);
+    background-color: rgb(197,195,198, 0.8);
     position: absolute;
-    bottom: 20em;
-    left: 4em;
+    bottom: 6em;
+    left: 6em;
+}
+
+#home-cover-text1 h3, #home-cover-text2 h3 {
+    color:#ffffff;
+    text-transform: uppercase;
+    font-size: 1.4em;
+}
+
+#home-cover-text2 h2 {
+    font-size: 1.2em;
+    letter-spacing: none; 
 }
 
 #home-cover-text2 a {
     text-transform: lowercase;
-    color: #1985A1;
+    color: #ffffff;
 }
 
 #home-cover-text2 a:hover {
-    color: #ffffff;
+    color: #1985A1;
     text-decoration: none;
 }
 
@@ -178,7 +204,7 @@ h2, h3 {
 
 #exercise-reasons {
     color: #ffffff;
-    background-color: #C5C3C6;
+    background-color: rgba(197, 195, 198, 0);
     height: auto;
     width: 100%;
     padding: 1em;
@@ -199,31 +225,32 @@ h2, h3 {
 }
 
 .container-reasons h2{
-    padding: 1em;
+    padding: 0.1em;
     font-size: 3em;
 }
 
 .col-sm p {
     font-size: 1.4em;
     text-align: left;
+    color: #000000;
 }
 
 .col-sm {
-    background-color: #46494C;
+    background-color: #A9A9A9;
     border-radius: 2.5em;
     height: auto;
-    padding: 1em;
-    margin: 0.5em;
+    padding: 0.5em;
+    margin: 0.2em;
 }
 
 .row .col-sm h2 {
     text-align: center;
-    font-size: 2em;
+    font-size: 1.8em;
 }
 
 .row .col-sm p {
     text-align: center;
-    font-size: 1.8em;
+    font-size: 1.4em;
 }
 
 .row .col-sm i {
@@ -259,7 +286,7 @@ h2, h3 {
     font-size: 2em;
     text-transform: none;
     font-weight: bold;
-    padding: 0.5em;
+    padding: 0.2em;
 }
 
 .row .col-md-6 p {
@@ -278,43 +305,38 @@ h2, h3 {
 
 #home-events h2 {
     font-size: 3em;
-    padding-top: 1.25em;
+    padding-top: 1em;
 }
 
 #home-events .next-events {
-    background-image: url("https://alandoherty95.github.io/MilestoneProjectOne/assets/images/spartan9.jpg");
-    border-radius: 1em;
+    background-image: url("https://alandoherty95.github.io/MilestoneProjectOne/assets/images/spartan18.jpg");
+    border-radius: 0.65em;
     margin: 0.3em;
+    width: 100%;
+    height: 30em;
     background-size: cover;
     display: inline-block;
     background-position: center;
     overflow: hidden;
-    height: 52em;
-    padding-top: 25em;
-    width: 24%;
     position: relative;
-    text-align: left;
 }
 
-#home-events .next-events h2 {
+#home-events .next-events h2, h3 {
     font-size: 2em;
     color: #ffffff;
-    padding: .5em;
+    padding: 0.2em;
+    text-align: left;
 }
 
 #home-events .next-events h3 {
     font-size: 2em;
     color: #ffffff;
-    padding: 0.5em;
+    padding: 0.2em;
 }
 
 #home-events .next-events a {
     text-decoration: none;
-    color:#1985A1;
-
-    position: absolute;
-    bottom: 0.5em;
-    right: 0.5em;
+    color:#ffffff;
 }
 
 #home-events .next-events a:hover {
@@ -325,7 +347,6 @@ h2, h3 {
 
 #smoothie-recipes {
     width: 100%;
-    padding-top: 1em;
     height: auto;
     overflow: hidden;
     position: relative;
@@ -333,21 +354,17 @@ h2, h3 {
 }
 
 #smoothie-recipes h2 {
-    padding-top: 2.25em;
     font-size: 2.8em;
-    color:#ffffff;
     text-align: center;
+    padding: 1em;
 }
 
 #recipe {
-    color: #ffffff;
     background-image: url("https://alandoherty95.github.io/MilestoneProjectOne/assets/images/fruit-smoothie.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 40em;
-    padding: 1em 6.25em 0.625em 6.25em;
-    font-size: 2em;
+    height: 50em;
 }
 
 #recipe h2 {
@@ -357,7 +374,6 @@ h2, h3 {
 }
 
 #recipe-one-heading, #recipe-two-heading {
-    width: 45%;
     padding: 0.8em;
 }
 
@@ -369,13 +385,28 @@ h2, h3 {
     float: right;
 }
 
-#recipe li {
-    text-decoration-style: solid;
-    padding-left: 0.4em;
-    list-style-type: "》";
-    font-size: 1em;
-    line-height: 2em;
+.container-reasons h2{
+    padding: 1em;
+    font-size: 3em;
 }
+
+.row .col-md {
+    background-color: rgb(197,195,198, 0.85);
+    border-radius: 2.5em;
+    height: auto;
+    padding: 1em;
+    margin: 0.5em;
+}
+
+.row .col-md li {
+    text-decoration-style: solid;
+    list-style-type: "》";
+    font-size: 1.8em;
+    line-height: 1em;
+    padding: 0.5em;
+    text-align: left;
+}
+
 
 /*------------------------------------------------------------------------------------ contact.html -*/
 
@@ -399,12 +430,12 @@ h2, h3 {
 #cover-text3 {
     padding: 1em;
     border-radius: 1em;
-    border: 0.5em solid #1985A1;
+    border: 0.3em solid #1985A1;
     font-size: 1.8em;
     background-color: rgb(197,195,198, 0.65);
     position: absolute;
     bottom: 15em;
-    left: 2.5em; 
+    margin: 0.2em;
 }
 
 #cover-text3 ul {
@@ -414,16 +445,16 @@ h2, h3 {
 #cover-text4 {
     padding: 1em;
     border-radius: 1em;
-    border: 0.5em solid #1985A1;
+    border: 0.4em solid #1985A1;
     background-color: rgb(197,195,198, 0.65);
     position: absolute;
     bottom: 10em;
-    left: 2.5em; 
+    margin: 0.2em;
 }
 
 #cover-text4 h2 {
     text-transform: none;
-    font-size: 2.2em;
+    font-size: 1.8em;
 }
 
 
@@ -469,7 +500,7 @@ h2, h3 {
 }
 
 #form {
-    width: 50%;
+    width: 100%;
     height: 20em;
     padding: 4em;
     text-align: left;
@@ -496,7 +527,7 @@ input {
     color: #ffffff;
     padding: 1em;
     background-color: transparent;
-    margin-top: 0.5em;
+    margin: 0.5em;
     box-sizing: border-box;
     border: 0.2em solid #1985A1;
 }
@@ -504,7 +535,7 @@ input {
 textarea {
     padding: 1em;
     background-color: transparent;
-    margin-top: 0.5em;
+    margin: 0.5em;
     color: #ffffff;
     box-sizing: border-box;
     border: 0.2em solid #1985A1;
@@ -529,23 +560,6 @@ textarea {
 
 
 /*----------------------------------------------------------------------------------------- gallery.html -*/
-.container-gallery {
-    position: relative;
-}
-
-
-.row {
-    margin: 0.5em;
-    padding: 1em;
-    position: relative;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 #race-images-title, #photo-shoot-title, #hurton-logo-title {
     padding-top: 4em;
     padding-left: 2.5em;
@@ -554,6 +568,26 @@ textarea {
 #race-images-title h2, #photo-shoot-title h2, #hurton-logo-title h2 {
     text-align: left;
     color: #1985A1;
+}
+
+.row {
+  margin: 1em;
+}
+
+.modal button.close {
+  right: 0;
+  outline: 0;
+}
+  
+#gallery-lightbox img {
+  height: 25em;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+#gallery-lightbox img:hover {
+  opacity: 0.9;
+  transition: 0.5s ease-out;
 }
 /*------------------------------------------------------------------------------------------ events.html -*/
 
