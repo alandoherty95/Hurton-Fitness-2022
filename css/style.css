@@ -2,745 +2,629 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
-
-/*----------------------------------------------------------------------- Head -*/
-
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
+	margin: 0;
+	padding: 0;
+	border: 0;
 }
-
 hr {
-    height: 1px;
-    background-color: #ffffff;
-    border: none;
+	height: 1px;
+	background-color: #ffffff;
+	border: none;
 }
-
 header {
-    width: 100%;
+	width: 100%;
 }
-
 body {
-    font-family: 'Fjalla One', sans-serif;
-    color: #ffffff;
-    font-size: 16px;
+	font-family: 'Fjalla One', sans-serif;
+	color: #ffffff;
+	font-size: 16px;
 }
-
 h1 {
-    text-transform: uppercase;
-    font-size: 68px; 
-    letter-spacing: 6px;
-    font-weight: 900;
-    color:#1985A1;
+	text-transform: uppercase;
+	font-size: 68px;
+	letter-spacing: 6px;
+	font-weight: 900;
+	color: #1985A1;
 }
-
 header h2, h3 {
-    text-transform: uppercase;
-    font-weight: bold;
-    color:#1985A1;
-    text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #1985A1;
+	text-align: center;
 }
-
 h2, h3 {
-    text-transform: uppercase;
-    font-weight: bold;
-    color:#ffffff;
-    text-align: center;
+	text-transform: uppercase;
+	color: #ffffff;
 }
-
-
-/*------------------------------------------------------------Logo & Nav Bar-*/
+/*-----------Logo & Nav Bar-*/
 
 #logo {
-    float: left; 
-    text-decoration: none;
-    padding-left: 0.2em;
+	text-decoration: none;
+	padding-left: 0.2em;
 }
-
 @media only screen and (max-width: 600px) {
-  #logo {
-    font-size: 25.6px; 
-  }
+	#logo {
+		font-size: 25.6px;
+	}
 }
-
 @media only screen and (max-width: 900px) {
-  #logo {
-    font-size: 32.6px; 
-  }
+	#logo {
+		font-size: 32.6px;
+	}
 }
-
 @media only screen and (max-width: 1200px) {
-  #logo {
-    font-size: 48.6px; 
-  }
+	#logo {
+		font-size: 48.6px;
+	}
 }
-
 .nav-link li {
-    list-style: none;
-    margin: 1.2em;
-    padding: 1em;
-    letter-spacing: 0.2em;
-    font-size: 1.3em;
-    list-style-type: none;
+	list-style: none;
+	margin: 1.2em;
+	padding: 1em;
+	letter-spacing: 0.2em;
+	font-size: 1.3em;
+	list-style-type: none;
 }
-
 .navbar-toggler-icon {
-    display: inline-block;
-    width: 1.5em;
-    height: 1.5em;
-    vertical-align: middle;
-    background: no-repeat center center;
-    background-size: 100% 100%;
+	display: inline-block;
+	width: 1.5em;
+	height: 1.5em;
+	vertical-align: middle;
+	background: no-repeat center center;
+	background-size: 100% 100%;
 }
-
 .navbar-toggler {
-    padding: .25rem .75rem;
-    font-size: 1.25rem;
-    line-height: 1;
-    background-color: transparent;
-    border: 0.1em solid transparent;
-    border-radius: .25rem;
+	padding: .25rem .75rem;
+	font-size: 1.25rem;
+	line-height: 1;
+	background-color: transparent;
+	border: 0.1em solid transparent;
+	border-radius: .25rem;
 }
-
 .navbar-collapse {
-    float: right;
+	float: right;
 }
+/*----------- index.html -*/
 
-
-/*------------------------------------------------------------------------------------- index.html -*/
-
-/*---------------------------------------------------------- Top Section -*/
+/*-------- Top Section -*/
 
 #top-section {
-    overflow: hidden;
-    position: relative;
-    height: 76em;
-    width: 100%;
+	overflow: hidden;
+	position: relative;
+	height: 76em;
+	width: 100%;
 }
-
 #top-section h2 {
-    letter-spacing: 0.2em;
-    font-size: 1.5em;
-    color:#ffffff;
+	letter-spacing: 0.2em;
+	font-size: 1.5em;
+	color: #ffffff;
 }
-
 #top-section h3 {
-    font-size: 1.5em;
-    text-transform: none;
-    color:#1985A1;
+	font-size: 1.5em;
+	text-transform: none;
+	color: #1985A1;
 }
-
 #home-cover-image {
-    height: 76em;
-    width: 100%;
-    background-image: url("https://alandoherty95.github.io/MilestoneProjectOne/assets/images/steps.jpg");
-    animation-name: hero-zoom;
-    animation-duration: 4s;
-    animation-fill-mode: forwards;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-} 
-
-@keyframes hero-zoom {
-    from{
-        transform: scale(1);
-    }
-    to{
-        transform: scale(1.08);
-    }
+	height: 76em;
+	width: 100%;
+	background-image: url("https://alandoherty95.github.io/MilestoneProjectOne/assets/images/steps.jpg");
+	animation-name: hero-zoom;
+	animation-duration: 4s;
+	animation-fill-mode: forwards;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
 }
-
-/*----------------------------------------------------------Home Cover Text 1 -*/
+@keyframes hero-zoom {
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(1.08);
+	}
+}
+/*---------------Home Cover Text 1 -*/
 
 #home-cover-text1 {
-    padding: 1.2em;
-    border-radius: 2.5em;
-    border: 0.6em solid #1985A1;
-    background-color: rgb(197,195,198, 0.8);
-    position: absolute;
-    top: 28em;
-    right: 4em; 
+	padding: 1.2em;
+	border-radius: 2.5em;
+	border: 0.6em solid #1985A1;
+	background-color: rgb(197, 195, 198, 0.8);
+	position: absolute;
+	top: 28em;
+	right: 4em;
 }
 
-/*---------------------------------------------------------- Home Cover Text 2 -*/
+/*----- Home Cover Text 2 -*/
 
 #home-cover-text2 {
-    padding: 1em;
-    margin: 1em;
-    border: 0.6em solid #1985A1;;
-    border-radius: 2.5em;
-    background-color: rgb(197,195,198, 0.8);
-    position: absolute;
-    bottom: 6em;
-    left: 6em;
+	padding: 1em;
+	margin: 1em;
+	border: 0.6em solid #1985A1;
+	;
+	border-radius: 2.5em;
+	background-color: rgb(197, 195, 198, 0.8);
+	position: absolute;
+	bottom: 6em;
+	left: 6em;
 }
-
 #home-cover-text1 h3, #home-cover-text2 h3 {
-    color:#ffffff;
-    text-transform: uppercase;
-    font-size: 1.4em;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-size: 1.4em;
 }
-
 #home-cover-text2 h2 {
-    font-size: 1.2em;
-    letter-spacing: none; 
+	font-size: 1.2em;
+	letter-spacing: none;
 }
-
 #home-cover-text2 a {
-    text-transform: lowercase;
-    color: #ffffff;
+	text-transform: lowercase;
+	color: #ffffff;
 }
-
 #home-cover-text2 a:hover {
-    color: #1985A1;
-    text-decoration: none;
+	color: #1985A1;
+	text-decoration: none;
 }
-
-
-/*---------------------------------------------------------- 3 Reasons for Exercising -*/
+/*----------- 3 Reasons for Exercising -*/
 
 #exercise-reasons {
-    color: #ffffff;
-    background-color: rgba(197, 195, 198, 0);
-    height: auto;
-    width: 100%;
-    padding: 1em;
-} 
-
+	color: #ffffff;
+	background-color: rgba(197, 195, 198, 0);
+	height: auto;
+	width: 100%;
+	padding: 1em;
+}
 #container {
-    margin: 0.1em;
-    padding: 0.1em;
+	margin: 0.1em;
+	padding: 0.1em;
 }
-
 #three-reasons {
-    background-color: #46494C;
-    border-style: groove;
-    border-radius: 1em;
-    margin: 0.5em;
-    padding: 0.4em;
-    text-align: center;
+	background-color: #46494C;
+	border-style: groove;
+	border-radius: 1em;
+	margin: 0.5em;
+	padding: 0.4em;
+	text-align: center;
 }
-
-.container-reasons h2{
-    padding: 0.1em;
-    font-size: 3em;
+.container-reasons h2 {
+	padding: 0.1em;
+	font-size: 3em;
 }
-
 .col-sm p {
-    font-size: 1.4em;
-    text-align: left;
-    color: #000000;
+	font-size: 1.4em;
+	text-align: left;
+	color: #000000;
 }
-
 .col-sm {
-    background-color: #A9A9A9;
-    border-radius: 2.5em;
-    height: auto;
-    padding: 0.5em;
-    margin: 0.2em;
+	background-color: #A9A9A9;
+	border-radius: 2.5em;
+	height: auto;
+	padding: 0.5em;
+	margin: 0.2em;
 }
-
 .row .col-sm h2 {
-    text-align: center;
-    font-size: 1.8em;
+	text-align: center;
+	font-size: 1.8em;
 }
-
 .row .col-sm p {
-    text-align: center;
-    font-size: 1.4em;
+	text-align: center;
+	font-size: 1.4em;
 }
-
 .row .col-sm i {
-    align-items: center;
-    border-radius: 50%;
-    color: #ffffff;
-    font-size: 2em;
-    display: block;
-    text-align: center;
+	align-items: center;
+	border-radius: 50%;
+	color: #ffffff;
+	font-size: 2em;
+	display: block;
+	text-align: center;
 }
-
-/*------------------------------------------------------------ Client Testimonials -*/
+/*------- Client Testimonials -*/
 
 #testimonials {
-    color: #ffffff;
-    background-color: #1985A1;
-    height: auto;
+	color: #ffffff;
+	background-color: #1985A1;
+	height: auto;
 }
-
 #testimonials h2 {
-    font-size: 3em;
+	font-size: 3em;
 }
-
 #testimonials .row {
-    padding: 1em;
+	padding: 1em;
 }
-
 #testimonials-heading {
-    padding-top: 1em;
+	padding-top: 1em;
 }
-
 .row .col-md-6 h3 {
-    font-size: 2em;
-    text-transform: none;
-    font-weight: bold;
-    padding: 0.2em;
+	font-size: 2em;
+	text-transform: none;
+	font-weight: bold;
+	padding: 0.2em;
 }
-
 .row .col-md-6 p {
-    font-size: 1.6em;
-    border: 0.1em solid #ffffff;
-    padding: 0.5em;
+	font-size: 1.6em;
+	border: 0.1em solid #ffffff;
+	padding: 0.5em;
 }
-
-/*----------------------------------------------------------Events Section-*/
+/*------------------Events Section-*/
 
 #home-events {
-    width: 100%;
-    height: auto;
-    background-color: #1985A1;
+	width: 100%;
+	height: auto;
+	background-color: #1985A1;
 }
-
 #home-events h2 {
-    font-size: 3em;
-    padding-top: 1em;
+	font-size: 3em;
+	padding-top: 1em;
 }
-
 #home-events .next-events {
-    background-image: url("https://alandoherty95.github.io/MilestoneProjectOne/assets/images/spartan18.jpg");
-    border-radius: 0.65em;
-    margin: 0.3em;
-    width: 100%;
-    height: 30em;
-    background-size: cover;
-    display: inline-block;
-    background-position: center;
-    overflow: hidden;
-    position: relative;
+	background-image: url("https://alandoherty95.github.io/MilestoneProjectOne/assets/images/spartan18.jpg");
+	border-radius: 0.65em;
+	margin: 0.3em;
+	width: 100%;
+	height: 30em;
+	background-size: cover;
+	display: inline-block;
+	background-position: center;
+	overflow: hidden;
+	position: relative;
 }
-
 #home-events .next-events h2, h3 {
-    font-size: 2em;
-    color: #ffffff;
-    padding: 0.2em;
-    text-align: left;
+	font-size: 2em;
+	color: #ffffff;
+	padding: 0.2em;
+	text-align: left;
 }
-
 #home-events .next-events h3 {
-    font-size: 2em;
-    color: #ffffff;
-    padding: 0.2em;
+	font-size: 2em;
+	color: #ffffff;
+	padding: 0.2em;
 }
-
 #home-events .next-events a {
-    text-decoration: none;
-    color:#ffffff;
+	text-decoration: none;
+	color: #ffffff;
 }
-
 #home-events .next-events a:hover {
-    color:#ffffff;
+	color: #ffffff;
 }
-
-/*---------------------------------------------------------- Smoothie Recipes -*/
+/*-------------- Smoothie Recipes -*/
 
 #smoothie-recipes {
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-    position: relative;
-    background-color: #1985A1;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	position: relative;
+	background-color: #1985A1;
 }
-
 #smoothie-recipes h2 {
-    font-size: 2.8em;
-    text-align: center;
-    padding: 1em;
+	font-size: 2.8em;
+	text-align: center;
+	padding: 1em;
 }
-
 #recipe {
-    background-image: url("https://alandoherty95.github.io/MilestoneProjectOne/assets/images/fruit-smoothie.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 50em;
+	background-image: url("https://alandoherty95.github.io/MilestoneProjectOne/assets/images/fruit-smoothie.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 50em;
 }
-
 #recipe h2 {
-    color: #ffffff;
-    font-size: 2em;
-    letter-spacing: 0.1em;
+	color: #ffffff;
+	font-size: 2em;
+	letter-spacing: 0.1em;
 }
-
 #recipe-one-heading, #recipe-two-heading {
-    padding: 0.8em;
+	padding: 0.8em;
 }
-
 #recipe-one-heading {
-    float: left;
+	float: left;
 }
-
 #recipe-two-heading {
-    float: right;
+	float: right;
 }
-
-.container-reasons h2{
-    padding: 1em;
-    font-size: 3em;
+.container-reasons h2 {
+	padding: 1em;
+	font-size: 3em;
 }
-
 .row .col-md {
-    background-color: rgb(197,195,198, 0.85);
-    border-radius: 2.5em;
-    height: auto;
-    padding: 1em;
-    margin: 0.5em;
+	background-color: rgb(197, 195, 198, 0.85);
+	border-radius: 2.5em;
+	height: auto;
+	padding: 1em;
+	margin: 0.5em;
 }
-
 .row .col-md li {
-    text-decoration-style: solid;
-    list-style-type: "》";
-    font-size: 1.8em;
-    line-height: 1em;
-    padding: 0.5em;
-    text-align: left;
+	text-decoration-style: solid;
+	list-style-type: "》";
+	font-size: 1.8em;
+	line-height: 1em;
+	padding: 0.5em;
+	text-align: left;
 }
-
-
-/*------------------------------------------------------------------------------------ contact.html -*/
+/*----------------- contact.html -*/
 
 #contact-top-section {
-    overflow: hidden;
-    position: relative;
-    height: 120em;
-    width: 100%;
-    color: #ffffff;
+	overflow: hidden;
+	position: relative;
+	height: 120em;
+	width: 100%;
+	color: #ffffff;
 }
-
 #contact-cover-image {
-    height: 120em;
-    width: 100%;
-    background-image: url("https://alandoherty95.github.io/MilestoneProjectOne/assets/images/steps10.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-} 
-
+	height: 120em;
+	width: 100%;
+	background-image: url("https://alandoherty95.github.io/MilestoneProjectOne/assets/images/steps10.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+}
 #cover-text3 {
-    padding: 1em;
-    border-radius: 1em;
-    border: 0.3em solid #1985A1;
-    font-size: 1.8em;
-    background-color: rgb(197,195,198, 0.65);
-    position: absolute;
-    bottom: 15em;
-    margin: 0.2em;
+	padding: 1em;
+	border-radius: 1em;
+	border: 0.3em solid #1985A1;
+	font-size: 1.8em;
+	background-color: rgb(197, 195, 198, 0.65);
+	position: absolute;
+	bottom: 15em;
+	margin: 0.2em;
 }
-
 #cover-text3 ul {
-    list-style-type: none;
+	list-style-type: none;
 }
-
 #cover-text4 {
-    padding: 1em;
-    border-radius: 1em;
-    border: 0.4em solid #1985A1;
-    background-color: rgb(197,195,198, 0.65);
-    position: absolute;
-    bottom: 10em;
-    margin: 0.2em;
+	padding: 1em;
+	border-radius: 1em;
+	border: 0.4em solid #1985A1;
+	background-color: rgb(197, 195, 198, 0.65);
+	position: absolute;
+	bottom: 10em;
+	margin: 0.2em;
 }
-
 #cover-text4 h2 {
-    text-transform: none;
-    font-size: 1.8em;
+	text-transform: none;
+	font-size: 1.8em;
 }
-
-
-/*--------------------------------------------------------------- Biography -*/
+/*---------------------- Biography -*/
 
 #bio {
-    color: #ffffff;
-    background-color: #1985A1;;
-    height: auto;
+	color: #ffffff;
+	background-color: #1985A1;
+	;
+	height: auto;
 }
-
 #bio h1 {
-    text-align: center;
-    padding: 1em 1em;
-    letter-spacing: 0.1em;
-    font-weight: 900;
-    color:#ffffff;
+	text-align: center;
+	padding: 1em 1em;
+	letter-spacing: 0.1em;
+	font-weight: 900;
+	color: #ffffff;
 }
-
 .container2 {
-    padding: 1em;
-    margin: 0.4em;
+	padding: 1em;
+	margin: 0.4em;
 }
-
 .container2 h2 {
-    font-size: 1.8em;
-    text-align: left;
+	font-size: 1.8em;
+	text-align: left;
 }
-
 .container2 p {
-    font-size: 1.6em;
-    text-align: left;
+	font-size: 1.6em;
+	text-align: left;
 }
-
-/*---------------------------------------------------------------- Form Section -*/
+/*--------------- Form Section -*/
 
 .form-section {
-    clear: both;
-    background-size: cover;
-    background-position: center;
-    height: 46.25em;
-    color: transparent;
+	clear: both;
+	background-size: cover;
+	background-position: center;
+	height: 46.25em;
+	color: transparent;
 }
-
 #form {
-    width: 100%;
-    height: 20em;
-    padding: 4em;
-    text-align: left;
-    box-sizing: content-box;
-    color: #ffffff;
+	width: 100%;
+	height: 20em;
+	padding: 4em;
+	text-align: left;
+	box-sizing: content-box;
+	color: #ffffff;
 }
-
 #form h2 {
-    text-align: left;
-    font-size: 3em;
+	text-align: left;
+	font-size: 3em;
 }
-
 .contact-button {
-    border-radius: 1em;
-    font-size: 6em;
-    padding: 1em;
-    background-color: transparent;
-    margin: 1em;
-    color: #ffffff;
+	border-radius: 1em;
+	font-size: 6em;
+	padding: 1em;
+	background-color: transparent;
+	margin: 1em;
+	color: #ffffff;
 }
-
 input {
-    width: 60%;
-    color: #ffffff;
-    padding: 1em;
-    background-color: transparent;
-    margin: 0.5em;
-    box-sizing: border-box;
-    border: 0.2em solid #1985A1;
+	width: 60%;
+	color: #ffffff;
+	padding: 1em;
+	background-color: transparent;
+	margin: 0.5em;
+	box-sizing: border-box;
+	border: 0.2em solid #1985A1;
 }
-
 textarea {
-    padding: 1em;
-    background-color: transparent;
-    margin: 0.5em;
-    color: #ffffff;
-    box-sizing: border-box;
-    border: 0.2em solid #1985A1;
+	padding: 1em;
+	background-color: transparent;
+	margin: 0.5em;
+	color: #ffffff;
+	box-sizing: border-box;
+	border: 0.2em solid #1985A1;
 }
-
 ::placeholder {
-  color: #ffffff;
-  font-size: 1.4em;
-  opacity: 1; 
-  text-align: left;
+	color: #ffffff;
+	font-size: 1.4em;
+	opacity: 1;
+	text-align: left;
 }
-
 .contact-button ::placeholder {
-  color: #ffffff;
-  margin: 1em;
-  font-size: 1.4em;
-  opacity: 1; 
+	color: #ffffff;
+	margin: 1em;
+	font-size: 1.4em;
+	opacity: 1;
 }
+/*----------------------- End of Form -*/
 
+/*---------------------- gallery.html -*/
 
-/*---------------------------------------------------------------- End of Form -*/
-
-
-/*----------------------------------------------------------------------------------------- gallery.html -*/
 #race-images-title, #photo-shoot-title, #hurton-logo-title {
-    padding-top: 4em;
-    padding-left: 2.5em;
+	padding-top: 4em;
+	padding-left: 2.5em;
 }
-
 #race-images-title h2, #photo-shoot-title h2, #hurton-logo-title h2 {
-    text-align: left;
-    color: #1985A1;
+	text-align: left;
+	color: #1985A1;
 }
-
 .row {
-  margin: 1em;
+	margin: 1em;
 }
-
 .modal button.close {
-  right: 0;
-  outline: 0;
+	right: 0;
+	outline: 0;
 }
-  
 #gallery-lightbox img {
-  height: 25em;
-  object-fit: contain;
-  cursor: pointer;
+	height: 25em;
+	object-fit: contain;
+	cursor: pointer;
 }
-
 #gallery-lightbox img:hover {
-  opacity: 0.9;
-  transition: 0.5s ease-out;
+	opacity: 0.9;
+	transition: 0.5s ease-out;
 }
-/*------------------------------------------------------------------------------------------ events.html -*/
+/*---------------------- events.html -*/
 
 #events-top-section {
-    overflow: hidden;
-    position: relative;
-    height: auto;
-    width: 100%;
+	overflow: hidden;
+	position: relative;
+	height: auto;
+	width: 100%;
 }
-
 #events-cover-image {
-    width: 100%;
-    height: 180em;
-    background-image: url("https://alandoherty95.github.io/MilestoneProjectOne/assets/images/steps5.jpg");
-    background-repeat: repeat-y;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-} 
-
+	width: 100%;
+	height: 180em;
+	background-image: url("https://alandoherty95.github.io/MilestoneProjectOne/assets/images/steps5.jpg");
+	background-repeat: repeat-y;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
 #event-details {
-    margin: 1em;
-    position: relative;
+	margin: 1em;
+	position: relative;
 }
-
 #event-details h2 {
-    color: #ffffff;
-    font-size: 2.5em;
-    padding: 1.5em 1.5em;
-    letter-spacing: 0.15em;
+	color: #ffffff;
+	font-size: 2.5em;
+	padding: 1.5em 1.5em;
+	letter-spacing: 0.15em;
 }
-
 #event-details .event1 {
-    margin: 1em;
-    padding: 0.5em;
-    border-radius: 1em;
-    text-align: center;
-    border: 0.5em solid #1985A1;
-    color: #1985A1;
-    background-color: rgb(197,195,198, 0.65);
+	margin: 1em;
+	padding: 0.5em;
+	border-radius: 1em;
+	text-align: center;
+	border: 0.5em solid #1985A1;
+	color: #1985A1;
+	background-color: rgb(197, 195, 198, 0.65);
 }
-
 #event-details h3 {
-    font-size: 2em;
-    color: #ffffff;
-    padding: 0.25em;
+	font-size: 2em;
+	color: #ffffff;
+	padding: 0.25em;
 }
-
 #event-details h4 {
-    color: #1985A1;
-    text-transform: uppercase;
-    font-size: 2em;
+	color: #1985A1;
+	text-transform: uppercase;
+	font-size: 2em;
 }
-
 #event-details p {
-    color: #ffffff;
-    font-size: 1.4em;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
+	color: #ffffff;
+	font-size: 1.4em;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
 }
-
 #event-details .event1 a {
-    color: #1985A1;
-    font-size: 1.6em;
-    position: absolute;
-    bottom: 0.5em;
-    right: 0.5em;
-    text-decoration: none;
-    padding: 0.25em;
+	color: #1985A1;
+	font-size: 1.6em;
+	position: absolute;
+	bottom: 0.5em;
+	right: 0.5em;
+	text-decoration: none;
+	padding: 0.25em;
 }
-
 #event-details .event1 a:hover {
-    color: #ffffff;
+	color: #ffffff;
 }
-
-/*------------------------------------------------------------------------------------------------ Footer -*/
+/*----------------- Footer -*/
 
 .footer {
-    width: 100%;
-    padding-bottom: 1em;
+	width: 100%;
+	padding-bottom: 1em;
 }
-
 .row {
-    padding-bottom: 1em;
-    text-align: center;
+	padding-bottom: 1em;
+	text-align: center;
 }
-
 .col-sm-8 h2 {
-    padding-top: 1em;
-    font-size: 2em;
-    color: #1985A1;
-} 
-
+	padding-top: 1em;
+	font-size: 2em;
+	color: #1985A1;
+}
 .col-sm-8 h3 {
-    color: #1985A1;
-    font-size: 1em;
+	color: #1985A1;
+	font-size: 1em;
 }
-
 #social-links {
-    font-size: 2em;
-    padding: 0.25em;
-    text-decoration: none;
+	font-size: 2em;
+	padding: 0.25em;
+	text-decoration: none;
 }
-
 #social-links li {
-    padding: 1em;
+	padding: 1em;
 }
-
 #social-links a {
-    text-decoration: none;
-    color: #1985A1;
+	text-decoration: none;
+	color: #1985A1;
 }
-
 #social-links li a:visited {
-    text-decoration: none;
+	text-decoration: none;
 }
-
 .col-sm-4 {
-    text-decoration: none;
-    text-align: center;
+	text-decoration: none;
+	text-align: center;
 }
-
 .col-sm-4 h4 {
-    color: #1985A1;
-    font-size: 1.2em;
-    padding:0.5em;
+	color: #1985A1;
+	font-size: 1.2em;
+	padding: 0.5em;
 }
-
 .col-sm-4 a {
-    border: 0.2em solid #1985A1;
-    border-radius: 1em;
-    padding: 0.25em;
-    margin-top: 1em;
-    color: #1985A1;
+	border: 0.2em solid #1985A1;
+	border-radius: 1em;
+	padding: 0.25em;
+	margin-top: 1em;
+	color: #1985A1;
 }
-
 .back-to-top, .back-to-home {
-    margin: 1em;
-    border: 0.25em solid #1985A1;
-    border-radius: 1em;
-    padding: 1em;
-    color: #1985A1;
+	margin: 1em;
+	border: 0.25em solid #1985A1;
+	border-radius: 1em;
+	padding: 1em;
+	color: #1985A1;
 }
-
 .back-to-top a, .back-to-home a {
-    border: 0.2em solid #1985A1;
-    border-radius: 1em;
+	border: 0.2em solid #1985A1;
+	border-radius: 1em;
 }
-
 .back-to-top a:hover, .back-to-home a:hover {
-    border: 0.2em solid #1985A1;
-    border-radius: 1em;
-    text-decoration: none;
+	border: 0.2em solid #1985A1;
+	border-radius: 1em;
+	text-decoration: none;
 }
-
-

@@ -1,336 +1,160 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
-<!-------------------------------------------------------------------------------------------Head-->
-
+<!--=========================================================================================Head-->
 <head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="css/style.css" rel="stylesheet" type="text/css"/>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    
-    <title> Hurton Fitness </title>
-    <style>       
-    
-    </style>
-
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js">
+	</script>
+	<title>Hurton Fitness</title>
+	<style>
+	</style>
 </head>
-
-
-
-
 <body>
-        
-<!------------------------------------------------------------------------------------------------- logo & nav bar -->
-
-            <header>
-           
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <a id="logo" href="index.html"> <h1> Hurton Fitness </h1> </a> 
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav" id="top">
-                            <li class="nav-item">
-                                <a class="nav-link" href="events.html"> <h2> <i class="fa fa-phone"> Events </i> </h2> </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="gallery.html"> <h2> <i class="fa fa-image"> Gallery </i> </h2> </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact.html"> <h2> <i class="fa fa-phone"> Contact </i> </h2> </a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </header>
-
-            <section id="race-images-title">
-                <h2> Spartan Obstacle Race </h2>
-                <h2> Punchestown Racecourse </h2>
-                <h2> May 2019 </h2>
-                
-            </section>
-
-            <div id="gallery-lightbox" class="row" data-toggle="modal" data-target="#exampleModal">
-                <div class="col-6 col-md-3 col-lg-4 p-0">
-                    <img class="w-100" src="assets/images/spartan1.jpg" alt="Spartan Race" data-target="#carouselExample" data-slide-to="0">
-                </div>
-                <div class="col-6 col-md-3 col-lg-4 p-0">
-                    <img class="w-100" src="assets/images/spartan2.jpg" alt="Spartan Race" data-target="#carouselExample" data-slide-to="1">
-                </div>
-                <div class="col-6 col-md-3 col-lg-4 p-0">
-                    <img class="w-100" src="assets/images/spartan3.jpg" alt="Spartan Race" data-target="#carouselExample" data-slide-to="2">
-                </div>
-                <div class="col-6 col-md-3 col-lg-4 p-0">
-                    <img class="w-100" src="assets/images/spartan4.jpg" alt="Spartan Race" data-target="#carouselExample" data-slide-to="3">
-                </div>
-                <div class="col-6 col-md-3 col-lg-4 p-0">
-                    <img class="w-100" src="assets/images/spartan5.jpg" alt="Spartan Race" data-target="#carouselExample" data-slide-to="4">
-                </div>
-                <div class="col-6 col-md-3 col-lg-4 p-0">
-                    <img class="w-100" src="assets/images/spartan6.jpg" alt="Spartan Race" data-target="#carouselExample" data-slide-to="5">
-                </div>
-                <div class="col-6 col-md-3 col-lg-4 p-0">
-                    <img class="w-100" src="assets/images/spartan7.jpg" alt="Spartan Race" data-target="#carouselExample" data-slide-to="6">
-                </div>
-                <div class="col-6 col-md-3 col-lg-4 p-0">
-                    <img class="w-100" src="assets/images/spartan8.jpg" alt="Spartan Race" data-target="#carouselExample" data-slide-to="7">
-                </div>
-                <div class="col-6 col-md-3 col-lg-4 p-0">
-                    <img class="w-100" src="assets/images/spartan9.jpg" alt="Spartan Race" data-target="#carouselExample" data-slide-to="8">
-                </div>
-                <div class="col-6 col-md-3 col-lg-4 p-0">
-                    <img class="w-100" src="assets/images/spartan10.jpg" alt="Spartan Race" data-target="#carouselExample" data-slide-to="9">
-                </div>
-                <div class="col-6 col-md-3 col-lg-4 p-0">
-                    <img class="w-100" src="assets/images/spartan11.jpg" alt="Spartan Race" data-target="#carouselExample" data-slide-to="10">
-                </div>
-                <div class="col-6 col-md-3 col-lg-4 p-0">
-                    <img class="w-100" src="assets/images/spartan12.jpg" alt="Spartan Race" data-target="#carouselExample" data-slide-to="11">
-                </div>
-                <div class="col-6 col-md-3 col-lg-4 p-0">
-                    <img class="w-100" src="assets/images/spartan13.jpg" alt="Spartan Race" data-target="#carouselExample" data-slide-to="12">
-                </div>
-                <div class="col-6 col-md-3 col-lg-4 p-0">
-                    <img class="w-100" src="assets/images/spartan14.jpg" alt="Spartan Race" data-target="#carouselExample" data-slide-to="13">
-                </div>
-                <div class="col-6 col-md-3 col-lg-4 p-0">
-                    <img class="w-100" src="assets/images/spartan15.jpg" alt="Spartan Race" data-target="#carouselExample" data-slide-to="14">
-                </div>
-                <div class="col-6 col-md-3 col-lg-4 p-0">
-                    <img class="w-100" src="assets/images/spartan16.jpg" alt="Spartan Race" data-target="#carouselExample" data-slide-to="15">
-                </div>
-                <div class="col-6 col-md-3 col-lg-4 p-0">
-                    <img class="w-100" src="assets/images/spartan17.jpg" alt="Spartan Race" data-target="#carouselExample" data-slide-to="16">
-                </div>
-                <div class="col-6 col-md-3 col-lg-4 p-0">
-                    <img class="w-100" src="assets/images/spartan18.jpg" alt="Spartan Race" data-target="#carouselExample" data-slide-to="17">
-                </div>
-                <div class="col-6 col-md-3 col-lg-4 p-0">
-                    <img class="w-100" src="assets/images/spartan19.jpg" alt="Spartan Race" data-target="#carouselExample" data-slide-to="18">
-                </div>
-                <div class="col-6 col-md-3 col-lg-4 p-0">
-                    <img class="w-100" src="assets/images/spartan20.jpg" alt="Spartan Race" data-target="#carouselExample" data-slide-to="19">
-                </div>
-            </div>
-
-            <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-hidden="true">
-                <button type="button" class="close m-0 p-3 text-white position-absolute right-0" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                        </button>
-                <div class="modal-dialog modal-lg" role="document">
-                    <div class="modal-content bg-transparent">
-                        <div class="modal-body p-0">
-                            <div id="carouselExample" class="carousel slide carousel-fade" data-ride="false">
-                                <div class="carousel-item active">
-                                <img class="d-block w-100" src="assets/images/spartan1.jpg" alt="Spartan 1 slide">
-                                </div>
-                                <div class="carousel-item">
-                                <img class="d-block w-100" src="assets/images/spartan2.jpg" alt="Spartan 2 slide">
-                                </div>
-                                <div class="carousel-item">
-                                <img class="d-block w-100" src="assets/images/spartan3.jpg" alt="Spartan 3 slide">
-                                </div>
-                                <div class="carousel-item active">
-                                <img class="d-block w-100" src="assets/images/spartan4.jpg" alt="Spartan 4 slide">
-                                </div>
-                                <div class="carousel-item">
-                                <img class="d-block w-100" src="assets/images/spartan5.jpg" alt="Spartan 5 slide">
-                                </div>
-                                <div class="carousel-item">
-                                <img class="d-block w-100" src="assets/images/spartan6.jpg" alt="Spartan 6 slide">
-                                </div>
-                                <div class="carousel-item active">
-                                <img class="d-block w-100" src="assets/images/spartan7.jpg" alt="Spartan 7 slide">
-                                </div>
-                                <div class="carousel-item">
-                                <img class="d-block w-100" src="assets/images/spartan8.jpg" alt="Spartan 8 slide">
-                                </div>
-                                <div class="carousel-item">
-                                <img class="d-block w-100" src="assets/images/spartan9.jpg" alt="Spartan 9 slide">
-                                </div>
-                                <div class="carousel-item active">
-                                <img class="d-block w-100" src="assets/images/spartan10.jpg" alt="Spartan 10 slide">
-                                </div>
-                                <div class="carousel-item">
-                                <img class="d-block w-100" src="assets/images/spartan11.jpg" alt="Spartan 11 slide">
-                                </div>
-                                <div class="carousel-item">
-                                <img class="d-block w-100" src="assets/images/spartan12.jpg" alt="Spartan 12 slide">
-                                </div>
-                                <div class="carousel-item">
-                                <img class="d-block w-100" src="assets/images/spartan13.jpg" alt="Spartan 13 slide">
-                                </div>
-                                <div class="carousel-item active">
-                                <img class="d-block w-100" src="assets/images/spartan14.jpg" alt="Spartan 14 slide">
-                                </div>
-                                <div class="carousel-item">
-                                <img class="d-block w-100" src="assets/images/spartan15.jpg" alt="Spartan 15 slide">
-                                </div>
-                                <div class="carousel-item">
-                                <img class="d-block w-100" src="assets/images/spartan16.jpg" alt="Spartan 16 slide">
-                                </div>
-                                <div class="carousel-item active">
-                                <img class="d-block w-100" src="assets/images/spartan17.jpg" alt="Spartan 17 slide">
-                                </div>
-                                <div class="carousel-item">
-                                <img class="d-block w-100" src="assets/images/spartan18.jpg" alt="Spartan 18 slide">
-                                </div>
-                                <div class="carousel-item">
-                                <img class="d-block w-100" src="assets/images/spartan19.jpg" alt="Spartan 19 slide">
-                                </div>
-                                <div class="carousel-item active">
-                                <img class="d-block w-100" src="assets/images/spartan20.jpg" alt="Spartan 20 slide">
-                                </div>
-                               
-                            </div>
-                            <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-
-
-<!------------------------------------------------------------------------------------------------- race-images-title -->
-
-
-<!------------------------------------------------------------------------------------------------- race-images -->
-
-<!------------------------------------------------------------------------------------------------- photo-shoot-title -->
-
-        <section id="photo-shoot-title">
-                <h2> OneXU Photo Shoot </h2>
-                <h2> Corbally </h2>
-                <h2> January 2020 </h2>
-        </section>
-
-<!------------------------------------------------------------------------------------------------- photo-shoot-images -->
-        <div class="container-gallery">
-                        <div class="row">
-                            <a href="assets/images/steps10.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
-                            <img src="assets/images/steps10.jpg" class="img-fluid rounded" alt="OnexU Photo Shoot">
-                            </a>
-                            <a href="assets/images/steps2.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
-                            <img src="assets/images/steps2.jpg" class="img-fluid rounded" alt="OnexU Photo Shoot">
-                            </a>
-                            <a href="assets/images/steps4.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
-                            <img src="assets/images/steps4.jpg" class="img-fluid rounded" alt="OnexU Photo Shoot">
-                            </a>
-                        </div>
-                        <div class="row">
-                            <a href="assets/images/steps5.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
-                            <img src="assets/images/steps5.jpg" class="img-fluid rounded" alt="OnexU Photo Shoot">
-                            </a>
-                            <a href="assets/images/steps6.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
-                            <img src="assets/images/steps6.jpg" class="img-fluid rounded" alt="OnexU Photo Shoot">
-                            </a>
-                            <a href="assets/images/steps7.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
-                            <img src="assets/images/steps7.jpg" class="img-fluid rounded" alt="OnexU Photo Shoot">
-                            </a>
-                        </div>
-                        <div class="row">
-                            <a href="assets/images/steps9.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
-                            <img src="assets/images/steps9.jpg" class="img-fluid rounded" alt="OnexU Photo Shoot">
-                            </a>
-                            <a href="assets/images/steps.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
-                            <img src="assets/images/steps.jpg" class="img-fluid rounded" alt="OnexU Photo Shoot">
-                            </a>
-                            <a href="assets/images/steps8.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
-                            <img src="assets/images/steps8.jpg" class="img-fluid rounded" alt="OnexU Photo Shoot">
-                            </a>
-                        </div>
-        </div>
-
-        <section id="hurton-logo-title">
-                <h2> Hurton Fitness Logo </h2>
-        </section>
-
-        <div class="container-gallery">
-                        <div class="row">
-                            <a href="assets/images/logo-only.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
-                            <img src="assets/images/logo-only.jpg" class="img-fluid rounded" alt="Hurton Logo">
-                            </a>
-                            <a href="assets/images/logo-original.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
-                            <img src="assets/images/logo-original.jpg" class="img-fluid rounded" alt="Hurton Logo">
-                            </a>
-                            <a href="assets/images/logo-greyscale.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
-                            <img src="assets/images/logo-greyscale.jpg" class="img-fluid rounded" alt="Hurton Logo">
-                            </a>
-                        </div>
-                        <div class="row">
-                            <a href="assets/images/logo-transparent.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
-                            <img src="assets/images/logo-transparent.jpg" class="img-fluid rounded" alt="Hurton Logo">
-                            </a>
-                        </div>
-        </div>
-
-        <footer id="footer">
-<!------------------------------------------------------------------Footer Details-->
-                    <div class="row">
-
-                        <div class="col-sm-8"> <h2> Social Media Links </h2>
-                            <ul id="social-links">
-
-                                <li class="list-inline-item"> 
-                                <a target="_blank" href="https://www.facebook.com/pages/category/Personal-Blog/Iain-Hurton-Fitness-2181026858613543/">
-                                    <h3> <i class="fa fa-facebook"></i>
-                                    Facebook </h3> 
-                                </a>
-                                </li>
-                                <li class="list-inline-item">
-                                <a target="_blank" href="https://open.spotify.com/playlist/59xQzFKBIph1NGVyC7e1zB?si=zeuUQVdgRg-gATAyl1OJbg">
-                                    <h3> <i class="fa fa-spotify"></i>
-                                    Spotify </h3>
-                                </a>
-                                </li>
-                                <li class="list-inline-item">
-                                <a target="_blank" href="https://www.instagram.com/hurtonsfitness/?hl=en">
-                                    <h3> <i class="fa fa-instagram"></i>
-                                    Instagram </h3>
-                                </a>
-                                </li>
-                            </ul>
-
-                        </div>
-
-                        <div class="col-sm-4"> <h3> Details </h3>
-                                
-                                <h4> iainhurton1997@gmail.com </h4>
-                                <h4> © 2020 Hurton Fitness </h4>
-                                <h4>
-                                    <a href="assets/documents/hurton-cv-reference.pdf" target="_blank"> Download CV & Reference </a>
-                                </h4>
-                                
-                                <a href="#top" class="back-to-top"> Back to Top </a>
-                                <a href="index.html" class="back-to-home"> Back to Home </a>
-
-
-                        </div>
-                </div>
-
-        </footer>
-
+	<!--=============================================================================================== logo & nav bar -->
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a href="index.html" id="logo">
+			<h1>Hurton Fitness</h1></a> <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarNav" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav" id="top">
+					<li class="nav-item">
+						<a class="nav-link" href="events.html">
+						<h2><i class="fa fa-phone">Events</i></h2></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="gallery.html">
+						<h2><i class="fa fa-image">Gallery</i></h2></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contact.html">
+						<h2><i class="fa fa-phone">Contact</i></h2></a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<section id="race-images-title">
+		<h2>Spartan Obstacle Race</h2>
+		<h2>Punchestown Racecourse</h2>
+		<h2>May 2019</h2>
+	</section>
+	<div class="row" data-target="#exampleModal" data-toggle="modal" id="gallery-lightbox">
+		<div class="col-6 col-md-3 col-lg-4 p-0"><img alt="Spartan Race" class="w-100" data-slide-to="0" data-target="#carouselExample" src="assets/images/spartan1.jpg"></div>
+		<div class="col-6 col-md-3 col-lg-4 p-0"><img alt="Spartan Race" class="w-100" data-slide-to="1" data-target="#carouselExample" src="assets/images/spartan2.jpg"></div>
+		<div class="col-6 col-md-3 col-lg-4 p-0"><img alt="Spartan Race" class="w-100" data-slide-to="2" data-target="#carouselExample" src="assets/images/spartan3.jpg"></div>
+		<div class="col-6 col-md-3 col-lg-4 p-0"><img alt="Spartan Race" class="w-100" data-slide-to="3" data-target="#carouselExample" src="assets/images/spartan4.jpg"></div>
+		<div class="col-6 col-md-3 col-lg-4 p-0"><img alt="Spartan Race" class="w-100" data-slide-to="4" data-target="#carouselExample" src="assets/images/spartan5.jpg"></div>
+		<div class="col-6 col-md-3 col-lg-4 p-0"><img alt="Spartan Race" class="w-100" data-slide-to="5" data-target="#carouselExample" src="assets/images/spartan6.jpg"></div>
+		<div class="col-6 col-md-3 col-lg-4 p-0"><img alt="Spartan Race" class="w-100" data-slide-to="6" data-target="#carouselExample" src="assets/images/spartan7.jpg"></div>
+		<div class="col-6 col-md-3 col-lg-4 p-0"><img alt="Spartan Race" class="w-100" data-slide-to="7" data-target="#carouselExample" src="assets/images/spartan8.jpg"></div>
+		<div class="col-6 col-md-3 col-lg-4 p-0"><img alt="Spartan Race" class="w-100" data-slide-to="8" data-target="#carouselExample" src="assets/images/spartan9.jpg"></div>
+		<div class="col-6 col-md-3 col-lg-4 p-0"><img alt="Spartan Race" class="w-100" data-slide-to="9" data-target="#carouselExample" src="assets/images/spartan10.jpg"></div>
+		<div class="col-6 col-md-3 col-lg-4 p-0"><img alt="Spartan Race" class="w-100" data-slide-to="10" data-target="#carouselExample" src="assets/images/spartan11.jpg"></div>
+		<div class="col-6 col-md-3 col-lg-4 p-0"><img alt="Spartan Race" class="w-100" data-slide-to="11" data-target="#carouselExample" src="assets/images/spartan12.jpg"></div>
+		<div class="col-6 col-md-3 col-lg-4 p-0"><img alt="Spartan Race" class="w-100" data-slide-to="12" data-target="#carouselExample" src="assets/images/spartan13.jpg"></div>
+		<div class="col-6 col-md-3 col-lg-4 p-0"><img alt="Spartan Race" class="w-100" data-slide-to="13" data-target="#carouselExample" src="assets/images/spartan14.jpg"></div>
+		<div class="col-6 col-md-3 col-lg-4 p-0"><img alt="Spartan Race" class="w-100" data-slide-to="14" data-target="#carouselExample" src="assets/images/spartan15.jpg"></div>
+		<div class="col-6 col-md-3 col-lg-4 p-0"><img alt="Spartan Race" class="w-100" data-slide-to="15" data-target="#carouselExample" src="assets/images/spartan16.jpg"></div>
+		<div class="col-6 col-md-3 col-lg-4 p-0"><img alt="Spartan Race" class="w-100" data-slide-to="16" data-target="#carouselExample" src="assets/images/spartan17.jpg"></div>
+		<div class="col-6 col-md-3 col-lg-4 p-0"><img alt="Spartan Race" class="w-100" data-slide-to="17" data-target="#carouselExample" src="assets/images/spartan18.jpg"></div>
+		<div class="col-6 col-md-3 col-lg-4 p-0"><img alt="Spartan Race" class="w-100" data-slide-to="18" data-target="#carouselExample" src="assets/images/spartan19.jpg"></div>
+		<div class="col-6 col-md-3 col-lg-4 p-0"><img alt="Spartan Race" class="w-100" data-slide-to="19" data-target="#carouselExample" src="assets/images/spartan20.jpg"></div>
+	</div>
+	<div aria-hidden="true" class="modal" id="exampleModal" role="dialog" tabindex="-1">
+		<button aria-label="Close" class="close m-0 p-3 text-white position-absolute right-0" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content bg-transparent">
+				<div class="modal-body p-0">
+					<div class="carousel slide carousel-fade" data-ride="false" id="carouselExample">
+						<div class="carousel-item active"><img alt="Spartan 1 slide" class="d-block w-100" src="assets/images/spartan1.jpg"></div>
+						<div class="carousel-item"><img alt="Spartan 2 slide" class="d-block w-100" src="assets/images/spartan2.jpg"></div>
+						<div class="carousel-item"><img alt="Spartan 3 slide" class="d-block w-100" src="assets/images/spartan3.jpg"></div>
+						<div class="carousel-item active"><img alt="Spartan 4 slide" class="d-block w-100" src="assets/images/spartan4.jpg"></div>
+						<div class="carousel-item"><img alt="Spartan 5 slide" class="d-block w-100" src="assets/images/spartan5.jpg"></div>
+						<div class="carousel-item"><img alt="Spartan 6 slide" class="d-block w-100" src="assets/images/spartan6.jpg"></div>
+						<div class="carousel-item active"><img alt="Spartan 7 slide" class="d-block w-100" src="assets/images/spartan7.jpg"></div>
+						<div class="carousel-item"><img alt="Spartan 8 slide" class="d-block w-100" src="assets/images/spartan8.jpg"></div>
+						<div class="carousel-item"><img alt="Spartan 9 slide" class="d-block w-100" src="assets/images/spartan9.jpg"></div>
+						<div class="carousel-item active"><img alt="Spartan 10 slide" class="d-block w-100" src="assets/images/spartan10.jpg"></div>
+						<div class="carousel-item"><img alt="Spartan 11 slide" class="d-block w-100" src="assets/images/spartan11.jpg"></div>
+						<div class="carousel-item"><img alt="Spartan 12 slide" class="d-block w-100" src="assets/images/spartan12.jpg"></div>
+						<div class="carousel-item"><img alt="Spartan 13 slide" class="d-block w-100" src="assets/images/spartan13.jpg"></div>
+						<div class="carousel-item active"><img alt="Spartan 14 slide" class="d-block w-100" src="assets/images/spartan14.jpg"></div>
+						<div class="carousel-item"><img alt="Spartan 15 slide" class="d-block w-100" src="assets/images/spartan15.jpg"></div>
+						<div class="carousel-item"><img alt="Spartan 16 slide" class="d-block w-100" src="assets/images/spartan16.jpg"></div>
+						<div class="carousel-item active"><img alt="Spartan 17 slide" class="d-block w-100" src="assets/images/spartan17.jpg"></div>
+						<div class="carousel-item"><img alt="Spartan 18 slide" class="d-block w-100" src="assets/images/spartan18.jpg"></div>
+						<div class="carousel-item"><img alt="Spartan 19 slide" class="d-block w-100" src="assets/images/spartan19.jpg"></div>
+						<div class="carousel-item active"><img alt="Spartan 20 slide" class="d-block w-100" src="assets/images/spartan20.jpg"></div>
+					</div><a class="carousel-control-prev" data-slide="prev" href="#carouselExample" role="button"><span aria-hidden="true" class="carousel-control-prev-icon"></span> <span class="sr-only">Previous</span></a> <a class="carousel-control-next" data-slide="next" href="#carouselExample" role="button"><span aria-hidden="true" class="carousel-control-next-icon"></span> <span class="sr-only">Next</span></a>
+				</div>
+			</div>
+		</div>
+	</div><!--=============================================================================================== race-images-title -->
+	<!--=============================================================================================== race-images -->
+	<!--=============================================================================================== photo-shoot-title -->
+	<section id="photo-shoot-title">
+		<h2>OneXU Photo Shoot</h2>
+		<h2>Corbally</h2>
+		<h2>January 2020</h2>
+	</section><!--=============================================================================================== photo-shoot-images -->
+	<div class="container-gallery">
+		<div class="row">
+			<a class="col-md-4" data-gallery="gallery" data-toggle="lightbox" href="assets/images/steps10.jpg"><img alt="OnexU Photo Shoot" class="img-fluid rounded" src="assets/images/steps10.jpg"></a> <a class="col-md-4" data-gallery="gallery" data-toggle="lightbox" href="assets/images/steps2.jpg"><img alt="OnexU Photo Shoot" class="img-fluid rounded" src="assets/images/steps2.jpg"></a> <a class="col-md-4" data-gallery="gallery" data-toggle="lightbox" href="assets/images/steps4.jpg"><img alt="OnexU Photo Shoot" class="img-fluid rounded" src="assets/images/steps4.jpg"></a>
+		</div>
+		<div class="row">
+			<a class="col-md-4" data-gallery="gallery" data-toggle="lightbox" href="assets/images/steps5.jpg"><img alt="OnexU Photo Shoot" class="img-fluid rounded" src="assets/images/steps5.jpg"></a> <a class="col-md-4" data-gallery="gallery" data-toggle="lightbox" href="assets/images/steps6.jpg"><img alt="OnexU Photo Shoot" class="img-fluid rounded" src="assets/images/steps6.jpg"></a> <a class="col-md-4" data-gallery="gallery" data-toggle="lightbox" href="assets/images/steps7.jpg"><img alt="OnexU Photo Shoot" class="img-fluid rounded" src="assets/images/steps7.jpg"></a>
+		</div>
+		<div class="row">
+			<a class="col-md-4" data-gallery="gallery" data-toggle="lightbox" href="assets/images/steps9.jpg"><img alt="OnexU Photo Shoot" class="img-fluid rounded" src="assets/images/steps9.jpg"></a> <a class="col-md-4" data-gallery="gallery" data-toggle="lightbox" href="assets/images/steps.jpg"><img alt="OnexU Photo Shoot" class="img-fluid rounded" src="assets/images/steps.jpg"></a> <a class="col-md-4" data-gallery="gallery" data-toggle="lightbox" href="assets/images/steps8.jpg"><img alt="OnexU Photo Shoot" class="img-fluid rounded" src="assets/images/steps8.jpg"></a>
+		</div>
+	</div>
+	<section id="hurton-logo-title">
+		<h2>Hurton Fitness Logo</h2>
+	</section>
+	<div class="container-gallery">
+		<div class="row">
+			<a class="col-md-4" data-gallery="gallery" data-toggle="lightbox" href="assets/images/logo-only.jpg"><img alt="Hurton Logo" class="img-fluid rounded" src="assets/images/logo-only.jpg"></a> <a class="col-md-4" data-gallery="gallery" data-toggle="lightbox" href="assets/images/logo-original.jpg"><img alt="Hurton Logo" class="img-fluid rounded" src="assets/images/logo-original.jpg"></a> <a class="col-md-4" data-gallery="gallery" data-toggle="lightbox" href="assets/images/logo-greyscale.jpg"><img alt="Hurton Logo" class="img-fluid rounded" src="assets/images/logo-greyscale.jpg"></a>
+		</div>
+		<div class="row">
+			<a class="col-md-4" data-gallery="gallery" data-toggle="lightbox" href="assets/images/logo-transparent.jpg"><img alt="Hurton Logo" class="img-fluid rounded" src="assets/images/logo-transparent.jpg"></a>
+		</div>
+	</div>
+	<footer id="footer">
+		<!--================================================================Footer Details-->
+		<div class="row">
+			<div class="col-sm-8">
+				<h2>Social Media Links</h2>
+				<ul id="social-links">
+					<li class="list-inline-item">
+						<a href="https://www.facebook.com/pages/category/Personal-Blog/Iain-Hurton-Fitness-2181026858613543/" target="_blank">
+						<h3><i class="fa fa-facebook"></i> Facebook</h3></a>
+					</li>
+					<li class="list-inline-item">
+						<a href="https://open.spotify.com/playlist/59xQzFKBIph1NGVyC7e1zB?si=zeuUQVdgRg-gATAyl1OJbg" target="_blank">
+						<h3><i class="fa fa-spotify"></i> Spotify</h3></a>
+					</li>
+					<li class="list-inline-item">
+						<a href="https://www.instagram.com/hurtonsfitness/?hl=en" target="_blank">
+						<h3><i class="fa fa-instagram"></i> Instagram</h3></a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-sm-4">
+				<h3>Details</h3>
+				<h4>iainhurton1997@gmail.com</h4>
+				<h4>© 2020 Hurton Fitness</h4>
+				<h4><a href="assets/documents/hurton-bio.pdf" target="_blank">Preview & Download Bio</a></h4><a class="back-to-top" href="#top">Back to Top</a> <a class="back-to-home" href="index.html">Back to Home</a>
+			</div>
+		</div>
+	</footer>
 </body>
-
 </html>
