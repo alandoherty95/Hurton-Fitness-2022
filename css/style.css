@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@900&display=swap');
 
 * {
 	margin: 0;
@@ -22,9 +21,9 @@ body {
 }
 h1 {
 	text-transform: uppercase;
+    font-family: 'Big Shoulders Stencil Display', cursive;
 	font-size: 68px;
-	letter-spacing: 6px;
-	font-weight: 900;
+	letter-spacing: 4px;
 	color: #1985A1;
 }
 header h2, h3 {
@@ -37,7 +36,12 @@ h2, h3 {
 	text-transform: uppercase;
 	color: #ffffff;
 }
-/*-----------Logo & Nav Bar-*/
+
+p {
+	font-size: 22px;
+    text-align: left;
+}
+/*-----------logo & nav bar-*/
 
 #logo {
 	text-decoration: none;
@@ -58,14 +62,6 @@ h2, h3 {
 		font-size: 48.6px;
 	}
 }
-.nav-link li {
-	list-style: none;
-	margin: 1.2em;
-	padding: 1em;
-	letter-spacing: 0.2em;
-	font-size: 1.3em;
-	list-style-type: none;
-}
 .navbar-toggler-icon {
 	display: inline-block;
 	width: 1.5em;
@@ -75,19 +71,27 @@ h2, h3 {
 	background-size: 100% 100%;
 }
 .navbar-toggler {
-	padding: .25rem .75rem;
-	font-size: 1.25rem;
+	padding: .25em .75em;
+	font-size: 1.25em;
 	line-height: 1;
 	background-color: transparent;
 	border: 0.1em solid transparent;
-	border-radius: .25rem;
+	border-radius: .25em;
+}
+.nav-link li {
+	list-style: none;
+	margin: 1.2em;
+	padding: 1em;
+	letter-spacing: 0.2em;
+	font-size: 1.3em;
+	list-style-type: none;
 }
 .navbar-collapse {
 	float: right;
 }
 /*----------- index.html -*/
 
-/*-------- Top Section -*/
+/*-------- top section -*/
 
 #top-section {
 	overflow: hidden;
@@ -97,13 +101,12 @@ h2, h3 {
 }
 #top-section h2 {
 	letter-spacing: 0.2em;
-	font-size: 1.5em;
 	color: #ffffff;
+    font-size: 1.8em;
 }
 #top-section h3 {
-	font-size: 1.5em;
-	text-transform: none;
 	color: #1985A1;
+    font-size: 1.5em;
 }
 #home-cover-image {
 	height: 76em;
@@ -125,39 +128,30 @@ h2, h3 {
 		transform: scale(1.08);
 	}
 }
-/*---------------Home Cover Text 1 -*/
+/*---------------fitness instructor & swimming teacher -*/
 
 #home-cover-text1 {
-	padding: 1.2em;
+	padding: 1em;
+    margin: 1.2em;
 	border-radius: 2.5em;
 	border: 0.6em solid #1985A1;
 	background-color: rgb(197, 195, 198, 0.8);
 	position: absolute;
 	top: 28em;
-	right: 4em;
+    right: 4em;
 }
 
-/*----- Home Cover Text 2 -*/
+/*----- fitness bootcamp -*/
 
 #home-cover-text2 {
 	padding: 1em;
-	margin: 1em;
+	margin: 1.2em;
 	border: 0.6em solid #1985A1;
-	;
 	border-radius: 2.5em;
 	background-color: rgb(197, 195, 198, 0.8);
 	position: absolute;
 	bottom: 6em;
-	left: 6em;
-}
-#home-cover-text1 h3, #home-cover-text2 h3 {
-	color: #ffffff;
-	text-transform: uppercase;
-	font-size: 1.4em;
-}
-#home-cover-text2 h2 {
-	font-size: 1.2em;
-	letter-spacing: none;
+    left: 4em;
 }
 #home-cover-text2 a {
 	text-transform: lowercase;
@@ -167,101 +161,72 @@ h2, h3 {
 	color: #1985A1;
 	text-decoration: none;
 }
-/*----------- 3 Reasons for Exercising -*/
+/*---------------------- biography -*/
 
-#exercise-reasons {
-	color: #ffffff;
-	background-color: rgba(197, 195, 198, 0);
-	height: auto;
-	width: 100%;
-	padding: 1em;
-}
-#container {
-	margin: 0.1em;
-	padding: 0.1em;
-}
-#three-reasons {
-	background-color: #46494C;
-	border-style: groove;
-	border-radius: 1em;
-	margin: 0.5em;
-	padding: 0.4em;
-	text-align: center;
-}
-.container-reasons h2 {
-	padding: 0.1em;
-	font-size: 3em;
-}
-.col-sm p {
-	font-size: 1.4em;
-	text-align: left;
-	color: #000000;
-}
-.col-sm {
-	background-color: #A9A9A9;
-	border-radius: 2.5em;
-	height: auto;
-	padding: 0.5em;
-	margin: 0.2em;
-}
-.row .col-sm h2 {
-	text-align: center;
-	font-size: 1.8em;
-}
-.row .col-sm p {
-	text-align: center;
-	font-size: 1.4em;
-}
-.row .col-sm i {
-	align-items: center;
-	border-radius: 50%;
-	color: #ffffff;
-	font-size: 2em;
-	display: block;
-	text-align: center;
-}
-/*------- Client Testimonials -*/
-
-#testimonials {
-	color: #ffffff;
+#bio {
 	background-color: #1985A1;
 	height: auto;
 }
-#testimonials h2 {
-	font-size: 3em;
+#bio h1 {
+	text-align: center;
+	padding: 0.2em;
+    font-size: 4em;
+	letter-spacing: 0.1em;
+	color: #ffffff;
 }
-#testimonials .row {
+#bio h2 {
+	padding: 0.2em;
+    font-size: 2em;
+    text-align: left;
+    border:0.1em solid#ffffff;
+}
+.container-bio {
 	padding: 1em;
+	margin: 0.4em;
 }
-#testimonials-heading {
-	padding-top: 1em;
+/*------- client testimonials -*/
+
+#testimonials {
+    background-color:#4C5C68;
+	height: auto;
 }
-.row .col-md-6 h3 {
+#testimonials h1 {
+	text-align: center;
+	padding: 0.2em;
+    font-size: 3em;
+	letter-spacing: 0.1em;
+	color: #ffffff;
+}
+#testimonials h3 {
 	font-size: 2em;
 	text-transform: none;
 	font-weight: bold;
 	padding: 0.2em;
 }
 .row .col-md-6 p {
-	font-size: 1.6em;
+	font-size: 1.4em;
 	border: 0.1em solid #ffffff;
-	padding: 0.5em;
+	padding: 0.3em;
+    margin: 0.2em;
 }
-/*------------------Events Section-*/
+/*------------------events section-*/
 
 #home-events {
 	width: 100%;
 	height: auto;
-	background-color: #1985A1;
+	background-color: #FFEEAD;
 }
-#home-events h2 {
-	font-size: 3em;
-	padding-top: 1em;
+#home-events h1 {
+    color:#4C5C68;
+    text-align: center;
+	padding: 0.2em;
+    font-size: 3em;
+	letter-spacing: 0.1em;
 }
-#home-events .next-events {
+.next-events {
 	background-image: url("https://alandoherty95.github.io/MilestoneProjectOne/assets/images/spartan18.jpg");
 	border-radius: 0.65em;
-	margin: 0.3em;
+	margin: 0.2em;
 	width: 100%;
 	height: 30em;
 	background-size: cover;
@@ -270,77 +235,76 @@ h2, h3 {
 	overflow: hidden;
 	position: relative;
 }
-#home-events .next-events h2, h3 {
-	font-size: 2em;
+.next-events h2, h3 {
+	font-size: 2.2em;
 	color: #ffffff;
 	padding: 0.2em;
 	text-align: left;
 }
-#home-events .next-events h3 {
-	font-size: 2em;
-	color: #ffffff;
-	padding: 0.2em;
-}
-#home-events .next-events a {
+.next-events a {
 	text-decoration: none;
 	color: #ffffff;
 }
-#home-events .next-events a:hover {
-	color: #ffffff;
+.next-events a:hover {
+	color:#DC143C;
 }
-/*-------------- Smoothie Recipes -*/
+/*-------------- smoothie recipes -*/
 
 #smoothie-recipes {
 	width: 100%;
-	height: auto;
 	overflow: hidden;
 	position: relative;
-	background-color: #1985A1;
-}
-#smoothie-recipes h2 {
-	font-size: 2.8em;
-	text-align: center;
-	padding: 1em;
-}
-#recipe {
-	background-image: url("https://alandoherty95.github.io/MilestoneProjectOne/assets/images/fruit-smoothie.jpg");
+	background-color: #75BBA7;
+    background-image: url("https://alandoherty95.github.io/MilestoneProjectOne/assets/images/fruit-smoothie.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	height: 50em;
+	height: 60em;
 }
-#recipe h2 {
-	color: #ffffff;
-	font-size: 2em;
+#smoothie-recipes h1 {
+	font-size: 3em;
+	color:#ffffff;
+    text-align: center;
+	padding: 0.2em;
 	letter-spacing: 0.1em;
 }
-#recipe-one-heading, #recipe-two-heading {
-	padding: 0.8em;
+#smoothie-recipes h2 {
+	color: #ffffff;
+	font-size: 2.4em;
+	letter-spacing: 0.1em;
 }
-#recipe-one-heading {
-	float: left;
+.container-recipe {
+    margin: 0.2em;
+    background-color: rgb(117, 187, 167, 0.45)
 }
-#recipe-two-heading {
-	float: right;
-}
-.container-reasons h2 {
-	padding: 1em;
-	font-size: 3em;
-}
-.row .col-md {
-	background-color: rgb(197, 195, 198, 0.85);
-	border-radius: 2.5em;
+#smoothie-recipes .row {
 	height: auto;
 	padding: 1em;
+	margin: 0.1em;
+}
+#smoothie-recipes .col-lg {
+	margin: 1em;
+}
+#smoothie-recipes .row li {
+	text-decoration-style: solid;
+	list-style-type: none;
+	font-size: 1.8em;
+    line-height: 2em;
+	text-align: left;
+}
+#recipe-one-list {
+	float: left;
+    background-color: rgb(117, 187, 167, 0.85);
+    border-radius: 2.5em;
+    padding: 1em;
 	margin: 0.5em;
 }
-.row .col-md li {
-	text-decoration-style: solid;
-	list-style-type: "》";
-	font-size: 1.8em;
-	line-height: 1em;
-	padding: 0.5em;
-	text-align: left;
+#recipe-two-list {
+	float: right;
+    background-color: rgb(117, 187, 167, 0.85);
+    border-radius: 2.5em;
+    padding: 1em;
+	margin: 0.5em;
 }
 /*----------------- contact.html -*/
 
@@ -349,7 +313,6 @@ h2, h3 {
 	position: relative;
 	height: 120em;
 	width: 100%;
-	color: #ffffff;
 }
 #contact-cover-image {
 	height: 120em;
@@ -361,56 +324,28 @@ h2, h3 {
 }
 #cover-text3 {
 	padding: 1em;
-	border-radius: 1em;
-	border: 0.3em solid #1985A1;
+	border-radius: 2.5em;
+	border: 0.4em solid #1985A1;
 	font-size: 1.8em;
 	background-color: rgb(197, 195, 198, 0.65);
 	position: absolute;
 	bottom: 15em;
-	margin: 0.2em;
+	margin: 1em;
 }
-#cover-text3 ul {
+#cover-text3 li {
 	list-style-type: none;
 }
 #cover-text4 {
 	padding: 1em;
-	border-radius: 1em;
-	border: 0.4em solid #1985A1;
+	border-radius: 2.5em;
+	border: 0.6em solid #1985A1;
 	background-color: rgb(197, 195, 198, 0.65);
 	position: absolute;
 	bottom: 10em;
-	margin: 0.2em;
+	margin: 1em;
 }
 #cover-text4 h2 {
 	text-transform: none;
-	font-size: 1.8em;
-}
-/*---------------------- Biography -*/
-
-#bio {
-	color: #ffffff;
-	background-color: #1985A1;
-	;
-	height: auto;
-}
-#bio h1 {
-	text-align: center;
-	padding: 1em 1em;
-	letter-spacing: 0.1em;
-	font-weight: 900;
-	color: #ffffff;
-}
-.container2 {
-	padding: 1em;
-	margin: 0.4em;
-}
-.container2 h2 {
-	font-size: 1.8em;
-	text-align: left;
-}
-.container2 p {
-	font-size: 1.6em;
-	text-align: left;
 }
 /*--------------- Form Section -*/
 
@@ -418,28 +353,30 @@ h2, h3 {
 	clear: both;
 	background-size: cover;
 	background-position: center;
-	height: 46.25em;
 	color: transparent;
 }
+
+.form-section h1 {
+    color:#ffffff;
+    text-align: left;
+    font-size: 2.4em;
+	letter-spacing: 0.1em;
+}
 #form {
-	width: 100%;
+	width: 24em;
 	height: 20em;
 	padding: 4em;
 	text-align: left;
 	box-sizing: content-box;
 	color: #ffffff;
 }
-#form h2 {
-	text-align: left;
-	font-size: 3em;
-}
-.contact-button {
-	border-radius: 1em;
-	font-size: 6em;
+input[type=text] {
+	width: 60%;
+	color: #ffffff;
 	padding: 1em;
 	background-color: transparent;
-	margin: 1em;
-	color: #ffffff;
+	margin: 0.5em;
+	box-sizing: border-box;
 }
 input {
 	width: 60%;
@@ -447,6 +384,7 @@ input {
 	padding: 1em;
 	background-color: transparent;
 	margin: 0.5em;
+    font-size: 1.6;
 	box-sizing: border-box;
 	border: 0.2em solid #1985A1;
 }
@@ -460,43 +398,107 @@ textarea {
 }
 ::placeholder {
 	color: #ffffff;
-	font-size: 1.4em;
+	font-size: 1.6em;
 	opacity: 1;
 	text-align: left;
 }
-.contact-button ::placeholder {
+.btn {
+	border-radius: 1em;
+	font-size: 1.6em;
+	padding: 0.2em;
+	background-color: transparent;
+    border: 0.2em solid #1985A1;
+	margin: 0.2em;
+}
+.btn ::placeholder {
 	color: #ffffff;
 	margin: 1em;
 	font-size: 1.4em;
 	opacity: 1;
 }
-/*----------------------- End of Form -*/
+/*----------------------- end of form -*/
+/*----------- 3 reasons for exercising -*/
 
+#exercise-reasons {
+	background-color: #4C5C68;
+	height: auto;
+	width: 100%;
+}
+#exercise-reasons h1 {
+	font-size: 3em;
+	color:#ffffff;
+    text-align: center;
+	padding: 0.2em;
+	letter-spacing: 0.1em;
+}
+#exercise-reasons .col-sm {
+	background-color: #ffffff;
+	border-radius: 1em;
+	text-align: center;
+    margin: 0.5em;
+	padding: 0.5em;
+}
+#exercise-reasons .col-sm h2 {
+	text-align: center;
+    color: #4C5C68;
+    margin: 0.5em;
+	padding: 0.5em;
+    display: block;
+    letter-spacing: 0.2em;
+    font-size: 2em;
+}
+#exercise-reasons .col-sm p {
+	color:#4C5C68;
+    font-size: 1.6em;
+    text-align: center;
+}
+#exercise-reasons .col-sm i {
+	align-items: center;
+	border-radius: 50%;
+	font-size: 2em;
+	display: block;
+	text-align: center;
+}
 /*---------------------- gallery.html -*/
-
-#race-images-title, #photo-shoot-title, #hurton-logo-title {
-	padding-top: 4em;
-	padding-left: 2.5em;
-}
-#race-images-title h2, #photo-shoot-title h2, #hurton-logo-title h2 {
-	text-align: left;
-	color: #1985A1;
-}
-.row {
-	margin: 1em;
+#race-images-title h2 {
+    text-align: left;
+    color: #4C5C68;
+    margin: 0.2em;
+    padding-left: 0.5em;
+    letter-spacing: 0.2em;
+    font-size: 2em;
 }
 .modal button.close {
 	right: 0;
 	outline: 0;
 }
+#gallery-lightbox .row .col-6 {
+    margin: 0.2em;
+}
 #gallery-lightbox img {
-	height: 25em;
+	height: 30em;
 	object-fit: contain;
 	cursor: pointer;
 }
 #gallery-lightbox img:hover {
 	opacity: 0.9;
 	transition: 0.5s ease-out;
+}
+#photo-shoot-title h2 {
+    text-align: left;
+    color: #4C5C68;
+    margin: 0.2em;
+	padding-left: 0.5em;
+    letter-spacing: 0.2em;
+    font-size: 2em;
+}
+#hurton-logo-title h2 {
+    text-align: left;
+    color: #4C5C68;
+    margin: 0.2em;
+	padding-left: 0.5em;
+    letter-spacing: 0.2em;
+    font-size: 2em;
 }
 /*---------------------- events.html -*/
 
@@ -508,61 +510,49 @@ textarea {
 }
 #events-cover-image {
 	width: 100%;
-	height: 180em;
+	height: 190em;
 	background-image: url("https://alandoherty95.github.io/MilestoneProjectOne/assets/images/steps5.jpg");
-	background-repeat: repeat-y;
+	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 	position: relative;
 }
-#event-details {
-	margin: 1em;
+#events-cover-image {
+	margin: 0.2em;
 	position: relative;
 }
-#event-details h2 {
+#events-cover-image h2 {
 	color: #ffffff;
 	font-size: 2.5em;
-	padding: 1.5em 1.5em;
-	letter-spacing: 0.15em;
+	padding: 2em 2em;
+	letter-spacing: 0.1em;
+    text-align: center;
 }
-#event-details .event1 {
+.single-event {
 	margin: 1em;
-	padding: 0.5em;
 	border-radius: 1em;
-	text-align: center;
 	border: 0.5em solid #1985A1;
 	color: #1985A1;
 	background-color: rgb(197, 195, 198, 0.65);
 }
-#event-details h3 {
-	font-size: 2em;
+.single-event  h3 {
+	font-size: 2.6em;
 	color: #ffffff;
-	padding: 0.25em;
+	padding: 0.3em;
+    text-align: center;
 }
-#event-details h4 {
+.single-event h4 {
 	color: #1985A1;
 	text-transform: uppercase;
 	font-size: 2em;
+    text-align: center;
 }
-#event-details p {
+.single-event p {
 	color: #ffffff;
-	font-size: 1.4em;
-	padding-left: 0.5em;
-	padding-right: 0.5em;
-}
-#event-details .event1 a {
-	color: #1985A1;
 	font-size: 1.6em;
-	position: absolute;
-	bottom: 0.5em;
-	right: 0.5em;
-	text-decoration: none;
-	padding: 0.25em;
+    text-align: center;
 }
-#event-details .event1 a:hover {
-	color: #ffffff;
-}
-/*----------------- Footer -*/
+/*----------------- footer -*/
 
 .footer {
 	width: 100%;
