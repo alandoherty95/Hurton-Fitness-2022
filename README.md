@@ -9,15 +9,15 @@ The "Contact" page will include contact information for the fitness instructor s
 
 The "Events" page will include details of upcoming events such as bootcamps, group fitness sessions and swimming classes. it will also promote the availability of 1:1 Personal Training classes. 
 
-The "Gallery" page will include pictures of the trainer taking part in fitness events or races. It will also include pictures from a clothing line photo shoot. Additionally, there will also be different versions of the brand logo. 
+The "Gallery" page will include pictures of the trainer taking part in fitness events or races. It will also include pictures from a clothing line photoshoot. Additionally, there will also be different versions of the brand logo. 
 
 The footer will include links to the trainer's profile on social media platforms such as Facebook, Spotify and Instagram. It will also include a mailto: link for his email address and a link to download a PDF copy of the trainer's qualifications and references. 
 
 ## Motivation
 
-When I started preparing for my first milestone project, I wanted to choose an individual or organisation that would benefit greatly from having a website or online presence. My first project idea was about my local football club which I would have enjoyed creating and designing. However, my football club already has a functioning website and so, i decided to turn my attention elsewhere.
+When I started preparing for my first milestone project, I wanted to choose an individual or organisation that would benefit greatly from having a website or online presence. My first project idea was about my local football club which I would have enjoyed creating and designing. However, my football club already has a functioning website and so, I decided to turn my attention elsewhere.
 
-I decided on designing a website for an individual who is a professional fitness instructor and swimming teacher. Iain Hurton is long-time family friend who found a passion for health and fitness after finishing secondary school. Iain is now a fully qualified fitness instructor, personal trainer, swimming teacher and lifeguard. In recent years, I have been amazed and inspired by Iain’s work ethic and willingness to grow his fitness brand. Although I have not yet taken part, I have witnessed his group fitness classes in which he is very friendly, motivating and encouraging. Iain has shown his ability to adapt to unexpected situations. In recent months, Iain was forced to pivot to online classes while lockdown measures prevent groups from forming in large numbers and put a halt to swimming classes for the foreseeable future.
+I decided on designing a website for an individual who is a professional fitness instructor and swimming teacher. Iain Hurton is a long-time family friend who found a passion for health and fitness after finishing secondary school. Iain is now a fully qualified fitness instructor, personal trainer, swimming teacher and lifeguard. In recent years, I have been amazed and inspired by Iain’s work ethic and willingness to grow his fitness brand. Although I have not yet taken part, I have witnessed his group fitness classes in which he is very friendly, motivating and encouraging. Iain has shown his ability to adapt to unexpected situations. In recent months, Iain was forced to pivot to online classes while lockdown measures prevent groups from forming in large numbers and put a halt to swimming classes for the foreseeable future.
 
 I chose to create a website specifically for Iain after following his progress for a number of years. It was clear that he would gain some benefit from having an online presence other than social media platforms. Iain has already generated a strong following on social media platforms particularly Instagram and Facebook. He has gained a promising client base with men and women ranging from teenagers to retired people. For this reason, I thought he would greatly benefit from having a website which could be accessed by existing clients, potential clients and others wanting to learn more about Iain Hurton's lifestyle and his overall approach to fitness.
 
@@ -254,8 +254,56 @@ As a Frequent User, I want to learn more about the trainer, his background and q
 ## Known Bugs
 
 -   On some mobile devices the back-to-top button at the bottom of the page doesn't function correctly. 
-- The form is not set up correctly to record a response but it good for a demonstration of a feature which will be functioning soon.
+- The form is not set up correctly to record a response but it is good for a demonstration of a feature which will be functioning soon.
 -   Responsive design is not 100% complete and some flaws are still visible on smaller devices.
 - One side of the form is cut off on the Galaxy Fold.
 
+# Deployment
 
+### GitHub Pages
+	https://alandoherty95.github.io/MilestoneProjectOne/index.html
+    
+- Deployment was successfully bar some minor flaws which were to be expected.
+- The responsive navigation menu was not aligning on the right. Updates were made involving media query and its desired outcome was achieved.
+- The back-to-top button was not working before or after deployment on smaller devices but was functional on desktop devices.
+- The back-to-home button was functional on all devices.
+- All links internal and external were functioning correctly with minimal delay. 
+- The Gallery page was loading relatively quickly considering the vast amount of images.
+- The website was deployed a number of times to allow for adjustments and a rigorous assessment
+- 
+## Credits
+
+### Code
+
+-   [Bootstrap 4.5.3:](https://getbootstrap.com/docs/4.5/getting-started/introduction/) Bootstrap Library used throughout the project primarily to make the website responsive using the Bootstrap Grid System.
+    
+
+### Content
+
+-   All content was written by the developer.
+    
+-   Colour combinations for use on the website can be found [here](https://colorhunt.co/).
+    
+
+### Media
+
+-   Images of Iain taking part in the Spartan Obstacle Race were found on the [Spartan Race](https://www.spartanrace.uk/en/race/detail/4634/results) website.
+    
+-   Images of Iain modelling a line of OnexU clothing were supplied by Iain via email. The images were taken in January 2020 and are owned by Iain.
+    
+-   The background image used in the Favourite Smoothie Recipes was found at [Pixabay](https://pixabay.com/photos/jar-drink-smoothie-pink-strawberry-1610840/).
+    
+
+### Acknowledgements
+
+Iain Hurton for providing the inspiration to start this project. When I started work on my first milestone project, i wanted to choose a project that would benefit from having a website or an online presence. My first project idea was about my local football club which I would have enjoyed designing. However, my football club already has a functioning website.
+
+Therefore, I turned my attention to designing a website for a long-term family friend. Iain is a friend who found a passion for health and fitness after finishing secondary school. Iain is now a fully qualified fitness instructor and swimming teacher. In recent years, I have been amazed and inspired by Iain’s work ethic and willingness to grow his fitness brand. Although I have not yet taken part, I have witnessed his group fitness classes in which he is very friendly, motivating and encouraging. Iain has shown his ability to adapt to unexpected challenges. More recently, having set up online zoom classes.
+
+I chose to create a website specific for Iain after following his progress for a number of years. It was clear that he would gain some benefit from having an online presence. Iain has already generated a strong following on social media platforms particularly Instagram and Facebook. He has gained a promising client base with men and women ranging from teenagers to retired people. For this reason, I thought he would benefit from having a webpage which could be accessed by existing clients, potential clients and others.
+
+    
+- Tutor support at Code Institute for their support.
+- My mentor for providing some helpful direction.
+- The Slack community for being helpful and encouraging when called upon.
+- My friends, colleagues and family who involuntarily sat through demonstrations and feedback sessions.
