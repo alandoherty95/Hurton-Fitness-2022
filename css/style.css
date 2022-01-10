@@ -2,56 +2,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@900&display=swap');
 
 * {
-	margin: 0;
-	padding: 0;
-	border: 0;
-}
-hr {
-	height: 1px;
-	background-color: #ffffff;
-	border: none;
-}
-header {
-	width: 100%;
-}
-body {
-	font-family: 'Fjalla One', sans-serif;
-	color: #ffffff;
-	font-size: 16px;
-}
-h1 {
-	text-transform: uppercase;
-    font-family: 'Big Shoulders Stencil Display', cursive;
-	font-size: 68px;
-	letter-spacing: 4px;
-	color: #1985A1;
-}
-header h2, h3 {
-	text-transform: uppercase;
-	font-weight: bold;
-	color: #1985A1;
-	text-align: center;
-}
-h2, h3 {
-	text-transform: uppercase;
-	color: #ffffff;
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
-p {
-	font-size: 22px;
-    text-align: left;
+hr {
+    height: 1px;
+    background-color: #ffffff;
+    border: none;
 }
-/*-----------logo & nav bar-*/
+
+header {
+    width: 100%;
+}
+
+body {
+    font-family: 'Fjalla One', sans-serif;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Stencil Display', cursive;
+}
+
+h2,
+h3 {
+    color: #1985A1;
+}
+
+.logo-style {
+    color: #1985A1;
+    font-family: 'Courgette', cursive;
+}
+
+/*-----------logo & nav bar
 #logo {
-	text-decoration: none;
-	padding-left: 0.2em;
+    text-decoration: none;
+    padding-left: 0.2em;
 }
-/*-- inspiration from https://www.w3schools.com/css/css_rwd_mediaqueries.asp --*/
+
+/-- inspiration from https://www.w3schools.com/css/css_rwd_mediaqueries.asp --/
 @media only screen and (max-width: 600px) {
     h1 {
         font-size: 30px;
     }
-}    
+}
+
 @media only screen and (min-width: 600px) {
     h1 {
         font-size: 40px;
@@ -69,405 +66,464 @@ p {
         font-size: 60px;
     }
 }
+
 @media only screen and (min-width: 1200px) {
     h1 {
         font-size: 68px;
     }
 }
+
+-*/
+
 /*-- inspiration from https://getbootstrap.com/docs/4.0/components/navbar/ --*/
 .navbar-toggler-icon {
-	display: inline-block;
-	width: 1.5em;
-	height: 1.5em;
-	vertical-align: middle;
-	background: no-repeat center center;
-	background-size: 100% 100%;
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background: no-repeat center center;
+    background-size: 100% 100%;
 }
+
 .navbar-toggler {
-	padding: .25em .75em;
-	font-size: 1.25em;
-	line-height: 1;
-	background-color: transparent;
-	border: 0.1em solid transparent;
-	border-radius: .25em;
+    padding: .25em .75em;
+    font-size: 1.25em;
+    line-height: 1;
+    background-color: transparent;
+    border: 0.1em solid transparent;
+    border-radius: .25em;
 }
+
 .nav-link li {
-	list-style: none;
-	margin: 1.2em;
-	padding: 1em;
-	letter-spacing: 0.2em;
-	font-size: 1.3em;
-	list-style-type: none;
+    list-style: none;
+    margin: 1.2em;
+    padding: 1em;
+    letter-spacing: 0.2em;
+    font-size: 1.3em;
+    list-style-type: none;
 }
+
 .navbar-collapse {
-	float: right;
+    float: right;
 }
+
 /*----------- index.html -*/
 
 /*-------- top section -*/
 
 #top-section {
-	overflow: hidden;
-	position: relative;
-	height: 76em;
-	width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 76em;
+    width: 100%;
 }
+
 #top-section h2 {
-	letter-spacing: 0.2em;
-	color: #ffffff;
+    letter-spacing: 0.2em;
+    color: #ffffff;
     font-size: 1.8em;
 }
+
 #top-section h3 {
-	color: #1985A1;
+    color: #1985A1;
     font-size: 1.5em;
 }
+
 #top-section h4 {
-	color: #1985A1;
+    color: #1985A1;
     font-size: 1.5em;
     text-transform: none;
 }
+
 #home-cover-image {
-	height: 76em;
-	width: 100%;
-	background-image: url("https://alandoherty95.github.io/MilestoneProjectOne/assets/images/steps.jpg");
-	animation-name: hero-zoom;
-	animation-duration: 4s;
-	animation-fill-mode: forwards;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	position: relative;
+    width: 100%;
+    background-image: url("https://alandoherty95.github.io/MilestoneProjectOne/assets/images/iain-gloves.jpg");
+    animation-name: hero-zoom;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
 }
+
 @keyframes hero-zoom {
-	from {
-		transform: scale(1);
-	}
-	to {
-		transform: scale(1.08);
-	}
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.08);
+    }
 }
+
 /*---------------fitness instructor & swimming teacher -*/
 
 #home-cover-text1 {
-	padding: 1em;
+    padding: 1em;
     margin: 1.2em;
-	border-radius: 2.5em;
-	border: 0.6em solid #1985A1;
-	background-color: rgb(197, 195, 198, 0.8);
-	position: absolute;
-	top: 28em;
+    border-radius: 2.5em;
+    border: 0.6em solid #1985A1;
+    background-color: rgb(197, 195, 198, 0.8);
+    position: absolute;
+    top: 28em;
     right: 4em;
 }
 
 /*----- fitness bootcamp -*/
 
 #home-cover-text2 {
-	padding: 1em;
-	margin: 1.2em;
-	border: 0.6em solid #1985A1;
-	border-radius: 2.5em;
-	background-color: rgb(197, 195, 198, 0.8);
-	position: absolute;
-	bottom: 6em;
+    padding: 1em;
+    margin: 1.2em;
+    border: 0.6em solid #1985A1;
+    border-radius: 2.5em;
+    background-color: rgb(197, 195, 198, 0.8);
+    position: absolute;
+    bottom: 6em;
     left: 4em;
 }
+
 #home-cover-text2 a {
-	text-transform: lowercase;
-	color: #ffffff;
+    text-transform: lowercase;
+    color: #ffffff;
 }
+
 #home-cover-text2 a:hover {
-	color: #1985A1;
-	text-decoration: none;
+    color: #1985A1;
+    text-decoration: none;
 }
+
 /*---------------------- biography -*/
 
 #bio {
-	background-color: #1985A1;
-	height: auto;
+    background-color: #1985A1;
+    height: auto;
 }
+
 #bio h1 {
-	text-align: center;
-	padding: 0.2em;
+    text-align: center;
+    padding: 0.2em;
     font-size: 4em;
-	letter-spacing: 0.1em;
-	color: #ffffff;
+    letter-spacing: 0.1em;
+    color: #ffffff;
 }
+
 #bio h2 {
-	padding: 0.2em;
+    padding: 0.2em;
     font-size: 2em;
     text-align: left;
-    border:0.1em solid#ffffff;
+    border: 0.1em solid#ffffff;
 }
+
 .container-bio {
-	padding: 1em;
-	margin: 0.4em;
+    padding: 1em;
+    margin: 0.4em;
 }
+
 /*------- client testimonials -*/
 
 #testimonials {
-    background-color:#4C5C68;
-	height: auto;
+    background-color: #4C5C68;
+    height: auto;
 }
+
 #testimonials h1 {
-	text-align: center;
-	padding: 0.2em;
+    text-align: center;
+    padding: 0.2em;
     font-size: 3em;
-	letter-spacing: 0.1em;
-	color: #ffffff;
+    letter-spacing: 0.1em;
+    color: #ffffff;
 }
+
 #testimonials h3 {
-	font-size: 2em;
-	text-transform: none;
-	font-weight: bold;
-	padding: 0.2em;
+    font-size: 2em;
+    text-transform: none;
+    font-weight: bold;
+    padding: 0.2em;
 }
+
 .row .col-md-6 p {
-	font-size: 1.4em;
-	border: 0.1em solid #ffffff;
-	padding: 0.3em;
+    font-size: 1.4em;
+    border: 0.1em solid #ffffff;
+    padding: 0.3em;
     margin: 0.2em;
 }
+
 /*------------------events section-*/
 
 #home-events {
-	width: 100%;
-	height: auto;
-	background-color: #FFEEAD;
+    width: 100%;
+    height: auto;
+    background-color: #FFEEAD;
 }
+
 #home-events h1 {
-    color:#4C5C68;
+    color: #4C5C68;
     text-align: center;
-	padding: 0.2em;
+    padding: 0.2em;
     font-size: 3em;
-	letter-spacing: 0.1em;
+    letter-spacing: 0.1em;
 }
+
 .next-events {
-	background-image: url("https://alandoherty95.github.io/MilestoneProjectOne/assets/images/spartan18.jpg");
-	border-radius: 0.65em;
+    background-image: url("https://alandoherty95.github.io/MilestoneProjectOne/assets/images/spartan18.jpg");
+    border-radius: 0.65em;
     padding: 0.4em;
-	width: 100%;
-	height: 30em;
-	background-size: cover;
-	display: inline-block;
-	background-position: center;
-	overflow: hidden;
+    width: 100%;
+    height: 30em;
+    background-size: cover;
+    display: inline-block;
+    background-position: center;
+    overflow: hidden;
 }
-.next-events h2, h3 {
-	font-size: 2.2em;
-	color: #ffffff;
-	padding: 0.2em;
-	text-align: left;
+
+.next-events h2,
+h3 {
+    font-size: 2.2em;
+    color: #ffffff;
+    padding: 0.2em;
+    text-align: left;
 }
+
 .next-events a {
-	text-decoration: none;
-	color: #ffffff;
+    text-decoration: none;
+    color: #ffffff;
 }
+
 .next-events a:hover {
-	color:#DC143C;
+    color: #DC143C;
 }
+
 /*-------------- smoothie recipes -*/
 
 #smoothie-recipes {
-	width: 100%;
-	overflow: hidden;
-	position: relative;
-	background-color: #75BBA7;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background-color: #75BBA7;
     background-image: url("https://alandoherty95.github.io/MilestoneProjectOne/assets/images/fruit-smoothie.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	height: 120em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 120em;
 }
+
 #smoothie-recipes h1 {
-	font-size: 3em;
-	color:#ffffff;
+    font-size: 3em;
+    color: #ffffff;
     text-align: center;
-	padding: 0.2em;
-	letter-spacing: 0.1em;
+    padding: 0.2em;
+    letter-spacing: 0.1em;
     background-color: #75BBA7;
 }
+
 #smoothie-recipes h2 {
-	color: #ffffff;
-	font-size: 2.4em;
-	letter-spacing: 0.1em;
+    color: #ffffff;
+    font-size: 2.4em;
+    letter-spacing: 0.1em;
 }
+
 #smoothie-recipes .row {
-	height: 120em;
-	padding: 0.5em;
-	margin: 0.1em;
+    height: 120em;
+    padding: 0.5em;
+    margin: 0.1em;
 }
+
 #smoothie-recipes .row li {
-	text-decoration-style: solid;
-	list-style-type: none;
-	font-size: 1.8em;
+    text-decoration-style: solid;
+    list-style-type: none;
+    font-size: 1.8em;
     line-height: 1.5em;
-	text-align: left;
+    text-align: left;
 }
+
 #recipe-one-list {
     background-color: rgb(117, 187, 167, 0.85);
     border-radius: 2.5em;
     padding: 1em;
-	margin: 0.5em;
+    margin: 0.5em;
 }
+
 #recipe-two-list {
     background-color: rgb(117, 187, 167, 0.85);
     border-radius: 2.5em;
     padding: 1em;
-	margin: 0.5em;
+    margin: 0.5em;
 }
+
 /*----------------- contact.html -*/
 
 #contact-top-section {
-	overflow: hidden;
-	position: relative;
-	height: 120em;
-	width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 120em;
+    width: 100%;
 }
+
 #contact-cover-image {
-	height: 120em;
-	width: 100%;
-	background-image: url("https://alandoherty95.github.io/MilestoneProjectOne/assets/images/steps10.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	position: absolute;
+    height: 120em;
+    width: 100%;
+    background-image: url("https://alandoherty95.github.io/MilestoneProjectOne/assets/images/steps10.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
 }
+
 #cover-text3 {
-	padding: 1em;
-	border-radius: 2.5em;
-	border: 0.4em solid #1985A1;
-	font-size: 1.8em;
-	background-color: rgb(197, 195, 198, 0.65);
-	position: absolute;
-	bottom: 15em;
-	margin: 1em;
+    padding: 1em;
+    border-radius: 2.5em;
+    border: 0.4em solid #1985A1;
+    font-size: 1.8em;
+    background-color: rgb(197, 195, 198, 0.65);
+    position: absolute;
+    bottom: 15em;
+    margin: 1em;
 }
+
 #cover-text3 li {
-	list-style-type: none;
+    list-style-type: none;
 }
+
 #cover-text4 {
-	padding: 1em;
-	border-radius: 2.5em;
-	border: 0.6em solid #1985A1;
-	background-color: rgb(197, 195, 198, 0.65);
-	position: absolute;
-	bottom: 10em;
-	margin: 1em;
+    padding: 1em;
+    border-radius: 2.5em;
+    border: 0.6em solid #1985A1;
+    background-color: rgb(197, 195, 198, 0.65);
+    position: absolute;
+    bottom: 10em;
+    margin: 1em;
 }
+
 #cover-text4 h2 {
-	text-transform: none;
+    text-transform: none;
 }
+
 /*--------------- Form Section -*/
 
 .form-section {
-	clear: both;
-	background-size: cover;
-	background-position: center;
-	color: transparent;
+    clear: both;
+    background-size: cover;
+    background-position: center;
+    color: transparent;
 }
 
 .form-section h1 {
-    color:#ffffff;
+    color: #ffffff;
     text-align: left;
     font-size: 2.4em;
-	letter-spacing: 0.1em;
+    letter-spacing: 0.1em;
 }
+
 #form {
-	width: 24em;
-	height: 20em;
-	padding: 4em;
-	text-align: left;
-	box-sizing: content-box;
-	color: #ffffff;
+    width: 24em;
+    height: 20em;
+    padding: 4em;
+    text-align: left;
+    box-sizing: content-box;
+    color: #ffffff;
 }
+
 input[type=text] {
-	width: 60%;
-	color: #ffffff;
-	padding: 1em;
-	background-color: transparent;
-	margin: 0.5em;
-	box-sizing: border-box;
+    width: 60%;
+    color: #ffffff;
+    padding: 1em;
+    background-color: transparent;
+    margin: 0.5em;
+    box-sizing: border-box;
 }
+
 input {
-	width: 60%;
-	color: #ffffff;
-	padding: 1em;
-	background-color: transparent;
-	margin: 0.5em;
+    width: 60%;
+    color: #ffffff;
+    padding: 1em;
+    background-color: transparent;
+    margin: 0.5em;
     font-size: 1em;
-	box-sizing: border-box;
-	border: 0.2em solid #1985A1;
-}
-textarea {
-	padding: 1em;
-	background-color: transparent;
-	margin: 0.5em;
-	color: #ffffff;
-	box-sizing: border-box;
-	border: 0.2em solid #1985A1;
-}
-::placeholder {
-	color: #ffffff;
-	font-size: 1.6em;
-	opacity: 1;
-	text-align: left;
-}
-.btn {
-	border-radius: 1em;
-	font-size: 1.6em;
-	padding: 0.2em;
-	background-color: transparent;
+    box-sizing: border-box;
     border: 0.2em solid #1985A1;
-	margin: 0.2em;
 }
+
+textarea {
+    padding: 1em;
+    background-color: transparent;
+    margin: 0.5em;
+    color: #ffffff;
+    box-sizing: border-box;
+    border: 0.2em solid #1985A1;
+}
+
+::placeholder {
+    color: #ffffff;
+    font-size: 1.6em;
+    opacity: 1;
+    text-align: left;
+}
+
+.btn {
+    border-radius: 1em;
+    font-size: 1.6em;
+    padding: 0.2em;
+    background-color: transparent;
+    border: 0.2em solid #1985A1;
+    margin: 0.2em;
+}
+
 .btn ::placeholder {
-	color: #ffffff;
-	margin: 1em;
-	font-size: 1.4em;
-	opacity: 1;
+    color: #ffffff;
+    margin: 1em;
+    font-size: 1.4em;
+    opacity: 1;
 }
+
 /*----------------------- end of form -*/
 /*----------- 3 reasons for exercising -*/
 
 #exercise-reasons {
-	background-color: #4C5C68;
-	height: auto;
-	width: 100%;
+    background-color: #4C5C68;
+    height: auto;
+    width: 100%;
 }
+
 #exercise-reasons h1 {
-	font-size: 3em;
-	color:#ffffff;
+    font-size: 3em;
+    color: #ffffff;
     text-align: center;
-	padding: 0.2em;
-	letter-spacing: 0.1em;
+    padding: 0.2em;
+    letter-spacing: 0.1em;
 }
+
 #exercise-reasons .col-sm {
-	background-color: #ffffff;
-	border-radius: 1em;
-	text-align: center;
+    background-color: #ffffff;
+    border-radius: 1em;
+    text-align: center;
     margin: 2em;
-	padding: 0.5em;
+    padding: 0.5em;
 }
+
 #exercise-reasons .col-sm h2 {
-	text-align: center;
+    text-align: center;
     color: #4C5C68;
     margin: 0.5em;
-	padding: 0.5em;
+    padding: 0.5em;
     display: block;
     letter-spacing: 0.2em;
     font-size: 2em;
 }
+
 #exercise-reasons .col-sm p {
-	color:#4C5C68;
+    color: #4C5C68;
     font-size: 1.6em;
     text-align: center;
 }
+
 #exercise-reasons .col-sm i {
-	align-items: center;
-	border-radius: 50%;
-	font-size: 2em;
-	display: block;
-	text-align: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 2em;
+    display: block;
+    text-align: center;
 }
+
 /*---------------------- gallery.html -*/
 #race-images-title h2 {
     text-align: left;
@@ -477,155 +533,186 @@ textarea {
     letter-spacing: 0.2em;
     font-size: 2em;
 }
+
 .modal button.close {
-	right: 0;
-	outline: 0;
+    right: 0;
+    outline: 0;
 }
+
 #gallery-lightbox .row .col-6 {
     margin: 0.2em;
 }
+
 #gallery-lightbox img {
-	height: 30em;
-	object-fit: contain;
-	cursor: pointer;
+    height: 30em;
+    object-fit: contain;
+    cursor: pointer;
 }
+
 #gallery-lightbox img:hover {
-	opacity: 0.9;
-	transition: 0.5s ease-out;
+    opacity: 0.9;
+    transition: 0.5s ease-out;
 }
+
 #photo-shoot-title h2 {
     text-align: left;
     color: #4C5C68;
     margin: 0.2em;
-	padding-left: 0.5em;
+    padding-left: 0.5em;
     letter-spacing: 0.2em;
     font-size: 2em;
 }
+
 #hurton-logo-title h2 {
     text-align: left;
     color: #4C5C68;
     margin: 0.2em;
-	padding-left: 0.5em;
+    padding-left: 0.5em;
     letter-spacing: 0.2em;
     font-size: 2em;
 }
+
 /*---------------------- events.html -*/
 
 #events-top-section {
-	overflow: hidden;
-	position: relative;
-	height: auto;
-	width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: auto;
+    width: 100%;
 }
+
 #events-cover-image {
-	width: 100%;
-	height: 150em;
-	background-image: url("https://alandoherty95.github.io/MilestoneProjectOne/assets/images/steps5.jpg");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	position: relative;
+    width: 100%;
+    height: 150em;
+    background-image: url("https://alandoherty95.github.io/MilestoneProjectOne/assets/images/steps5.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
 }
+
 #events-cover-image {
-	margin: 0.2em;
-	position: relative;
+    margin: 0.2em;
+    position: relative;
 }
+
 #events-cover-image h2 {
-	color: #ffffff;
-	font-size: 2.5em;
-	padding: 2em 2em;
-	letter-spacing: 0.1em;
+    color: #ffffff;
+    font-size: 2.5em;
+    padding: 2em 2em;
+    letter-spacing: 0.1em;
     text-align: center;
 }
+
 #events-cover-image h3 {
-	font-size: 2.6em;
-	color: #ffffff;
-	padding: 0.3em;
+    font-size: 2.6em;
+    color: #ffffff;
+    padding: 0.3em;
     text-align: center;
 }
+
 #events-cover-image h4 {
-	color: #1985A1;
-	text-transform: uppercase;
-	font-size: 2em;
+    color: #1985A1;
+    text-transform: uppercase;
+    font-size: 2em;
     text-align: center;
 }
+
 #events-cover-image p {
-	color: #ffffff;
-	font-size: 1.6em;
+    color: #ffffff;
+    font-size: 1.6em;
     margin: 0.1em;
     text-align: center;
 }
+
 #events-cover-image .col-md {
-	margin: 1.5em;
-	border-radius: 1em;
-	border: 0.5em solid #1985A1;
-	color: #1985A1;
+    margin: 1.5em;
+    border-radius: 1em;
+    border: 0.5em solid #1985A1;
+    color: #1985A1;
     overflow: hidden;
-	background-color: rgb(197, 195, 198, 0.8);
+    background-color: rgb(197, 195, 198, 0.8);
 }
+
 /*----------------- footer -*/
 
 .footer {
-	width: 100%;
-	padding-bottom: 1em;
+    width: 100%;
+    padding-bottom: 1em;
 }
+
 .row {
-	padding-bottom: 1em;
-	text-align: center;
+    padding-bottom: 1em;
+    text-align: center;
 }
+
 .col-sm-8 h2 {
-	padding-top: 1em;
-	font-size: 2em;
-	color: #1985A1;
+    padding-top: 1em;
+    font-size: 2em;
+    color: #1985A1;
 }
+
 .col-sm-8 h3 {
-	color: #1985A1;
-	font-size: 1em;
+    color: #1985A1;
+    font-size: 1em;
 }
+
 #social-links {
-	font-size: 2em;
-	padding: 0.25em;
-	text-decoration: none;
+    font-size: 2em;
+    padding: 0.25em;
+    text-decoration: none;
 }
+
 #social-links li {
-	padding: 1em;
+    padding: 1em;
 }
+
 #social-links a {
-	text-decoration: none;
-	color: #1985A1;
+    text-decoration: none;
+    color: #1985A1;
 }
+
 #social-links li a:visited {
-	text-decoration: none;
+    text-decoration: none;
 }
+
 .col-sm-4 {
-	text-decoration: none;
-	text-align: center;
+    text-decoration: none;
+    text-align: center;
 }
+
 .col-sm-4 h4 {
-	color: #1985A1;
-	font-size: 1.2em;
-	padding: 0.5em;
+    color: #1985A1;
+    font-size: 1.2em;
+    padding: 0.5em;
 }
+
 .col-sm-4 a {
-	border: 0.2em solid #1985A1;
-	border-radius: 1em;
-	padding: 0.25em;
-	margin-top: 1em;
-	color: #1985A1;
+    border: 0.2em solid #1985A1;
+    border-radius: 1em;
+    padding: 0.25em;
+    margin-top: 1em;
+    color: #1985A1;
 }
-.back-to-top, .back-to-home {
-	margin: 1em;
-	border: 0.25em solid #1985A1;
-	border-radius: 1em;
-	padding: 1em;
-	color: #1985A1;
+
+.back-to-top,
+.back-to-home {
+    margin: 1em;
+    border: 0.25em solid #1985A1;
+    border-radius: 1em;
+    padding: 1em;
+    color: #1985A1;
 }
-.back-to-top a, .back-to-home a {
-	border: 0.2em solid #1985A1;
-	border-radius: 1em;
+
+.back-to-top a,
+.back-to-home a {
+    border: 0.2em solid #1985A1;
+    border-radius: 1em;
 }
-.back-to-top a:hover, .back-to-home a:hover {
-	border: 0.2em solid #1985A1;
-	border-radius: 1em;
-	text-decoration: none;
+
+.back-to-top a:hover,
+.back-to-home a:hover {
+    border: 0.2em solid #1985A1;
+    border-radius: 1em;
+    text-decoration: none;
 }
