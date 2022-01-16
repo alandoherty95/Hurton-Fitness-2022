@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text&family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text&family=Oswald&display=swap');
 
 * {
     margin: 0;
@@ -18,12 +18,12 @@ header {
 }
 
 body {
-    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 h1 {
     text-transform: uppercase;
-    font-family: 'Big Shoulders Stencil Display', cursive;
+    font-family: 'Big Shoulders Stencil Text', cursive;
 }
 
 h2,
@@ -33,7 +33,7 @@ h3 {
 
 .logo-style {
     color: #1985A1;
-    font-family: 'Courgette', cursive;
+    font-family: 'Big Shoulders Stencil Text', cursive;
 }
 
 /*-----------logo & nav bar --*/
