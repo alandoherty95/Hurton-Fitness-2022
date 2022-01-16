@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text&family=Oswald&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text&family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text&family=Fjalla+One&family=Oswald&display=swap');
 
 * {
     margin: 0;
@@ -24,17 +23,38 @@ body {
 h1 {
     text-transform: uppercase;
     font-family: 'Big Shoulders Stencil Text', cursive;
+    font-size: 4em;
 }
 
 h2,
 h3 {
     color: #1985A1;
+    font-size: 2em;
 }
+
+p {
+    font-size: 1.2em;
+    text-align: left;
+}
+
 
 .logo-style {
     color: #1985A1;
     font-family: 'Big Shoulders Stencil Text', cursive;
 }
+
+.title-style {
+    color: #1985A1;
+    font-family: 'Fjalla One', sans-serif;
+    text-align: center;
+}
+
+.heading-style {
+    color: #1985A1;
+    font-family: 'Fjalla One', sans-serif;
+    text-align: left;
+}
+
 
 /*-----------logo & nav bar --*/
 #logo {
@@ -120,7 +140,7 @@ h3 {
 #top-section {
     overflow: hidden;
     position: relative;
-    height: 76em;
+    height: auto;
     width: 100%;
 }
 
@@ -135,15 +155,10 @@ h3 {
     font-size: 1.5em;
 }
 
-#top-section h4 {
-    color: #1985A1;
-    font-size: 1.5em;
-    text-transform: none;
-}
-
 #home-cover-image {
     width: 100%;
-    background-image: url("https://github.com/alandoherty95/Hurton-Fitness-2022/blob/master/assets/images/iain-gloves.jpg?raw=true");
+    height: 50em;
+    background-image: url("https://raw.githubusercontent.com/alandoherty95/Hurton-Fitness-2022/master/assets/images/spartan6.jpg");
     animation-name: hero-zoom;
     animation-duration: 4s;
     animation-fill-mode: forwards;
@@ -176,26 +191,12 @@ h3 {
     right: 4em;
 }
 
-/*----- fitness bootcamp -*/
-
-#home-cover-text2 {
-    padding: 1em;
-    margin: 1.2em;
-    border: 0.6em solid #1985A1;
-    border-radius: 2.5em;
-    background-color: rgb(197, 195, 198, 0.8);
-    position: absolute;
-    bottom: 6em;
-    left: 4em;
-}
-
-#home-cover-text2 a {
+#home-cover-text1 a {
     text-transform: lowercase;
-    color: #ffffff;
+    color: #1985A1;
 }
 
-#home-cover-text2 a:hover {
-    color: #1985A1;
+#home-cover-text1 a:hover {
     text-decoration: none;
 }
 
@@ -283,209 +284,23 @@ h3 {
     overflow: hidden;
 }
 
-.next-events h2,
-h3 {
-    font-size: 2.2em;
-    color: #ffffff;
-    padding: 0.2em;
-    text-align: left;
-}
-
-.next-events a {
-    text-decoration: none;
-    color: #ffffff;
-}
-
-.next-events a:hover {
-    color: #DC143C;
-}
-
 /*-------------- smoothie recipes -*/
 
-#smoothie-recipes {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-    background-color: #75BBA7;
-    background-image: url("https://alandoherty95.github.io/MilestoneProjectOne/assets/images/fruit-smoothie.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 120em;
-}
-
-#smoothie-recipes h1 {
-    font-size: 3em;
-    color: #ffffff;
-    text-align: center;
-    padding: 0.2em;
-    letter-spacing: 0.1em;
-    background-color: #75BBA7;
-}
-
-#smoothie-recipes h2 {
-    color: #ffffff;
-    font-size: 2.4em;
-    letter-spacing: 0.1em;
-}
-
-#smoothie-recipes .row {
-    height: 120em;
-    padding: 0.5em;
-    margin: 0.1em;
-}
-
-#smoothie-recipes .row li {
-    text-decoration-style: solid;
-    list-style-type: none;
-    font-size: 1.8em;
-    line-height: 1.5em;
+.recipe-section ul {
+    list-style-type: circle;
     text-align: left;
-}
-
-#recipe-one-list {
-    background-color: rgb(117, 187, 167, 0.85);
-    border-radius: 2.5em;
-    padding: 1em;
-    margin: 0.5em;
-}
-
-#recipe-two-list {
-    background-color: rgb(117, 187, 167, 0.85);
-    border-radius: 2.5em;
-    padding: 1em;
-    margin: 0.5em;
-}
-
-/*----------------- contact.html -*/
-
-#contact-top-section {
-    overflow: hidden;
-    position: relative;
-    height: 120em;
-    width: 100%;
-}
-
-#contact-cover-image {
-    height: 120em;
-    width: 100%;
-    background-image: url("https://alandoherty95.github.io/MilestoneProjectOne/assets/images/steps10.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-}
-
-#cover-text3 {
-    padding: 1em;
-    border-radius: 2.5em;
-    border: 0.4em solid #1985A1;
-    font-size: 1.8em;
-    background-color: rgb(197, 195, 198, 0.65);
-    position: absolute;
-    bottom: 15em;
     margin: 1em;
 }
 
-#cover-text3 li {
-    list-style-type: none;
-}
-
-#cover-text4 {
-    padding: 1em;
-    border-radius: 2.5em;
-    border: 0.6em solid #1985A1;
-    background-color: rgb(197, 195, 198, 0.65);
-    position: absolute;
-    bottom: 10em;
+.recipe-section li {
     margin: 1em;
+    font-size: 1.2em;
 }
 
-#cover-text4 h2 {
-    text-transform: none;
-}
-
-/*--------------- Form Section -*/
-
-.form-section {
-    clear: both;
-    background-size: cover;
-    background-position: center;
-    color: transparent;
-}
-
-.form-section h1 {
-    color: #ffffff;
-    text-align: left;
-    font-size: 2.4em;
-    letter-spacing: 0.1em;
-}
-
-#form {
-    width: 24em;
-    height: 20em;
-    padding: 4em;
-    text-align: left;
-    box-sizing: content-box;
-    color: #ffffff;
-}
-
-input[type=text] {
-    width: 60%;
-    color: #ffffff;
-    padding: 1em;
-    background-color: transparent;
-    margin: 0.5em;
-    box-sizing: border-box;
-}
-
-input {
-    width: 60%;
-    color: #ffffff;
-    padding: 1em;
-    background-color: transparent;
-    margin: 0.5em;
-    font-size: 1em;
-    box-sizing: border-box;
-    border: 0.2em solid #1985A1;
-}
-
-textarea {
-    padding: 1em;
-    background-color: transparent;
-    margin: 0.5em;
-    color: #ffffff;
-    box-sizing: border-box;
-    border: 0.2em solid #1985A1;
-}
-
-::placeholder {
-    color: #ffffff;
-    font-size: 1.6em;
-    opacity: 1;
-    text-align: left;
-}
-
-.btn {
-    border-radius: 1em;
-    font-size: 1.6em;
-    padding: 0.2em;
-    background-color: transparent;
-    border: 0.2em solid #1985A1;
-    margin: 0.2em;
-}
-
-.btn ::placeholder {
-    color: #ffffff;
-    margin: 1em;
-    font-size: 1.4em;
-    opacity: 1;
-}
-
-/*----------------------- end of form -*/
 /*----------- 3 reasons for exercising -*/
 
 #exercise-reasons {
-    background-color: #4C5C68;
+    background-color: #1985A1;
     height: auto;
     width: 100%;
 }
@@ -508,7 +323,6 @@ textarea {
 
 #exercise-reasons .col-sm h2 {
     text-align: center;
-    color: #4C5C68;
     margin: 0.5em;
     padding: 0.5em;
     display: block;
@@ -517,7 +331,6 @@ textarea {
 }
 
 #exercise-reasons .col-sm p {
-    color: #4C5C68;
     font-size: 1.6em;
     text-align: center;
 }
@@ -528,54 +341,6 @@ textarea {
     font-size: 2em;
     display: block;
     text-align: center;
-}
-
-/*---------------------- gallery.html -*/
-#race-images-title h2 {
-    text-align: left;
-    color: #4C5C68;
-    margin: 0.2em;
-    padding-left: 0.5em;
-    letter-spacing: 0.2em;
-    font-size: 2em;
-}
-
-.modal button.close {
-    right: 0;
-    outline: 0;
-}
-
-#gallery-lightbox .row .col-6 {
-    margin: 0.2em;
-}
-
-#gallery-lightbox img {
-    height: 30em;
-    object-fit: contain;
-    cursor: pointer;
-}
-
-#gallery-lightbox img:hover {
-    opacity: 0.9;
-    transition: 0.5s ease-out;
-}
-
-#photo-shoot-title h2 {
-    text-align: left;
-    color: #4C5C68;
-    margin: 0.2em;
-    padding-left: 0.5em;
-    letter-spacing: 0.2em;
-    font-size: 2em;
-}
-
-#hurton-logo-title h2 {
-    text-align: left;
-    color: #4C5C68;
-    margin: 0.2em;
-    padding-left: 0.5em;
-    letter-spacing: 0.2em;
-    font-size: 2em;
 }
 
 /*---------------------- events.html -*/
@@ -655,12 +420,10 @@ textarea {
 .col-sm-8 h2 {
     padding-top: 1em;
     font-size: 2em;
-    color: #1985A1;
 }
 
 .col-sm-8 h3 {
-    color: #1985A1;
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
 #social-links {
@@ -688,14 +451,11 @@ textarea {
 }
 
 .col-sm-4 h4 {
-    color: #1985A1;
     font-size: 1.2em;
     padding: 0.5em;
 }
 
 .col-sm-4 a {
-    border: 0.2em solid #1985A1;
-    border-radius: 1em;
     padding: 0.25em;
     margin-top: 1em;
     color: #1985A1;
@@ -704,21 +464,11 @@ textarea {
 .back-to-top,
 .back-to-home {
     margin: 1em;
-    border: 0.25em solid #1985A1;
-    border-radius: 1em;
     padding: 1em;
     color: #1985A1;
 }
 
-.back-to-top a,
-.back-to-home a {
-    border: 0.2em solid #1985A1;
-    border-radius: 1em;
-}
-
 .back-to-top a:hover,
 .back-to-home a:hover {
-    border: 0.2em solid #1985A1;
-    border-radius: 1em;
     text-decoration: none;
 }
