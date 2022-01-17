@@ -1,5 +1,6 @@
 # Hurton Fitness
 
+python3 -m http.server
 
 Welcome to the README.md file for the Hurton Fitness website. I am building a static front-end website for an individual using HTML, CSS and Bootstrap. The individual is a professional fitness instructor and swimming teacher. The main purpose of the website is to promote the Hurton Fitness brand in the interest of attracting new clients and retaining existing clients. It will be accessed by existing clients, potential clients and others wanting to learn more about Iain Hurton's lifestyle and his overall approach to fitness. The website will include different navigation pages for contact information, a gallery and upcoming events respectively.
 
