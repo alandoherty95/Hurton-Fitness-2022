@@ -55,6 +55,10 @@ p {
     text-align: left;
 }
 
+.hvr-underline-from-left :hover {
+    color: black;
+}
+
 
 /*-----------logo & nav bar --*/
 #logo {
