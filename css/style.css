@@ -26,10 +26,39 @@ h1 {
     font-size: 4em;
 }
 
-h2,
+h2 {
+    color: #1985A1;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 2.4em;
+    margin: 1em;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
 h3 {
     color: #1985A1;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 2.2em;
+    text-align: left;
+}
+
+h4 {
+    color: #1985A1;
+    font-family: 'Fjalla One', sans-serif;
     font-size: 2em;
+}
+
+h5 {
+    color: #1985A1;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1.5em;
+}
+
+h6 {
+    color: black;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1em;
 }
 
 p {
@@ -37,33 +66,7 @@ p {
     text-align: left;
 }
 
-
-.logo-style {
-    color: #1985A1;
-    font-family: 'Big Shoulders Stencil Text', cursive;
-}
-
-.title-style {
-    color: #1985A1;
-    font-family: 'Fjalla One', sans-serif;
-    text-align: center;
-}
-
-
-.big-heading-style {
-    color: black;
-    font-family: 'Fjalla One', sans-serif;
-    text-align: left;
-}
-
-
-.heading-style {
-    color: #1985A1;
-    font-family: 'Fjalla One', sans-serif;
-    text-align: left;
-}
-
-.hvr-underline-from-left :hover {
+.hvr-grow :hover {
     color: black;
 }
 
@@ -71,8 +74,13 @@ p {
 /*-----------logo & nav bar --*/
 #logo {
     text-decoration: none;
+    color: #1985A1;
     padding-left: 0.2em;
     padding-right: 2em;
+}
+
+#logo a {
+    text-decoration: none;
 }
 
 #logo a:link,
@@ -150,7 +158,7 @@ p {
 
 /*-------- top section -*/
 
-#top-section {
+#cover-section {
     overflow: hidden;
     position: relative;
     height: auto;
@@ -162,6 +170,7 @@ p {
 .call-to-action {
     background: #1985A1;
     color: #ffffff;
+    border-radius: 30px;
     padding: 0.5em;
     font-size: 1.5em;
 }
@@ -173,18 +182,7 @@ p {
     color: #1985A1;
 }
 
-#top-section h2 {
-    letter-spacing: 0.2em;
-    color: #ffffff;
-    font-size: 1.8em;
-}
-
-#top-section h3 {
-    color: #1985A1;
-    font-size: 1.5em;
-}
-
-#home-cover-image {
+#cover-image {
     width: 100%;
     height: 50em;
     background-image: url("https://raw.githubusercontent.com/alandoherty95/Hurton-Fitness-2022/master/assets/images/spartan6.jpg");
@@ -207,42 +205,35 @@ p {
     }
 }
 
-/*---------------fitness instructor & swimming teacher -*/
+/*--------------- cover section -*/
 
-#home-cover-text1 {
+#cover-text {
     padding: 1em;
     margin: 1.2em;
-    border-radius: 2.5em;
+    border-radius: 30px;
     border: 0.6em solid #1985A1;
     background-color: rgb(197, 195, 198, 0.8);
     position: absolute;
-    top: 26em;
+    top: 22em;
     right: 4em;
 }
 
-/*---------------------- biography -*/
+/*---------------------- about section -*/
 
 
-/*------- client testimonials -*/
+/*------- testimonial section -*/
 
-#testimonials {
-    background-color: #4C5C68;
+.testimonial-section {
+    background-color: #1985A1;
+    color: white;
     height: auto;
+    padding: 1em;
 }
 
-#testimonials h1 {
-    text-align: center;
-    padding: 0.2em;
-    font-size: 3em;
-    letter-spacing: 0.1em;
-    color: #ffffff;
-}
 
-#testimonials h3 {
-    font-size: 2em;
-    text-transform: none;
-    font-weight: bold;
-    padding: 0.2em;
+.testimonial-section h2,
+.testimonial-section h3 {
+    color: white;
 }
 
 .row .col-md-6 p {
@@ -254,19 +245,6 @@ p {
 
 /*------------------events section-*/
 
-#home-events {
-    width: 100%;
-    height: auto;
-    background-color: #FFEEAD;
-}
-
-#home-events h1 {
-    color: #4C5C68;
-    text-align: center;
-    padding: 0.2em;
-    font-size: 3em;
-    letter-spacing: 0.1em;
-}
 
 /*-------------- smoothie recipes -*/
 
@@ -283,49 +261,6 @@ p {
 
 /*----------- 3 reasons for exercising -*/
 
-#exercise-reasons {
-    background-color: #1985A1;
-    height: auto;
-    width: 100%;
-}
-
-#exercise-reasons h1 {
-    font-size: 3em;
-    color: #ffffff;
-    text-align: center;
-    padding: 0.2em;
-    letter-spacing: 0.1em;
-}
-
-#exercise-reasons .col-sm {
-    background-color: #ffffff;
-    border-radius: 1em;
-    text-align: center;
-    margin: 2em;
-    padding: 0.5em;
-}
-
-#exercise-reasons .col-sm h2 {
-    text-align: center;
-    margin: 0.5em;
-    padding: 0.5em;
-    display: block;
-    letter-spacing: 0.2em;
-    font-size: 2em;
-}
-
-#exercise-reasons .col-sm p {
-    font-size: 1.6em;
-    text-align: center;
-}
-
-#exercise-reasons .col-sm i {
-    align-items: center;
-    border-radius: 50%;
-    font-size: 2em;
-    display: block;
-    text-align: center;
-}
 
 /*---------------------- events.html -*/
 
@@ -334,59 +269,6 @@ p {
     position: relative;
     height: auto;
     width: 100%;
-}
-
-#events-cover-image {
-    width: 100%;
-    height: 150em;
-    background-image: url("https://alandoherty95.github.io/MilestoneProjectOne/assets/images/steps5.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-}
-
-#events-cover-image {
-    margin: 0.2em;
-    position: relative;
-}
-
-#events-cover-image h2 {
-    color: #ffffff;
-    font-size: 2.5em;
-    padding: 2em 2em;
-    letter-spacing: 0.1em;
-    text-align: center;
-}
-
-#events-cover-image h3 {
-    font-size: 2.6em;
-    color: #ffffff;
-    padding: 0.3em;
-    text-align: center;
-}
-
-#events-cover-image h4 {
-    color: #1985A1;
-    text-transform: uppercase;
-    font-size: 2em;
-    text-align: center;
-}
-
-#events-cover-image p {
-    color: #ffffff;
-    font-size: 1.6em;
-    margin: 0.1em;
-    text-align: center;
-}
-
-#events-cover-image .col-md {
-    margin: 1.5em;
-    border-radius: 1em;
-    border: 0.5em solid #1985A1;
-    color: #1985A1;
-    overflow: hidden;
-    background-color: rgb(197, 195, 198, 0.8);
 }
 
 /*----------------- footer -*/
@@ -410,18 +292,23 @@ p {
     font-size: 1.2em;
 }
 
-#social-links {
+.footer-links {
     font-size: 1em;
     padding: 0.25em;
     text-decoration: none;
 }
 
-#social-links a {
+.footer-links li {
+    list-style: none;
+    margin-top: 1em;
+}
+
+.footer-links a {
     text-decoration: none;
     color: #1985A1;
 }
 
-#social-links li a:visited {
+.footer-links a:visited {
     text-decoration: none;
 }
 
@@ -430,6 +317,10 @@ p {
     padding: 0.25em;
     text-decoration: none;
     list-style: none;
+}
+
+#footer-pages li a:visited {
+    text-decoration: none;
 }
 
 .col-sm-4 {
