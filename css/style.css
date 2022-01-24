@@ -262,6 +262,10 @@ p {
     font-size: 1.2em;
 }
 
+.social-links a:hover {
+    text-transform: none;
+}
+
 /*----------- 3 reasons for exercising -*/
 
 
