@@ -37,7 +37,7 @@ h2 {
 }
 
 h3 {
-    color: #1985A1;
+    color: black;
     font-family: 'Fjalla One', sans-serif;
     font-size: 2.2em;
     text-align: left;
@@ -67,9 +67,12 @@ p {
 }
 
 .hvr-grow :hover {
-    color: black;
+    color: #1985A1;
 }
 
+.styled-heading {
+    color: #1985A1;
+}
 
 /*-----------logo & nav bar --*/
 #logo {
