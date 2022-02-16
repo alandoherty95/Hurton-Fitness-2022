@@ -290,6 +290,26 @@ p {
     width: 100%;
 }
 
+/*---------------------- contact.html -*/
+
+.certificate-section {
+    background-color: #1985A1;
+    height: auto;
+    padding: 0.8em;
+}
+
+
+.certificate-section ul {
+    list-style-type: circle;
+    text-align: left;
+    margin: 1em;
+}
+
+.certificate-section li {
+    margin: 1em;
+    font-size: 1.2em;
+}
+
 /*----------------- footer -*/
 
 .footer {
