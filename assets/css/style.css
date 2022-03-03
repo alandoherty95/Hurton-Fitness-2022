@@ -174,7 +174,7 @@ p {
 .call-to-action {
     background: #1985A1;
     color: #ffffff;
-    border-radius: 30px;
+    border-radius: 12px;
     padding: 0.5em;
     font-size: 1.5em;
 }
@@ -184,6 +184,25 @@ p {
 .call-to-action:focus {
     background: #ffffff;
     color: #1985A1;
+}
+
+/* Buttons */
+
+.call-to-action2 {
+    background: #1985A1;
+    color: #ffffff;
+    border-radius: 12px;
+    padding: 0.5em;
+    font-size: 1.5em;
+    width: 50%;
+    text-align: center;
+}
+
+.call-to-action2:hover,
+.call-to-action2:active,
+.call-to-action2:focus {
+    background: #000000;
+    color: #ffffff;
 }
 
 #cover-image {
@@ -214,7 +233,7 @@ p {
 #cover-text {
     padding: 1em;
     margin: 1.2em;
-    border-radius: 30px;
+    border-radius: 12px;
     border: 0.3em solid #1985A1;
     background-color: rgb(197, 195, 198, 0.8);
     position: absolute;
@@ -248,20 +267,14 @@ p {
 }
 
 /*------------------events section-*/
-
+.event-section .col-lg-6 {
+    text-align: center;
+}
 
 /*-------------- smoothie recipes -*/
 .recipe-section {
-    background-color: #1985A1;
-    color: white;
     height: auto;
     padding: 1em;
-}
-
-
-.recipe-section h2,
-.recipe-section h3 {
-    color: white;
 }
 
 .recipe-section ul {
@@ -281,16 +294,6 @@ p {
 }
 
 /*----------- 3 reasons for exercising -*/
-
-
-/*---------------------- events.html -*/
-
-#events-top-section {
-    overflow: hidden;
-    position: relative;
-    height: auto;
-    width: 100%;
-}
 
 /*---------------------- contact.html -*/
 
