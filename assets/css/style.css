@@ -8,8 +8,8 @@
 }
 
 hr {
-    height: 1px;
-    background-color: #1985A1;
+    height: 2px;
+    background-color: #FFD700;
     border: none;
 }
 
@@ -28,7 +28,6 @@ h1 {
 }
 
 h2 {
-    color: #1985A1;
     font-family: 'Fjalla One', sans-serif;
     font-size: 2.4em;
     margin: 1em;
@@ -38,26 +37,22 @@ h2 {
 }
 
 h3 {
-    color: black;
     font-family: 'Fjalla One', sans-serif;
     font-size: 2.2em;
     text-align: left;
 }
 
 h4 {
-    color: #1985A1;
     font-family: 'Fjalla One', sans-serif;
     font-size: 2em;
 }
 
 h5 {
-    color: #1985A1;
     font-family: 'Fjalla One', sans-serif;
     font-size: 1.5em;
 }
 
 h6 {
-    color: black;
     font-family: 'Fjalla One', sans-serif;
     font-size: 1.3em;
 }
@@ -68,17 +63,17 @@ p {
 }
 
 .hvr-grow :hover {
-    color: #1985A1;
+    color: #FFD700;
 }
 
 .styled-heading {
-    color: #1985A1;
+    color: #000000;
 }
 
 /*-----------logo & nav bar --*/
 #logo {
     text-decoration: none;
-    color: #1985A1;
+    color: #000000;
     padding-left: 0.2em;
     padding-right: 2em;
 }
@@ -151,7 +146,6 @@ p {
     letter-spacing: 0.2em;
     font-size: 1.3em;
     list-style-type: none;
-    color: #1985A1;
 }
 
 .navbar-collapse {
@@ -172,8 +166,8 @@ p {
 /* Buttons */
 
 .call-to-action {
-    background: #1985A1;
-    color: #ffffff;
+    background: #FFD700;
+    color: #000000;
     border-radius: 12px;
     padding: 0.5em;
     font-size: 1.5em;
@@ -182,15 +176,15 @@ p {
 .call-to-action:hover,
 .call-to-action:active,
 .call-to-action:focus {
-    background: #ffffff;
-    color: #1985A1;
+    background: #000000;
+    color: #FFD700;
 }
 
 /* Buttons */
 
 .call-to-action2 {
-    background: #1985A1;
-    color: #ffffff;
+    background: #FFD700;
+    color: #000000;
     border-radius: 12px;
     padding: 0.5em;
     font-size: 1.5em;
@@ -234,7 +228,7 @@ p {
     padding: 1em;
     margin: 1.2em;
     border-radius: 12px;
-    border: 0.3em solid #1985A1;
+    border: 0.3em solid #FFD700;
     background-color: rgb(197, 195, 198, 0.8);
     position: absolute;
     top: 22em;
@@ -247,7 +241,7 @@ p {
 /*------- testimonial section -*/
 
 .testimonial-section {
-    background-color: #1985A1;
+    background-color: #000000;
     color: white;
     height: auto;
     padding: 1em;
@@ -290,7 +284,7 @@ p {
 
 .social-links a:hover {
     text-transform: none;
-    color: #1985A1;
+    color: #FFD700;
 }
 
 /*----------- 3 reasons for exercising -*/
@@ -298,7 +292,7 @@ p {
 /*---------------------- contact.html -*/
 
 .certificate-section {
-    background-color: #1985A1;
+    background-color: #FFD700;
     height: auto;
     padding: 0.8em;
 }
@@ -349,7 +343,7 @@ p {
 
 .footer-links a {
     text-decoration: none;
-    color: #1985A1;
+    color: #000000;
 }
 
 .footer-links a:visited {
@@ -380,13 +374,13 @@ p {
 .col-sm-4 a {
     padding: 0.25em;
     margin-top: 1em;
-    color: #1985A1;
+    color: #000000;
 }
 
 .back-to-top {
     font-size: 1.2em;
     padding: 0.5em;
-    color: #1985A1;
+    color: #000000;
 }
 
 .back-to-top a:hover {
