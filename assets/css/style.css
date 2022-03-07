@@ -29,7 +29,7 @@ h1 {
 
 h2 {
     font-family: 'Fjalla One', sans-serif;
-    font-size: 2.4em;
+    font-size: 2.2em;
     margin: 1em;
     letter-spacing: 4px;
     text-transform: uppercase;
@@ -37,14 +37,13 @@ h2 {
 }
 
 h3 {
-    font-family: 'Fjalla One', sans-serif;
-    font-size: 2.2em;
-    text-align: left;
+    font-family: 'Sirin Stencil', cursive;
+    font-size: 2em;
 }
 
 h4 {
     font-family: 'Fjalla One', sans-serif;
-    font-size: 2em;
+    font-size: 1.8em;
 }
 
 h5 {
@@ -54,16 +53,20 @@ h5 {
 
 h6 {
     font-family: 'Fjalla One', sans-serif;
-    font-size: 1.3em;
+    font-size: 1.5em;
 }
 
 p {
-    font-size: 1.5em;
+    font-size: 1.3em;
     text-align: left;
 }
 
+.hvr-grow {
+    color: #000000;
+}
+
 .hvr-grow :hover {
-    color: #FFD700;
+    color: #808080;
 }
 
 .styled-heading {
@@ -282,9 +285,15 @@ p {
     font-size: 1.2em;
 }
 
+.social-links a {
+    text-transform: none;
+    color: #000000;
+    text-decoration: none;
+}
+
 .social-links a:hover {
     text-transform: none;
-    color: #FFD700;
+    color: #808080;
 }
 
 /*----------- 3 reasons for exercising -*/
@@ -297,6 +306,9 @@ p {
     padding: 0.8em;
 }
 
+.certificate-section .card-body {
+    background-color: #ffffff;
+}
 
 .certificate-section ul {
     list-style-type: circle;
