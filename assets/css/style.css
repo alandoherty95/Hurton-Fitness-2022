@@ -92,6 +92,10 @@ p {
     text-decoration: none;
 }
 
+.event-section .card-body {
+    min-height: 82em;
+}
+
 /*-- inspiration from https: //www.w3schools.com/css/css_rwd_mediaqueries.asp --*/
 @media only screen and (max-width: 600px) {
     h1 {
@@ -191,7 +195,6 @@ p {
     border-radius: 12px;
     padding: 0.5em;
     font-size: 1.5em;
-    width: 50%;
     text-align: center;
 }
 
