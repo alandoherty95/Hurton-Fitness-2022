@@ -237,6 +237,7 @@ p {
     border: 0.3em solid #FFD700;
     background-color: rgb(197, 195, 198, 0.8);
     position: absolute;
+    text-align: center;
     top: 22em;
     right: 4em;
 }
