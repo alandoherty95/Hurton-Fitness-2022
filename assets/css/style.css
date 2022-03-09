@@ -175,6 +175,7 @@ p {
 .call-to-action {
     background: #FFD700;
     color: #000000;
+    letter-spacing: 0px;
     border-radius: 12px;
     padding: 0.5em;
     font-size: 1.5em;
@@ -236,6 +237,7 @@ p {
     border-radius: 12px;
     border: 0.3em solid #FFD700;
     background-color: rgb(197, 195, 198, 0.8);
+    letter-spacing: 2px;
     position: absolute;
     text-align: center;
     top: 22em;
@@ -244,20 +246,23 @@ p {
 
 /*---------------------- about section -*/
 
-
-/*------- testimonial section -*/
-
-.testimonial-section {
+.about-section {
     background-color: #000000;
     color: white;
     height: auto;
     padding: 1em;
 }
 
-
-.testimonial-section h2,
-.testimonial-section h3 {
+.about-section h2,
+.about-section h3 {
     color: white;
+}
+
+/*------- testimonial section -*/
+
+.testimonial-section {
+    height: auto;
+    padding: 1em;
 }
 
 .row .col-md-6 p {
@@ -272,10 +277,29 @@ p {
     text-align: center;
 }
 
+.event-page {
+    background-color: #000000;
+}
+
+.event-page h2 {
+    color: #ffffff;
+}
+
+.event-page .col-lg-6 {
+    text-align: center;
+}
+
 /*-------------- smoothie recipes -*/
 .recipe-section {
     height: auto;
     padding: 1em;
+    background-color: #000000;
+    color: white;
+}
+
+
+.recipe-section .card-body {
+    border: 2px solid #FFD700;
 }
 
 .recipe-section ul {
@@ -293,6 +317,7 @@ p {
     text-transform: none;
     color: #000000;
     text-decoration: none;
+    margin: 4em;
 }
 
 .social-links a:hover {
@@ -302,16 +327,38 @@ p {
 
 /*----------- 3 reasons for exercising -*/
 
+
+.exercise-reasons-section .card-body {
+    border: 2px solid #FFD700;
+}
+
 /*---------------------- contact.html -*/
 
+.contact-section {
+    background-color: #000000;
+}
+
+.contact-section h2,
+.contact-section h3 {
+    color: #ffffff;
+}
+
+.contact-section .card-body h3 {
+    color: #000000;
+}
+
 .certificate-section {
-    background-color: #FFD700;
+    background-color: #000000;
     height: auto;
     padding: 0.8em;
 }
 
+.certificate-section h2 {
+    color: #ffffff;
+}
+
 .certificate-section .card-body {
-    background-color: #ffffff;
+    color: #ffffff;
 }
 
 .certificate-section ul {
