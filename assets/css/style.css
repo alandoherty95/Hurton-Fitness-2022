@@ -61,41 +61,11 @@ p {
     text-align: left;
 }
 
-.hvr-grow {
-    color: #000000;
-}
-
-.hvr-grow :hover {
-    color: #808080;
-}
-
 .styled-heading {
     color: #000000;
 }
 
-/*-----------logo & nav bar --*/
-#logo {
-    text-decoration: none;
-    color: #000000;
-    padding-left: 0.2em;
-    padding-right: 2em;
-}
-
-#logo a {
-    text-decoration: none;
-}
-
-#logo a:link,
-#logo a:visited,
-#logo a:hover,
-#logo a:active {
-    text-decoration: none;
-}
-
-.event-section .card-body {
-    min-height: 82em;
-}
-
+/*-- media queries --*/
 /*-- inspiration from https: //www.w3schools.com/css/css_rwd_mediaqueries.asp --*/
 @media only screen and (max-width: 600px) {
     h1 {
@@ -127,6 +97,28 @@ p {
     }
 }
 
+/*-----------logo & nav bar --*/
+#logo {
+    text-decoration: none;
+    color: #000000;
+    padding-right: 2em;
+}
+
+#logo a {
+    text-decoration: none;
+}
+
+#logo a:link,
+#logo a:visited,
+#logo a:hover,
+#logo a:active {
+    text-decoration: none;
+}
+
+.event-section .card-body {
+    min-height: 82em;
+}
+
 /*-- inspiration from https://getbootstrap.com/docs/4.0/components/navbar/ --*/
 .navbar-toggler-icon {
     display: inline-block;
@@ -148,11 +140,16 @@ p {
 
 .nav-link li {
     list-style: none;
-    margin: 1.2em;
+    color: #000000;
+    margin: 2em;
     padding: 1em;
     letter-spacing: 0.2em;
     font-size: 1.3em;
     list-style-type: none;
+}
+
+.navbar-nav li {
+    margin-right: 1em;
 }
 
 .navbar-collapse {
@@ -190,7 +187,7 @@ p {
 
 /* Buttons */
 
-.call-to-action2 {
+.button-style {
     background: #FFD700;
     color: #000000;
     border-radius: 12px;
@@ -199,16 +196,16 @@ p {
     text-align: center;
 }
 
-.call-to-action2:hover,
-.call-to-action2:active,
-.call-to-action2:focus {
+.button-style:hover,
+.button-style:active,
+.button-style:focus {
     background: #000000;
     color: #ffffff;
 }
 
 #cover-image {
     width: 100%;
-    height: 50em;
+    height: 46em;
     background-image: url("https://raw.githubusercontent.com/alandoherty95/Hurton-Fitness-2022/master/assets/images/spartan6.jpg");
     animation-name: hero-zoom;
     animation-duration: 4s;
@@ -279,10 +276,13 @@ p {
 
 .event-page {
     background-color: #000000;
+    color: #ffffff;
+    padding-bottom: 6em;
 }
 
-.event-page h2 {
-    color: #ffffff;
+.event-page .card-body {
+    background-color: #000000;
+    border: 2px solid #FFD700;
 }
 
 .event-page .col-lg-6 {
@@ -320,11 +320,6 @@ p {
     margin: 4em;
 }
 
-.social-links a:hover {
-    text-transform: none;
-    color: #808080;
-}
-
 /*----------- 3 reasons for exercising -*/
 
 
@@ -336,15 +331,17 @@ p {
 
 .contact-section {
     background-color: #000000;
-}
-
-.contact-section h2,
-.contact-section h3 {
     color: #ffffff;
 }
 
-.contact-section .card-body h3 {
-    color: #000000;
+.contact-section .card-body {
+    border: 2px solid #FFD700;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.contact-section .card-body a {
+    color: #ffffff;
 }
 
 .certificate-section {
@@ -370,6 +367,10 @@ p {
 .certificate-section li {
     margin: 1em;
     font-size: 1.2em;
+}
+
+.styled-heading {
+    color: #000000;
 }
 
 /*----------------- footer -*/
@@ -438,14 +439,4 @@ p {
     padding: 0.25em;
     margin-top: 1em;
     color: #000000;
-}
-
-.back-to-top {
-    font-size: 1.2em;
-    padding: 0.5em;
-    color: #000000;
-}
-
-.back-to-top a:hover {
-    text-decoration: none;
 }
