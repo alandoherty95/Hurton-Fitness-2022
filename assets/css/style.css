@@ -87,6 +87,34 @@ p {
     min-height: 82em;
 }
 
+/*-- inspiration from https: //www.w3schools.com/css/css_rwd_mediaqueries.asp --*/
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 26px;
+    }
+
+    h4 {
+        font-size: 24px;
+    }
+
+    h5 {
+        font-size: 24px;
+    }
+
+    h6 {
+        font-size: 22px;
+    }
+}
+
+
 /*-- inspiration from https://getbootstrap.com/docs/4.0/components/navbar/ --*/
 .navbar-toggler-icon {
     display: inline-block;
@@ -285,7 +313,11 @@ p {
     text-transform: none;
     color: #000000;
     text-decoration: none;
-    margin: 4em;
+    margin: 1em;
+}
+
+.contact-section .card-body {
+    min-height: 20em;
 }
 
 /*----------- 3 reasons for exercising -*/
@@ -379,17 +411,6 @@ p {
 }
 
 .footer-links a:visited {
-    text-decoration: none;
-}
-
-#footer-pages {
-    font-size: 1em;
-    padding: 0.25em;
-    text-decoration: none;
-    list-style: none;
-}
-
-#footer-pages li a:visited {
     text-decoration: none;
 }
 
