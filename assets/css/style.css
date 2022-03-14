@@ -114,6 +114,20 @@ p {
     }
 }
 
+@media only screen and (max-width: 480px) {
+    h1 {
+        font-size: 26px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    h5 {
+        font-size: 18px;
+    }
+}
+
 
 /*-- inspiration from https://getbootstrap.com/docs/4.0/components/navbar/ --*/
 .navbar-toggler-icon {
