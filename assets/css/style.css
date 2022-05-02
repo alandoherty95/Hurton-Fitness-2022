@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text&family=Fjalla+One&family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Fjalla+One&family=Sirin+Stencil&display=swap');
+
 
 * {
     margin: 0;
@@ -7,8 +8,8 @@
 }
 
 hr {
-    height: 1px;
-    background-color: #1985A1;
+    height: 2px;
+    background-color: #FFD700;
     border: none;
 }
 
@@ -22,14 +23,13 @@ body {
 
 h1 {
     text-transform: uppercase;
-    font-family: 'Big Shoulders Stencil Text', cursive;
+    font-family: 'Sirin Stencil', cursive;
     font-size: 4em;
 }
 
 h2 {
-    color: #1985A1;
     font-family: 'Fjalla One', sans-serif;
-    font-size: 2.4em;
+    font-size: 2.2em;
     margin: 1em;
     letter-spacing: 4px;
     text-transform: uppercase;
@@ -37,48 +37,38 @@ h2 {
 }
 
 h3 {
-    color: black;
-    font-family: 'Fjalla One', sans-serif;
-    font-size: 2.2em;
-    text-align: left;
-}
-
-h4 {
-    color: #1985A1;
-    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Sirin Stencil', cursive;
     font-size: 2em;
 }
 
+h4 {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1.8em;
+}
+
 h5 {
-    color: #1985A1;
     font-family: 'Fjalla One', sans-serif;
     font-size: 1.5em;
 }
 
 h6 {
-    color: black;
     font-family: 'Fjalla One', sans-serif;
-    font-size: 1.3em;
+    font-size: 1.5em;
 }
 
 p {
-    font-size: 1.5em;
+    font-size: 1.3em;
     text-align: left;
 }
 
-.hvr-grow :hover {
-    color: #1985A1;
-}
-
 .styled-heading {
-    color: #1985A1;
+    color: #000000;
 }
 
 /*-----------logo & nav bar --*/
 #logo {
     text-decoration: none;
-    color: #1985A1;
-    padding-left: 0.2em;
+    color: #000000;
     padding-right: 2em;
 }
 
@@ -93,36 +83,51 @@ p {
     text-decoration: none;
 }
 
+.event-section .card-body {
+    min-height: 82em;
+}
+
 /*-- inspiration from https: //www.w3schools.com/css/css_rwd_mediaqueries.asp --*/
 @media only screen and (max-width: 600px) {
     h1 {
         font-size: 30px;
     }
-}
 
-@media only screen and (min-width: 600px) {
-    h1 {
-        font-size: 40px;
+    h2 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 26px;
+    }
+
+    h4 {
+        font-size: 24px;
+    }
+
+    h5 {
+        font-size: 24px;
+    }
+
+    h6 {
+        font-size: 22px;
     }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 480px) {
     h1 {
-        font-size: 50px;
+        font-size: 26px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    h5 {
+        font-size: 18px;
     }
 }
 
-@media only screen and (min-width: 992px) {
-    h1 {
-        font-size: 60px;
-    }
-}
-
-@media only screen and (min-width: 1200px) {
-    h1 {
-        font-size: 68px;
-    }
-}
 
 /*-- inspiration from https://getbootstrap.com/docs/4.0/components/navbar/ --*/
 .navbar-toggler-icon {
@@ -145,12 +150,16 @@ p {
 
 .nav-link li {
     list-style: none;
-    margin: 1.2em;
+    color: #000000;
+    margin: 2em;
     padding: 1em;
     letter-spacing: 0.2em;
     font-size: 1.3em;
     list-style-type: none;
-    color: #1985A1;
+}
+
+.navbar-nav li {
+    margin-right: 1em;
 }
 
 .navbar-collapse {
@@ -171,9 +180,10 @@ p {
 /* Buttons */
 
 .call-to-action {
-    background: #1985A1;
-    color: #ffffff;
-    border-radius: 30px;
+    background: #FFD700;
+    color: #000000;
+    letter-spacing: 0px;
+    border-radius: 12px;
     padding: 0.5em;
     font-size: 1.5em;
 }
@@ -181,14 +191,37 @@ p {
 .call-to-action:hover,
 .call-to-action:active,
 .call-to-action:focus {
-    background: #ffffff;
-    color: #1985A1;
+    background: #000000;
+    color: #FFD700;
+}
+
+/* Buttons */
+
+.button-style {
+    background: #FFD700;
+    color: #000000;
+    border-radius: 12px;
+    padding: 0.5em;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.button-style:hover,
+.button-style:active,
+.button-style:focus {
+    background: #000000;
+    color: #ffffff;
 }
 
 #cover-image {
     width: 100%;
+<<<<<<< HEAD
     height: 50em;
     background-image: url("https://github.com/alandoherty95/Hurton-Fitness-2022/blob/master/assets/images/bootcamp1.jpg?raw=true");
+=======
+    height: 46em;
+    background-image: url("https://raw.githubusercontent.com/alandoherty95/Hurton-Fitness-2022/master/assets/images/spartan6.jpg");
+>>>>>>> b5c0eb9d49358b0370112954bad0f42e54ae68df
     animation-name: hero-zoom;
     animation-duration: 4s;
     animation-fill-mode: forwards;
@@ -213,30 +246,35 @@ p {
 #cover-text {
     padding: 1em;
     margin: 1.2em;
-    border-radius: 30px;
-    border: 0.3em solid #1985A1;
+    border-radius: 12px;
+    border: 0.3em solid #FFD700;
     background-color: rgb(197, 195, 198, 0.8);
+    letter-spacing: 2px;
     position: absolute;
+    text-align: center;
     top: 22em;
     right: 4em;
 }
 
 /*---------------------- about section -*/
 
-
-/*------- testimonial section -*/
-
-.testimonial-section {
-    background-color: #1985A1;
+.about-section {
+    background-color: #000000;
     color: white;
     height: auto;
     padding: 1em;
 }
 
-
-.testimonial-section h2,
-.testimonial-section h3 {
+.about-section h2,
+.about-section h3 {
     color: white;
+}
+
+/*------- testimonial section -*/
+
+.testimonial-section {
+    height: auto;
+    padding: 1em;
 }
 
 .row .col-md-6 p {
@@ -247,20 +285,36 @@ p {
 }
 
 /*------------------events section-*/
+.event-section .col-lg-6 {
+    text-align: center;
+}
 
+.event-page {
+    background-color: #000000;
+    color: #ffffff;
+    padding-bottom: 6em;
+}
+
+.event-page .card-body {
+    background-color: #000000;
+    border: 2px solid #FFD700;
+}
+
+.event-page .col-lg-6 {
+    text-align: center;
+}
 
 /*-------------- smoothie recipes -*/
 .recipe-section {
-    background-color: #1985A1;
-    color: white;
     height: auto;
     padding: 1em;
+    background-color: #000000;
+    color: white;
 }
 
 
-.recipe-section h2,
-.recipe-section h3 {
-    color: white;
+.recipe-section .card-body {
+    border: 2px solid #FFD700;
 }
 
 .recipe-section ul {
@@ -274,20 +328,68 @@ p {
     font-size: 1.2em;
 }
 
-.social-links a:hover {
+.social-links a {
     text-transform: none;
+    color: #000000;
+    text-decoration: none;
+    margin: 1em;
+}
+
+.contact-section .card-body {
+    min-height: 20em;
 }
 
 /*----------- 3 reasons for exercising -*/
 
 
-/*---------------------- events.html -*/
+.exercise-reasons-section .card-body {
+    border: 2px solid #FFD700;
+}
 
-#events-top-section {
-    overflow: hidden;
-    position: relative;
+/*---------------------- contact.html -*/
+
+.contact-section {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.contact-section .card-body {
+    border: 2px solid #FFD700;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.contact-section .card-body a {
+    color: #ffffff;
+}
+
+.certificate-section {
+    background-color: #000000;
     height: auto;
-    width: 100%;
+    padding: 0.8em;
+}
+
+.certificate-section h2 {
+    color: #ffffff;
+}
+
+.certificate-section .card-body {
+    color: #ffffff;
+}
+
+.certificate-section ul {
+    list-style-type: circle;
+    text-align: left;
+    margin: 1em;
+}
+
+.certificate-section li {
+    margin: 1em;
+    font-size: 1.2em;
+}
+
+.styled-heading {
+    color: #000000;
 }
 
 
@@ -326,21 +428,10 @@ p {
 
 .footer-links a {
     text-decoration: none;
-    color: #1985A1;
+    color: #000000;
 }
 
 .footer-links a:visited {
-    text-decoration: none;
-}
-
-#footer-pages {
-    font-size: 1em;
-    padding: 0.25em;
-    text-decoration: none;
-    list-style: none;
-}
-
-#footer-pages li a:visited {
     text-decoration: none;
 }
 
@@ -357,15 +448,5 @@ p {
 .col-sm-4 a {
     padding: 0.25em;
     margin-top: 1em;
-    color: #1985A1;
-}
-
-.back-to-top {
-    font-size: 1.2em;
-    padding: 0.5em;
-    color: #1985A1;
-}
-
-.back-to-top a:hover {
-    text-decoration: none;
+    color: #000000;
 }
