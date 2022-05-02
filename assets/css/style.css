@@ -188,7 +188,7 @@ p {
 #cover-image {
     width: 100%;
     height: 50em;
-    background-image: url("https://raw.githubusercontent.com/alandoherty95/Hurton-Fitness-2022/master/assets/images/spartan6.jpg");
+    background-image: url("https://github.com/alandoherty95/Hurton-Fitness-2022/blob/master/assets/images/bootcamp1.jpg?raw=true");
     animation-name: hero-zoom;
     animation-duration: 4s;
     animation-fill-mode: forwards;
@@ -289,6 +289,8 @@ p {
     height: auto;
     width: 100%;
 }
+
+
 
 /*----------------- footer -*/
 
