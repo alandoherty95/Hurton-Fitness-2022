@@ -215,13 +215,8 @@ p {
 
 #cover-image {
     width: 100%;
-<<<<<<< HEAD
-    height: 50em;
-    background-image: url("https://github.com/alandoherty95/Hurton-Fitness-2022/blob/master/assets/images/bootcamp1.jpg?raw=true");
-=======
     height: 46em;
-    background-image: url("https://raw.githubusercontent.com/alandoherty95/Hurton-Fitness-2022/master/assets/images/spartan6.jpg");
->>>>>>> b5c0eb9d49358b0370112954bad0f42e54ae68df
+    background-image: url("https://github.com/alandoherty95/Hurton-Fitness-2022/blob/master/assets/images/bootcamp1.jpg?raw=true");
     animation-name: hero-zoom;
     animation-duration: 4s;
     animation-fill-mode: forwards;
